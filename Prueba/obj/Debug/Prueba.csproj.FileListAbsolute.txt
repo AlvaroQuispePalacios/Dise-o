@@ -1,0 +1,15 @@
+C:\Users\Persona\source\repos\Prueba\bin\Debug\Prueba.exe.config
+C:\Users\Persona\source\repos\Prueba\bin\Debug\Prueba.exe
+C:\Users\Persona\source\repos\Prueba\bin\Debug\Prueba.pdb
+C:\Users\Persona\source\repos\Prueba\obj\Debug\Prueba.csproj.AssemblyReference.cache
+C:\Users\Persona\source\repos\Prueba\obj\Debug\Prueba.formLogin.resources
+C:\Users\Persona\source\repos\Prueba\obj\Debug\Prueba.Properties.Resources.resources
+C:\Users\Persona\source\repos\Prueba\obj\Debug\Prueba.csproj.GenerateResource.cache
+C:\Users\Persona\source\repos\Prueba\obj\Debug\Prueba.csproj.CoreCompileInputs.cache
+C:\Users\Persona\source\repos\Prueba\obj\Debug\Prueba.exe
+C:\Users\Persona\source\repos\Prueba\obj\Debug\Prueba.pdb
+C:\Users\Persona\source\repos\Prueba\obj\Debug\Prueba.Form1.resources
+C:\Users\Persona\source\repos\Prueba\obj\Debug\Prueba.FormAlumnos.resources
+C:\Users\Persona\source\repos\Prueba\obj\Debug\Prueba.FormProfesores.resources
+C:\Users\Persona\source\repos\Prueba\obj\Debug\Prueba.FormAsignaturas.resources
+C:\Users\Persona\source\repos\Prueba\obj\Debug\Prueba.FormNotas.resources
