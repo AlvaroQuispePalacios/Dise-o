@@ -1,0 +1,14 @@
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\bin\Debug\sistema_de_notas.exe.config
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\bin\Debug\sistema_de_notas.exe
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\bin\Debug\sistema_de_notas.pdb
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\obj\Debug\sistema_de_notas.csproj.AssemblyReference.cache
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\obj\Debug\sistema_de_notas.FormLogin.resources
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\obj\Debug\sistema_de_notas.Properties.Resources.resources
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\obj\Debug\sistema_de_notas.csproj.GenerateResource.cache
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\obj\Debug\sistema_de_notas.csproj.CoreCompileInputs.cache
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\obj\Debug\sistema_de_notas.exe
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\obj\Debug\sistema_de_notas.pdb
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\obj\Debug\sistema_de_notas.Form1.resources
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\obj\Debug\sistema_de_notas.FormAlumnos.resources
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\obj\Debug\sistema_de_notas.FormAsignaturas.resources
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\obj\Debug\sistema_de_notas.FormNotas.resources

@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Persona\\source\\repos\\Prueba\\",
+  "WorkspaceRootPath": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|C:\\Users\\Persona\\source\\repos\\Prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|C:\\Users\\Persona\\source\\repos\\Prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|C:\\Users\\Persona\\source\\repos\\Prueba\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|c:\\users\\persona\\source\\repos\\prueba\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|C:\\Users\\Persona\\source\\repos\\Prueba\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|solutionrelative:formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|c:\\users\\persona\\source\\repos\\prueba\\formprofesores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\formprofesores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|solutionrelative:formprofesores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|C:\\Users\\Persona\\source\\repos\\Prueba\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,54 +38,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "formLogin.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Persona\\source\\repos\\Prueba\\formLogin.cs",
+              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\formLogin.cs",
               "RelativeDocumentMoniker": "formLogin.cs",
               "ToolTip": "C:\\Users\\Persona\\source\\repos\\Prueba\\formLogin.cs [Dise\u00F1o]",
-              "RelativeToolTip": "formLogin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Persona\\source\\repos\\Prueba\\formLogin.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T11:55:37.888Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-11-03T11:55:37.888Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "formLogin.cs",
-              "DocumentMoniker": "C:\\Users\\Persona\\source\\repos\\Prueba\\formLogin.cs",
+              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\formLogin.cs",
               "RelativeDocumentMoniker": "formLogin.cs",
-              "ToolTip": "C:\\Users\\Persona\\source\\repos\\Prueba\\formLogin.cs",
+              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\formLogin.cs",
               "RelativeToolTip": "formLogin.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwC0AAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T11:55:44.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T11:55:44.819Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Persona\\source\\repos\\Prueba\\Form1.cs",
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Persona\\source\\repos\\Prueba\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-03T11:09:35.988Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Persona\\source\\repos\\Prueba\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Persona\\source\\repos\\Prueba\\Form1.cs",
+              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAcwEoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAA4wEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-03T11:23:55.845Z",
               "EditorCaption": ""
@@ -94,39 +96,36 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "formLogin.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Persona\\source\\repos\\Prueba\\formLogin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\formLogin.Designer.cs",
               "RelativeDocumentMoniker": "formLogin.Designer.cs",
-              "ToolTip": "C:\\Users\\Persona\\source\\repos\\Prueba\\formLogin.Designer.cs",
+              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\formLogin.Designer.cs",
               "RelativeToolTip": "formLogin.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T11:56:34.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T11:56:34.634Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "FormProfesores.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Persona\\source\\repos\\Prueba\\FormProfesores.cs",
+              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\FormProfesores.cs",
               "RelativeDocumentMoniker": "FormProfesores.cs",
               "ToolTip": "C:\\Users\\Persona\\source\\repos\\Prueba\\FormProfesores.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FormProfesores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Persona\\source\\repos\\Prueba\\FormProfesores.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T14:04:37.128Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-11-03T14:04:37.128Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Persona\\source\\repos\\Prueba\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Persona\\source\\repos\\Prueba\\Program.cs",
+              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T11:24:34.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T11:24:34.329Z"
             }
           ]
         }
