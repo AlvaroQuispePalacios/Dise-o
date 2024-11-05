@@ -3,23 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\sistema_de_notas\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\sistema_de_notas\\formviewnotasasignaturasalumnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|solutionrelative:formviewnotasasignaturasalumnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\sistema_de_notas\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\sistema_de_notas\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\sistema_de_notas\\formviewnotasasignaturasalumnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|solutionrelative:formviewnotasasignaturasalumnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\sistema_de_notas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\sistema_de_notas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\sistema_de_notas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\sistema_de_notas\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\sistema_de_notas\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\sistema_de_notas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\sistema_de_notas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F752922-1A63-4459-A9B3-D1B72234E2F1}|sistema_de_notas.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,11 +38,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 206,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormViewNotasAsignaturasAlumnos.cs",
+              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\sistema_de_notas\\FormViewNotasAsignaturasAlumnos.cs",
+              "RelativeDocumentMoniker": "FormViewNotasAsignaturasAlumnos.cs",
+              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\sistema_de_notas\\FormViewNotasAsignaturasAlumnos.cs",
+              "RelativeToolTip": "FormViewNotasAsignaturasAlumnos.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAjwB0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:50:04.277Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "FormViewNotasAsignaturasAlumnos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\sistema_de_notas\\FormViewNotasAsignaturasAlumnos.cs",
+              "RelativeDocumentMoniker": "FormViewNotasAsignaturasAlumnos.cs",
+              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\sistema_de_notas\\FormViewNotasAsignaturasAlumnos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormViewNotasAsignaturasAlumnos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:48:22.273Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FormLogin.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\sistema_de_notas\\FormLogin.cs",
               "RelativeDocumentMoniker": "FormLogin.cs",
@@ -46,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "FormLogin.cs",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\sistema_de_notas\\FormLogin.cs",
               "RelativeDocumentMoniker": "FormLogin.cs",
@@ -59,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\sistema_de_notas\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -71,20 +112,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\sistema_de_notas\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\sistema_de_notas\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowDAAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T15:58:53.502Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\sistema_de_notas\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -92,8 +133,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T15:34:38.619Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T15:34:38.619Z"
             }
           ]
         }

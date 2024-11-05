@@ -32,10 +32,11 @@
             this.tableLayoutPanelContenedor = new System.Windows.Forms.TableLayoutPanel();
             this.panelContenedorMenu = new System.Windows.Forms.Panel();
             this.flowLayoutPanelMenuOpciones = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelContenedorFormHijo = new System.Windows.Forms.Panel();
             this.btnMostrarAlumnos = new System.Windows.Forms.Button();
             this.btnMostrarNotas = new System.Windows.Forms.Button();
             this.btnAsignaturas = new System.Windows.Forms.Button();
+            this.panelContenedorFormHijo = new System.Windows.Forms.Panel();
+            this.btnViewNAA = new System.Windows.Forms.Button();
             this.tableLayoutPanelContenedor.SuspendLayout();
             this.panelContenedorMenu.SuspendLayout();
             this.flowLayoutPanelMenuOpciones.SuspendLayout();
@@ -79,18 +80,11 @@
             this.flowLayoutPanelMenuOpciones.Controls.Add(this.btnMostrarAlumnos);
             this.flowLayoutPanelMenuOpciones.Controls.Add(this.btnMostrarNotas);
             this.flowLayoutPanelMenuOpciones.Controls.Add(this.btnAsignaturas);
+            this.flowLayoutPanelMenuOpciones.Controls.Add(this.btnViewNAA);
             this.flowLayoutPanelMenuOpciones.Location = new System.Drawing.Point(13, 199);
             this.flowLayoutPanelMenuOpciones.Name = "flowLayoutPanelMenuOpciones";
             this.flowLayoutPanelMenuOpciones.Size = new System.Drawing.Size(218, 198);
             this.flowLayoutPanelMenuOpciones.TabIndex = 0;
-            // 
-            // panelContenedorFormHijo
-            // 
-            this.panelContenedorFormHijo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedorFormHijo.Location = new System.Drawing.Point(253, 3);
-            this.panelContenedorFormHijo.Name = "panelContenedorFormHijo";
-            this.panelContenedorFormHijo.Size = new System.Drawing.Size(544, 406);
-            this.panelContenedorFormHijo.TabIndex = 1;
             // 
             // btnMostrarAlumnos
             // 
@@ -125,6 +119,25 @@
             this.btnAsignaturas.UseVisualStyleBackColor = true;
             this.btnAsignaturas.Click += new System.EventHandler(this.btnAsignaturas_Click);
             // 
+            // panelContenedorFormHijo
+            // 
+            this.panelContenedorFormHijo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedorFormHijo.Location = new System.Drawing.Point(253, 3);
+            this.panelContenedorFormHijo.Name = "panelContenedorFormHijo";
+            this.panelContenedorFormHijo.Size = new System.Drawing.Size(544, 406);
+            this.panelContenedorFormHijo.TabIndex = 1;
+            // 
+            // btnViewNAA
+            // 
+            this.btnViewNAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewNAA.Location = new System.Drawing.Point(3, 138);
+            this.btnViewNAA.Name = "btnViewNAA";
+            this.btnViewNAA.Size = new System.Drawing.Size(215, 39);
+            this.btnViewNAA.TabIndex = 3;
+            this.btnViewNAA.Text = "View";
+            this.btnViewNAA.UseVisualStyleBackColor = true;
+            this.btnViewNAA.Click += new System.EventHandler(this.btnViewNAA_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -151,6 +164,7 @@
         private System.Windows.Forms.Button btnMostrarNotas;
         private System.Windows.Forms.Panel panelContenedorFormHijo;
         private System.Windows.Forms.Button btnAsignaturas;
+        private System.Windows.Forms.Button btnViewNAA;
     }
 }
 

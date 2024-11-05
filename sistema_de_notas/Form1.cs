@@ -35,6 +35,11 @@ namespace sistema_de_notas
             MostrarFormHijo(new FormAsignaturas());
         }
 
+        private void btnViewNAA_Click(object sender, EventArgs e)
+        {
+            MostrarFormHijo(new FormViewNotasAsignaturasAlumnos());
+        }
+
         public void MostrarFormHijo(Form formHijo)
         {
             if(formActivo != null)
@@ -51,6 +56,6 @@ namespace sistema_de_notas
             formHijo.Show();
         }
 
-  
+
     }
 }

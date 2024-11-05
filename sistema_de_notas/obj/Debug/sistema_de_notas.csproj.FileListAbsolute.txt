@@ -12,3 +12,4 @@ C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\obj\Debug\sistema_de_not
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\obj\Debug\sistema_de_notas.FormAlumnos.resources
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\obj\Debug\sistema_de_notas.FormAsignaturas.resources
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\obj\Debug\sistema_de_notas.FormNotas.resources
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\sistema_de_notas\obj\Debug\sistema_de_notas.FormViewNotasAsignaturasAlumnos.resources

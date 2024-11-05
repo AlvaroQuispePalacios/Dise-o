@@ -76,6 +76,12 @@
     <Compile Include="FormNotas.Designer.cs">
       <DependentUpon>FormNotas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormViewNotasAsignaturasAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormViewNotasAsignaturasAlumnos.Designer.cs">
+      <DependentUpon>FormViewNotasAsignaturasAlumnos.cs</DependentUpon>
+    </Compile>
     <Compile Include="notasDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -97,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormNotas.resx">
       <DependentUpon>FormNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormViewNotasAsignaturasAlumnos.resx">
+      <DependentUpon>FormViewNotasAsignaturasAlumnos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
