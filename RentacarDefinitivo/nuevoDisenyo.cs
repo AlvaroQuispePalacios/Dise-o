@@ -12,7 +12,7 @@ namespace RentacarDefinitivo
 {
     public partial class nuevoDisenyo : Form
     {
-        private Form formActivo = null;
+        private Form formularioActivo = null;
         public nuevoDisenyo()
         {
             InitializeComponent();
@@ -31,7 +31,14 @@ namespace RentacarDefinitivo
 
         private void btnMinMax_Click(object sender, EventArgs e)
         {
-            this.WindowState=FormWindowState.Maximized;
+            if(this.WindowState == FormWindowState.Normal) {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+            
         }
 
   
@@ -47,20 +54,29 @@ namespace RentacarDefinitivo
 
         }
 
-        public void AbrirFormHijo(object formhijo)
+        public void AbrirFormHijo(Form formularioHijo)
         {
-            if(formActivo != null)
+            if(formularioActivo != null)
             {
-                formActivo = null;
+                formularioActivo = null;
             }
-            formActivo = formActivo;
-            Form fh = formhijo as Form;
-            fh.TopLevel = false;
-            fh.Dock = DockStyle.Fill;
-            this.panelContenedor.Controls.Add(fh);
-            this.panelContenedor.Tag = fh;
-            fh.Show();
-            
+            formularioActivo = formularioHijo;
+            //Form fh = formhijo as Form;
+            //fh.TopLevel = false;
+            //fh.Dock = DockStyle.Fill;
+            //this.panelContenedorFormularioHijo.Controls.Add(fh);
+            //this.panelContenedorFormularioHijo.Tag = fh;
+            //fh.Show();
+
+            formularioActivo = formularioHijo; // Asigna el formulario hijo actual
+            formularioHijo.TopLevel = false; // Para que el formulario se comporte como un control
+            formularioHijo.FormBorderStyle = FormBorderStyle.None; // Quita los bordes
+            formularioHijo.Dock = DockStyle.Fill; // Ajusta el formulario al tamaño del panel
+            panelContenedorFormularioHijo.Controls.Add(formularioHijo); // Agrega el formulario al panel
+            panelContenedorFormularioHijo.Tag = formularioHijo; // Asigna el formulario como tag del panel
+            formularioHijo.BringToFront(); // Lleva el formulario al frente
+            formularioHijo.Show(); // Muestra el formulario
+
         }
 
         private void btnCargos_Click(object sender, EventArgs e)
@@ -77,6 +93,11 @@ namespace RentacarDefinitivo
         private void btnMostrarFormClientes_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnMostrarFormVehiculo_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new menuVehiculos()); 
         }
     }
 }

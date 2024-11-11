@@ -29,35 +29,23 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menuVehiculos));
             this.rentacarDataSet = new RentacarDefinitivo.rentacarDataSet();
             this.vehicleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vehicleTableAdapter = new RentacarDefinitivo.rentacarDataSetTableAdapters.vehicleTableAdapter();
             this.tableAdapterManager = new RentacarDefinitivo.rentacarDataSetTableAdapters.TableAdapterManager();
-            this.vehicleBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.vehicleBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.vehicleDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panelTopFormVehiculos = new System.Windows.Forms.Panel();
+            this.panelMidFormVehiculos = new System.Windows.Forms.Panel();
+            this.panelBotFormVehiculos = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.rentacarDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehicleBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vehicleBindingNavigator)).BeginInit();
-            this.vehicleBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.vehicleDataGridView)).BeginInit();
+            this.panelTopFormVehiculos.SuspendLayout();
+            this.panelBotFormVehiculos.SuspendLayout();
             this.SuspendLayout();
             // 
             // rentacarDataSet
@@ -85,194 +73,106 @@
             this.tableAdapterManager.usuarioTableAdapter = null;
             this.tableAdapterManager.vehicleTableAdapter = this.vehicleTableAdapter;
             // 
-            // vehicleBindingNavigator
+            // panelTopFormVehiculos
             // 
-            this.vehicleBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.vehicleBindingNavigator.BindingSource = this.vehicleBindingSource;
-            this.vehicleBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.vehicleBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.vehicleBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.vehicleBindingNavigatorSaveItem});
-            this.vehicleBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.vehicleBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.vehicleBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.vehicleBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.vehicleBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.vehicleBindingNavigator.Name = "vehicleBindingNavigator";
-            this.vehicleBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.vehicleBindingNavigator.Size = new System.Drawing.Size(800, 25);
-            this.vehicleBindingNavigator.TabIndex = 0;
-            this.vehicleBindingNavigator.Text = "bindingNavigator1";
+            this.panelTopFormVehiculos.Controls.Add(this.button6);
+            this.panelTopFormVehiculos.Controls.Add(this.button5);
+            this.panelTopFormVehiculos.Controls.Add(this.button4);
+            this.panelTopFormVehiculos.Controls.Add(this.button3);
+            this.panelTopFormVehiculos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTopFormVehiculos.Location = new System.Drawing.Point(0, 0);
+            this.panelTopFormVehiculos.Name = "panelTopFormVehiculos";
+            this.panelTopFormVehiculos.Size = new System.Drawing.Size(800, 37);
+            this.panelTopFormVehiculos.TabIndex = 2;
             // 
-            // bindingNavigatorMoveFirstItem
+            // panelMidFormVehiculos
             // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Mover primero";
+            this.panelMidFormVehiculos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMidFormVehiculos.Location = new System.Drawing.Point(0, 37);
+            this.panelMidFormVehiculos.Name = "panelMidFormVehiculos";
+            this.panelMidFormVehiculos.Size = new System.Drawing.Size(800, 413);
+            this.panelMidFormVehiculos.TabIndex = 3;
             // 
-            // bindingNavigatorMovePreviousItem
+            // panelBotFormVehiculos
             // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
+            this.panelBotFormVehiculos.Controls.Add(this.button2);
+            this.panelBotFormVehiculos.Controls.Add(this.button1);
+            this.panelBotFormVehiculos.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBotFormVehiculos.Location = new System.Drawing.Point(0, 413);
+            this.panelBotFormVehiculos.Name = "panelBotFormVehiculos";
+            this.panelBotFormVehiculos.Size = new System.Drawing.Size(800, 37);
+            this.panelBotFormVehiculos.TabIndex = 4;
             // 
-            // bindingNavigatorSeparator
+            // button1
             // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.button1.Location = new System.Drawing.Point(585, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 31);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // bindingNavigatorPositionItem
+            // button2
             // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Posición";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
+            this.button2.Location = new System.Drawing.Point(691, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 31);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // bindingNavigatorCountItem
+            // button3
             // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 15);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            this.button3.Location = new System.Drawing.Point(12, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(42, 31);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "<<";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // bindingNavigatorSeparator1
+            // button4
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.button4.Location = new System.Drawing.Point(156, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(42, 31);
+            this.button4.TabIndex = 1;
+            this.button4.Text = ">>";
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // bindingNavigatorMoveNextItem
+            // button5
             // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorMoveNextItem.Text = "Mover siguiente";
+            this.button5.Location = new System.Drawing.Point(60, 3);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(42, 31);
+            this.button5.TabIndex = 2;
+            this.button5.Text = "<";
+            this.button5.UseVisualStyleBackColor = true;
             // 
-            // bindingNavigatorMoveLastItem
+            // button6
             // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorMoveLastItem.Text = "Mover último";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
-            // 
-            // vehicleBindingNavigatorSaveItem
-            // 
-            this.vehicleBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.vehicleBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("vehicleBindingNavigatorSaveItem.Image")));
-            this.vehicleBindingNavigatorSaveItem.Name = "vehicleBindingNavigatorSaveItem";
-            this.vehicleBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
-            this.vehicleBindingNavigatorSaveItem.Text = "Guardar datos";
-            this.vehicleBindingNavigatorSaveItem.Click += new System.EventHandler(this.vehicleBindingNavigatorSaveItem_Click);
-            // 
-            // vehicleDataGridView
-            // 
-            this.vehicleDataGridView.AutoGenerateColumns = false;
-            this.vehicleDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.vehicleDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5});
-            this.vehicleDataGridView.DataSource = this.vehicleBindingSource;
-            this.vehicleDataGridView.Location = new System.Drawing.Point(0, 89);
-            this.vehicleDataGridView.Name = "vehicleDataGridView";
-            this.vehicleDataGridView.Size = new System.Drawing.Size(800, 349);
-            this.vehicleDataGridView.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "matricula";
-            this.dataGridViewTextBoxColumn1.HeaderText = "matricula";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "tipologia";
-            this.dataGridViewTextBoxColumn2.HeaderText = "tipologia";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "marca";
-            this.dataGridViewTextBoxColumn3.HeaderText = "marca";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "model";
-            this.dataGridViewTextBoxColumn4.HeaderText = "model";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "color";
-            this.dataGridViewTextBoxColumn5.HeaderText = "color";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.button6.Location = new System.Drawing.Point(108, 3);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(42, 31);
+            this.button6.TabIndex = 3;
+            this.button6.Text = ">";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // menuVehiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.vehicleDataGridView);
-            this.Controls.Add(this.vehicleBindingNavigator);
+            this.Controls.Add(this.panelBotFormVehiculos);
+            this.Controls.Add(this.panelMidFormVehiculos);
+            this.Controls.Add(this.panelTopFormVehiculos);
             this.Name = "menuVehiculos";
             this.Text = "menuVehiculos";
             this.Load += new System.EventHandler(this.menuVehiculos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.rentacarDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehicleBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vehicleBindingNavigator)).EndInit();
-            this.vehicleBindingNavigator.ResumeLayout(false);
-            this.vehicleBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.vehicleDataGridView)).EndInit();
+            this.panelTopFormVehiculos.ResumeLayout(false);
+            this.panelBotFormVehiculos.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -282,24 +182,14 @@
         private System.Windows.Forms.BindingSource vehicleBindingSource;
         private rentacarDataSetTableAdapters.vehicleTableAdapter vehicleTableAdapter;
         private rentacarDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator vehicleBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton vehicleBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView vehicleDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.Panel panelTopFormVehiculos;
+        private System.Windows.Forms.Panel panelMidFormVehiculos;
+        private System.Windows.Forms.Panel panelBotFormVehiculos;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
     }
 }

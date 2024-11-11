@@ -30,7 +30,7 @@
         {
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.panelContenedorFormularioHijo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnMostrarFormClientes = new System.Windows.Forms.Button();
@@ -38,7 +38,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btnCargos = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnMostrarFormVehiculo = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -68,7 +68,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
-            this.panel4.Controls.Add(this.panelContenedor);
+            this.panel4.Controls.Add(this.panelContenedorFormularioHijo);
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 48);
@@ -77,16 +77,16 @@
             this.panel4.TabIndex = 3;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // panelContenedor
+            // panelContenedorFormularioHijo
             // 
-            this.panelContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panelContenedorFormularioHijo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelContenedor.BackColor = System.Drawing.Color.Transparent;
-            this.panelContenedor.Location = new System.Drawing.Point(226, 0);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(625, 452);
-            this.panelContenedor.TabIndex = 5;
+            this.panelContenedorFormularioHijo.BackColor = System.Drawing.Color.Transparent;
+            this.panelContenedorFormularioHijo.Location = new System.Drawing.Point(226, 0);
+            this.panelContenedorFormularioHijo.Name = "panelContenedorFormularioHijo";
+            this.panelContenedorFormularioHijo.Size = new System.Drawing.Size(625, 452);
+            this.panelContenedorFormularioHijo.TabIndex = 5;
             // 
             // panel1
             // 
@@ -110,7 +110,7 @@
             this.tableLayoutPanel2.Controls.Add(this.button4, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.button5, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.btnCargos, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button6, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.btnMostrarFormVehiculo, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.button7, 0, 6);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 96);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -191,16 +191,17 @@
             this.btnCargos.UseVisualStyleBackColor = false;
             this.btnCargos.Click += new System.EventHandler(this.btnCargos_Click);
             // 
-            // button6
+            // btnMostrarFormVehiculo
             // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(3, 207);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(202, 34);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "Vehiculo";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnMostrarFormVehiculo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMostrarFormVehiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMostrarFormVehiculo.Location = new System.Drawing.Point(3, 207);
+            this.btnMostrarFormVehiculo.Name = "btnMostrarFormVehiculo";
+            this.btnMostrarFormVehiculo.Size = new System.Drawing.Size(202, 34);
+            this.btnMostrarFormVehiculo.TabIndex = 8;
+            this.btnMostrarFormVehiculo.Text = "Vehiculo";
+            this.btnMostrarFormVehiculo.UseVisualStyleBackColor = true;
+            this.btnMostrarFormVehiculo.Click += new System.EventHandler(this.btnMostrarFormVehiculo_Click);
             // 
             // button7
             // 
@@ -325,10 +326,10 @@
         private System.Windows.Forms.Button btnMostrarFormClientes;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnMostrarFormVehiculo;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panelContenedor;
+        private System.Windows.Forms.Panel panelContenedorFormularioHijo;
     }
 }
