@@ -1,16 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\",
+  "WorkspaceRootPath": "E:\\2DAM\\Dise-o\\Prueba\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|E:\\2DAM\\Dise-o\\Prueba\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 075f15762d28bcc2cdbe8fbba1e75f83a44cd07a
       "RelativeMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|E:\\2DAM\\Dise-o\\Prueba\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,9 +26,21 @@
     {
       "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|solutionrelative:formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|e:\\2dam\\dise-o\\prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|E:\\2DAM\\Dise-o\\Prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> 075f15762d28bcc2cdbe8fbba1e75f83a44cd07a
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|E:\\2DAM\\Dise-o\\Prueba\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|E:\\2DAM\\Dise-o\\Prueba\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16490B6E-5CF5-4C8B-BAF3-64ED52D3D3BA}|Prueba.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -48,9 +65,15 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "formLogin.cs [Dise\u00F1o]",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\formLogin.cs",
               "RelativeDocumentMoniker": "formLogin.cs",
               "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\formLogin.cs [Dise\u00F1o]",
+=======
+              "DocumentMoniker": "E:\\2DAM\\Dise-o\\Prueba\\formLogin.cs",
+              "RelativeDocumentMoniker": "formLogin.cs",
+              "ToolTip": "E:\\2DAM\\Dise-o\\Prueba\\formLogin.cs [Dise\u00F1o]",
+>>>>>>> 075f15762d28bcc2cdbe8fbba1e75f83a44cd07a
               "RelativeToolTip": "formLogin.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-03T11:55:37.888Z",
@@ -60,11 +83,19 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "formLogin.cs",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\formLogin.cs",
               "RelativeDocumentMoniker": "formLogin.cs",
               "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\formLogin.cs",
               "RelativeToolTip": "formLogin.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwBoAAACDAAAAAAAAAA==",
+=======
+              "DocumentMoniker": "E:\\2DAM\\Dise-o\\Prueba\\formLogin.cs",
+              "RelativeDocumentMoniker": "formLogin.cs",
+              "ToolTip": "E:\\2DAM\\Dise-o\\Prueba\\formLogin.cs",
+              "RelativeToolTip": "formLogin.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA5wCQAAAA1AAAAAAAAAA==",
+>>>>>>> 075f15762d28bcc2cdbe8fbba1e75f83a44cd07a
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-03T11:55:44.819Z",
               "EditorCaption": ""
@@ -73,9 +104,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\Form1.cs",
+              "DocumentMoniker": "E:\\2DAM\\Dise-o\\Prueba\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\Form1.cs [Dise\u00F1o]",
+              "ToolTip": "E:\\2DAM\\Dise-o\\Prueba\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-03T11:09:35.988Z",
@@ -85,11 +116,15 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\Form1.cs",
+              "DocumentMoniker": "E:\\2DAM\\Dise-o\\Prueba\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\Form1.cs",
+              "ToolTip": "E:\\2DAM\\Dise-o\\Prueba\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAD4AAAAAAAAAAAAuwFYAAAAAAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAJAAAAAAAAAAAAAwwLUAAAAAAAAAAAAAAA==",
+>>>>>>> 075f15762d28bcc2cdbe8fbba1e75f83a44cd07a
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-03T11:23:55.845Z",
               "EditorCaption": ""
@@ -97,23 +132,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "formLogin.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\formLogin.Designer.cs",
-              "RelativeDocumentMoniker": "formLogin.Designer.cs",
-              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\formLogin.Designer.cs",
-              "RelativeToolTip": "formLogin.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAABAAAAAAAAAA==",
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "E:\\2DAM\\Dise-o\\Prueba\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "E:\\2DAM\\Dise-o\\Prueba\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wE4BAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2024-11-03T11:56:34.634Z",
               "EditorCaption": ""
+=======
+              "WhenOpened": "2024-11-06T12:17:49.432Z"
+>>>>>>> 075f15762d28bcc2cdbe8fbba1e75f83a44cd07a
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\Program.cs",
+              "DocumentMoniker": "E:\\2DAM\\Dise-o\\Prueba\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Prueba\\Program.cs",
+              "ToolTip": "E:\\2DAM\\Dise-o\\Prueba\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

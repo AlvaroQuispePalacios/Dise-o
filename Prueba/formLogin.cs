@@ -24,6 +24,18 @@ namespace Prueba
             string nombreUsuario = tbNombre.Text;
             string pwd = tbPwd.Text;
 
+            //SELECT column1, column2, ...
+            //FROM table_name;
+
+            //UPDATE table_name
+            //SET column1 = value1, column2 = value2, ...
+            //WHERE condition;
+
+            //INSERT INTO table_name(column1, column2, column3, ...)
+            //VALUES(value1, value2, value3, ...);
+
+            //DELETE FROM table_name WHERE condition;
+
             SqlConnection conn = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=dbSistema;User id=alvaro;Password=alvaro;Trusted_Connection=True;TrustServerCertificate=True");
             conn.Open();
             string query = $"SELECT * FROM Profesores WHERE usuario='{nombreUsuario}' AND pwd='{pwd}'";
@@ -43,7 +55,7 @@ namespace Prueba
 
                         if (!bloqueado)
                         {
-                            Global.userLogin = $"{nombreProfesor} {apellidoProfesor}";
+                            Global.userLogin = nombreUsuario;
                             DialogResult = DialogResult.OK;
                             MessageBox.Show($"Bienvenido {nombreProfesor} {apellidoProfesor}");
                         }

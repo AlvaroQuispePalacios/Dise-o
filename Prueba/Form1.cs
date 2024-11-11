@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -84,6 +85,97 @@ namespace Prueba
 
         }
 
+        private void profesoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormProfesores formProfesores = new FormProfesores();
+            formProfesores.ShowDialog();
+        }
 
+        private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAlumnos formAlumnos = new FormAlumnos();
+            formAlumnos.ShowDialog();
+        }
+
+        private void notasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormNotas formNotas = new FormNotas();
+            formNotas.ShowDialog();
+        }
+
+        private void asignaturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAsignaturas formAsignaturas = new FormAsignaturas();
+            formAsignaturas.ShowDialog();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //Esto es para esconder botones
+            try
+            {
+                SqlConnection conn = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=dbSistema;User id=alvaro;Password=alvaro;Trusted_Connection=True;TrustServerCertificate=True");
+                conn.Open();
+                string query = $"SELECT * FROM Restricciones WHERE usuario='{Global.userLogin}'";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        var restriccion = reader["restriccion"].ToString();
+                        foreach (Control item in flowLayoutPanelContenedor.Controls)
+                        {
+                            if (restriccion.Equals(item.Text))
+                            {
+                                item.Hide();
+                            }
+                        }
+                    }
+                }
+                else
+                {
+
+                    //Muestra todas las opciones de manera normal
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            //Esto es para esconder un menuTripItem
+            //try
+            //{
+            //    SqlConnection conn = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=dbSistema;User id=alvaro;Password=alvaro;Trusted_Connection=True;TrustServerCertificate=True");
+            //    conn.Open();
+            //    string query = $"SELECT * FROM Restricciones WHERE usuario='{Global.userLogin}'";
+            //    SqlCommand cmd = new SqlCommand(query, conn);
+            //    SqlDataReader reader = cmd.ExecuteReader();
+            //    if (reader.HasRows)
+            //    {
+            //        while (reader.Read())
+            //        {
+            //            var restriccion = reader["restriccion"].ToString();
+            //            foreach (ToolStripMenuItem item in menuStrip1.Items)
+            //            {
+            //                Console.WriteLine(item.Text);
+            //                if (restriccion.Equals(item.Text))
+            //                {
+            //                    item.Visible = false;
+            //                }
+            //            }
+            //        }
+            //    }
+            //    else
+            //    {
+
+            //        //Muestra todas las opciones de manera normal
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+        }
     }
 }
