@@ -20,19 +20,12 @@ namespace RentacarDefinitivo
         [STAThread]
         static void Main()
         {
-
-            //Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new nuevoDisenyo());
-
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
             login lg = new login();
             if (lg.ShowDialog() == DialogResult.OK)
             {
-                Application.EnableVisualStyles();
-                //Application.SetCompatibleTextRenderingDefault(false);
-                //Application.Run(new MenuPrincipal());
                 Application.Run(new nuevoDisenyo());
-
             }
         }
     }

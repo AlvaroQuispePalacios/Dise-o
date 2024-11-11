@@ -3,65 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\rentacardefinitivo\\nuevodisenyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\nuevodisenyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:nuevodisenyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\nuevoDisenyo.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:nuevoDisenyo.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\nuevodisenyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:nuevodisenyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\nuevoDisenyo.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:nuevoDisenyo.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\formhijo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:formhijo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|E:\\2DAM\\Dise-o\\RentacarDefinitivo\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|E:\\2DAM\\Dise-o\\RentacarDefinitivo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|E:\\2DAM\\Dise-o\\RentacarDefinitivo\\nuevodisenyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:nuevodisenyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|E:\\2DAM\\Dise-o\\RentacarDefinitivo\\nuevoDisenyo.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:nuevoDisenyo.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|e:\\2dam\\dise-o\\rentacardefinitivo\\nuevodisenyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:nuevodisenyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|E:\\2DAM\\Dise-o\\RentacarDefinitivo\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|E:\\2DAM\\Dise-o\\RentacarDefinitivo\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> 2447888c75c424a96efa7788d8551f474353d3cb
+      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\rentacardefinitivo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\formhijo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:formhijo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -71,25 +42,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 206,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 1,
-=======
               "DocumentIndex": 5,
->>>>>>> 2447888c75c424a96efa7788d8551f474353d3cb
               "Title": "login.cs",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\login.cs",
               "RelativeDocumentMoniker": "login.cs",
               "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\login.cs",
               "RelativeToolTip": "login.cs",
-<<<<<<< HEAD
-              "ViewState": "AgIAACAAAAAAAAAAAAAIwDQAAAA7AAAAAAAAAA==",
-=======
-              "ViewState": "AgIAAB0AAAAAAAAAAAAwwEkAAAAtAAAAAAAAAA==",
->>>>>>> 2447888c75c424a96efa7788d8551f474353d3cb
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwDsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T13:58:30.633Z",
               "IsPinned": true,
@@ -100,42 +63,12 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "nuevoDisenyo.cs",
-              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\nuevoDisenyo.cs",
-              "RelativeDocumentMoniker": "nuevoDisenyo.cs",
-              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\nuevoDisenyo.cs",
-              "RelativeToolTip": "nuevoDisenyo.cs",
-<<<<<<< HEAD
-              "ViewState": "AgIAAD8AAAAAAAAAAAAkwGEAAABAAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAADUAAAAAAAAAAAAAwFoAAAApAAAAAAAAAA==",
->>>>>>> 2447888c75c424a96efa7788d8551f474353d3cb
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T16:06:29.942Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "nuevoDisenyo.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\nuevoDisenyo.Designer.cs",
-              "RelativeDocumentMoniker": "nuevoDisenyo.Designer.cs",
-              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\nuevoDisenyo.Designer.cs",
-              "RelativeToolTip": "nuevoDisenyo.Designer.cs",
-<<<<<<< HEAD
-              "ViewState": "AgIAAAMAAAAAAAAAAAAowEUBAAA6AAAAAAAAAA==",
-=======
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUBAAA6AAAAAAAAAA==",
->>>>>>> 2447888c75c424a96efa7788d8551f474353d3cb
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T14:51:04.699Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "nuevoDisenyo.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\nuevoDisenyo.cs",
               "RelativeDocumentMoniker": "nuevoDisenyo.cs",
@@ -147,7 +80,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "nuevoDisenyo.cs",
+              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\nuevoDisenyo.cs",
+              "RelativeDocumentMoniker": "nuevoDisenyo.cs",
+              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\nuevoDisenyo.cs",
+              "RelativeToolTip": "nuevoDisenyo.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAqwD0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T16:06:29.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "nuevoDisenyo.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\nuevoDisenyo.Designer.cs",
+              "RelativeDocumentMoniker": "nuevoDisenyo.Designer.cs",
+              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\nuevoDisenyo.Designer.cs",
+              "RelativeToolTip": "nuevoDisenyo.Designer.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAowBoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T14:51:04.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -159,31 +118,20 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA3AAAAAAAAAA==",
-=======
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "E:\\2DAM\\Dise-o\\RentacarDefinitivo\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "E:\\2DAM\\Dise-o\\RentacarDefinitivo\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAgwEgAAAApAAAAAAAAAA==",
->>>>>>> 2447888c75c424a96efa7788d8551f474353d3cb
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T13:47:04.458Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-<<<<<<< HEAD
+              "DocumentIndex": 7,
               "Title": "formhijo.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\formhijo.cs",
               "RelativeDocumentMoniker": "formhijo.cs",
@@ -193,26 +141,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAAEwAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAA1wD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T17:42:14.87Z",
               "EditorCaption": ""
-=======
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\2DAM\\Dise-o\\RentacarDefinitivo\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\2DAM\\Dise-o\\RentacarDefinitivo\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T13:47:04.458Z"
->>>>>>> 2447888c75c424a96efa7788d8551f474353d3cb
             }
           ]
         }

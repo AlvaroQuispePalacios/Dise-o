@@ -54,13 +54,23 @@ namespace RentacarDefinitivo
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.HasRows)
                 {
-                    reader.Read();
-                    if(reader.GetBoolean(4).ToString() != "True")
+                    while (reader.Read())
                     {
-                        Global.userLogin = usuario;
-                        DialogResult = DialogResult.OK;
-                        this.Close();
+                        var usuarioBloqueado = Convert.ToBoolean(reader["bloq__usuario"]);
+                        if (!usuarioBloqueado)
+                        {
+                            Global.userLogin = usuario;
+                            DialogResult = DialogResult.OK;
+                        
+                        }
                     }
+                    //reader.Read();
+                    //if(reader.GetBoolean(4).ToString() != "True")
+                    //{
+                    //    Global.userLogin = usuario;
+                    //    DialogResult = DialogResult.OK;
+                    //    this.Close();
+                    //}
                 }
                 else
                 {

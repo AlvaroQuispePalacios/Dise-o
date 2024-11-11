@@ -30,9 +30,10 @@
         {
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panelContenedor = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnMostrarFormClientes = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -45,7 +46,6 @@
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnMinMax = new System.Windows.Forms.Button();
-            this.panelContenedor = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -77,6 +77,17 @@
             this.panel4.TabIndex = 3;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
+            // panelContenedor
+            // 
+            this.panelContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelContenedor.BackColor = System.Drawing.Color.Transparent;
+            this.panelContenedor.Location = new System.Drawing.Point(226, 0);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(625, 452);
+            this.panelContenedor.TabIndex = 5;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(28)))));
@@ -94,7 +105,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.button2, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.btnMostrarFormClientes, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.button3, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.button4, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.button5, 0, 4);
@@ -115,47 +126,51 @@
             this.tableLayoutPanel2.TabIndex = 2;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
-            // button2
+            // btnMostrarFormClientes
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(3, 45);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(194, 36);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Clientes";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnMostrarFormClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
+            this.btnMostrarFormClientes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMostrarFormClientes.FlatAppearance.BorderSize = 0;
+            this.btnMostrarFormClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMostrarFormClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMostrarFormClientes.ForeColor = System.Drawing.Color.White;
+            this.btnMostrarFormClientes.Location = new System.Drawing.Point(3, 45);
+            this.btnMostrarFormClientes.Name = "btnMostrarFormClientes";
+            this.btnMostrarFormClientes.Size = new System.Drawing.Size(202, 36);
+            this.btnMostrarFormClientes.TabIndex = 4;
+            this.btnMostrarFormClientes.Text = "Clientes";
+            this.btnMostrarFormClientes.UseVisualStyleBackColor = false;
+            this.btnMostrarFormClientes.Click += new System.EventHandler(this.btnMostrarFormClientes_Click);
             // 
             // button3
             // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(3, 87);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(194, 34);
+            this.button3.Size = new System.Drawing.Size(202, 34);
             this.button3.TabIndex = 5;
             this.button3.Text = "Contratos";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(3, 127);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(194, 34);
+            this.button4.Size = new System.Drawing.Size(202, 34);
             this.button4.TabIndex = 6;
             this.button4.Text = "Reservas";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
+            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(3, 167);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(194, 34);
+            this.button5.Size = new System.Drawing.Size(202, 34);
             this.button5.TabIndex = 7;
             this.button5.Text = "Usuarios";
             this.button5.UseVisualStyleBackColor = true;
@@ -163,13 +178,14 @@
             // btnCargos
             // 
             this.btnCargos.BackColor = System.Drawing.Color.LightGray;
+            this.btnCargos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnCargos.FlatAppearance.BorderSize = 0;
             this.btnCargos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCargos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargos.ForeColor = System.Drawing.Color.Black;
             this.btnCargos.Location = new System.Drawing.Point(3, 3);
             this.btnCargos.Name = "btnCargos";
-            this.btnCargos.Size = new System.Drawing.Size(194, 36);
+            this.btnCargos.Size = new System.Drawing.Size(202, 36);
             this.btnCargos.TabIndex = 0;
             this.btnCargos.Text = "Cargos";
             this.btnCargos.UseVisualStyleBackColor = false;
@@ -177,10 +193,11 @@
             // 
             // button6
             // 
+            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(3, 207);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(194, 34);
+            this.button6.Size = new System.Drawing.Size(202, 34);
             this.button6.TabIndex = 8;
             this.button6.Text = "Vehiculo";
             this.button6.UseVisualStyleBackColor = true;
@@ -272,17 +289,6 @@
             this.btnMinMax.UseVisualStyleBackColor = false;
             this.btnMinMax.Click += new System.EventHandler(this.btnMinMax_Click);
             // 
-            // panelContenedor
-            // 
-            this.panelContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelContenedor.BackColor = System.Drawing.Color.Transparent;
-            this.panelContenedor.Location = new System.Drawing.Point(226, 0);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(625, 452);
-            this.panelContenedor.TabIndex = 5;
-            // 
             // nuevoDisenyo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -316,7 +322,7 @@
         private System.Windows.Forms.Button btnMinMax;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnMostrarFormClientes;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button6;

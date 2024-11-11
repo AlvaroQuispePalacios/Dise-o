@@ -12,44 +12,10 @@ namespace RentacarDefinitivo
 {
     public partial class nuevoDisenyo : Form
     {
+        private Form formActivo = null;
         public nuevoDisenyo()
         {
             InitializeComponent();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
         }
 
         private void nuevoDisenyo_Load(object sender, EventArgs e)
@@ -83,16 +49,18 @@ namespace RentacarDefinitivo
 
         public void AbrirFormHijo(object formhijo)
         {
-            //if(this.panelContenedor.Controls.Count > 0)
-                //{
-                //this.panelContenedor.Controls.RemoveAt(0);
-                Form fh = formhijo as Form;
-                fh.TopLevel = false;
-                fh.Dock = DockStyle.Fill;
-                this.panelContenedor.Controls.Add(fh);
-                this.panelContenedor.Tag = fh;
-                fh.Show();
-            //}
+            if(formActivo != null)
+            {
+                formActivo = null;
+            }
+            formActivo = formActivo;
+            Form fh = formhijo as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panelContenedor.Controls.Add(fh);
+            this.panelContenedor.Tag = fh;
+            fh.Show();
+            
         }
 
         private void btnCargos_Click(object sender, EventArgs e)
@@ -100,13 +68,13 @@ namespace RentacarDefinitivo
             AbrirFormHijo(new menuCargos());
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
-            AbrirFormHijo(new menuCargos());
 
         }
 
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        private void btnMostrarFormClientes_Click(object sender, EventArgs e)
         {
 
         }
