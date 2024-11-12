@@ -31,5 +31,25 @@ namespace RentacarDefinitivo
             this.vehicleTableAdapter.Fill(this.rentacarDataSet.vehicle);
 
         }
+
+        private void btnIrAlPrimerRegistro_Click(object sender, EventArgs e)
+        {
+            this.vehicleBindingSource.MoveFirst();
+        }
+
+        private void btnIrAlAnteriorRegistro_Click(object sender, EventArgs e)
+        {
+            this.vehicleBindingSource.MovePrevious();
+        }
+
+        private void btnIrAlSiguienteRegistro_Click(object sender, EventArgs e)
+        {
+            this.vehicleBindingSource.MoveNext();
+        }
+
+        private void btnIrAlUltimoRegistro_Click(object sender, EventArgs e)
+        {
+            this.vehicleBindingSource.MoveLast();
+        }
     }
 }

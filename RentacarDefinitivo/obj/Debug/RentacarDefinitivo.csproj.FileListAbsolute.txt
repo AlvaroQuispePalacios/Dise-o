@@ -15,4 +15,3 @@ C:\Users\ciclesgs\Desktop\2DAM\Diseño\RentacarDefinitivo\obj\Debug\RentacarDefi
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.menuContrato.resources
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.login.resources
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.nuevoDisenyo.resources
-C:\Users\ciclesgs\Desktop\2DAM\Diseño\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.formhijo.resources
