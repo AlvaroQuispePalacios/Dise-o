@@ -51,5 +51,32 @@ namespace RentacarDefinitivo
         {
             this.vehicleBindingSource.MoveLast();
         }
+
+        private void btnAgregarRegistro_Click(object sender, EventArgs e)
+        {
+            this.vehicleBindingSource.AddNew();
+
+
+        }
+
+        private void btnValidarRegistro_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+
+            //this.vehicleBindingSource.EndEdit();
+            //foreach(var item in this.vehicleBindingSource.List)
+            //{
+            //    Console.WriteLine(item.ToString());
+            //}
+            //MessageBox.Show(vehicleBindingSource.List);
+            //string matricula = tbMatricula.Text;
+            //string tipologia = tbTipologia.Text;
+            //string marca = tbMarca.Text;
+            //string modelo = tbModelo.Text;
+            //string color = tbColor.Text;
+            //this.vehicleDataGridView.Rows.Add(new object[] {
+            //   matricula, tipologia, marca, modelo, color
+            //});
+        }
     }
 }
