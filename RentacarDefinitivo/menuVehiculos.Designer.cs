@@ -40,6 +40,8 @@
             this.tableAdapterManager = new RentacarDefinitivo.rentacarDataSetTableAdapters.TableAdapterManager();
             this.panelTopFormVehiculos = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnAgregarRegistro = new System.Windows.Forms.Button();
+            this.btnSeleccionarRegistroParaEliminar = new System.Windows.Forms.Button();
             this.btnIrAlPrimerRegistro = new System.Windows.Forms.Button();
             this.btnIrAlUltimoRegistro = new System.Windows.Forms.Button();
             this.btnIrAlSiguienteRegistro = new System.Windows.Forms.Button();
@@ -54,17 +56,15 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.colorTextBox = new System.Windows.Forms.TextBox();
+            this.modelTextBox = new System.Windows.Forms.TextBox();
+            this.marcaTextBox = new System.Windows.Forms.TextBox();
+            this.tipologiaTextBox = new System.Windows.Forms.TextBox();
+            this.matriculaTextBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnValidarRegistro = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCancelarValidarRegistro = new System.Windows.Forms.Button();
             this.panelBotFormVehiculos = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnAgregarRegistro = new System.Windows.Forms.Button();
-            this.matriculaTextBox = new System.Windows.Forms.TextBox();
-            this.tipologiaTextBox = new System.Windows.Forms.TextBox();
-            this.marcaTextBox = new System.Windows.Forms.TextBox();
-            this.modelTextBox = new System.Windows.Forms.TextBox();
-            this.colorTextBox = new System.Windows.Forms.TextBox();
             matriculaLabel = new System.Windows.Forms.Label();
             tipologiaLabel = new System.Windows.Forms.Label();
             marcaLabel = new System.Windows.Forms.Label();
@@ -82,6 +82,56 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.panelBotFormVehiculos.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // matriculaLabel
+            // 
+            matriculaLabel.AutoSize = true;
+            matriculaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            matriculaLabel.Location = new System.Drawing.Point(66, 58);
+            matriculaLabel.Name = "matriculaLabel";
+            matriculaLabel.Size = new System.Drawing.Size(77, 20);
+            matriculaLabel.TabIndex = 0;
+            matriculaLabel.Text = "matricula:";
+            // 
+            // tipologiaLabel
+            // 
+            tipologiaLabel.AutoSize = true;
+            tipologiaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            tipologiaLabel.Location = new System.Drawing.Point(71, 95);
+            tipologiaLabel.Name = "tipologiaLabel";
+            tipologiaLabel.Size = new System.Drawing.Size(72, 20);
+            tipologiaLabel.TabIndex = 2;
+            tipologiaLabel.Text = "tipologia:";
+            // 
+            // marcaLabel
+            // 
+            marcaLabel.AutoSize = true;
+            marcaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            marcaLabel.Location = new System.Drawing.Point(80, 140);
+            marcaLabel.Name = "marcaLabel";
+            marcaLabel.Size = new System.Drawing.Size(57, 20);
+            marcaLabel.TabIndex = 4;
+            marcaLabel.Text = "marca:";
+            // 
+            // modelLabel
+            // 
+            modelLabel.AutoSize = true;
+            modelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            modelLabel.Location = new System.Drawing.Point(81, 193);
+            modelLabel.Name = "modelLabel";
+            modelLabel.Size = new System.Drawing.Size(56, 20);
+            modelLabel.TabIndex = 6;
+            modelLabel.Text = "model:";
+            // 
+            // colorLabel
+            // 
+            colorLabel.AutoSize = true;
+            colorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            colorLabel.Location = new System.Drawing.Point(90, 238);
+            colorLabel.Name = "colorLabel";
+            colorLabel.Size = new System.Drawing.Size(47, 20);
+            colorLabel.TabIndex = 8;
+            colorLabel.Text = "color:";
             // 
             // rentacarDataSet
             // 
@@ -115,7 +165,7 @@
             this.panelTopFormVehiculos.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTopFormVehiculos.Location = new System.Drawing.Point(0, 0);
             this.panelTopFormVehiculos.Name = "panelTopFormVehiculos";
-            this.panelTopFormVehiculos.Size = new System.Drawing.Size(994, 42);
+            this.panelTopFormVehiculos.Size = new System.Drawing.Size(990, 42);
             this.panelTopFormVehiculos.TabIndex = 2;
             // 
             // tableLayoutPanel2
@@ -128,7 +178,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel2.Controls.Add(this.btnAgregarRegistro, 5, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button3, 4, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnSeleccionarRegistroParaEliminar, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnIrAlPrimerRegistro, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnIrAlUltimoRegistro, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnIrAlSiguienteRegistro, 2, 0);
@@ -140,12 +190,34 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(330, 36);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
+            // btnAgregarRegistro
+            // 
+            this.btnAgregarRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAgregarRegistro.Location = new System.Drawing.Point(273, 3);
+            this.btnAgregarRegistro.Name = "btnAgregarRegistro";
+            this.btnAgregarRegistro.Size = new System.Drawing.Size(54, 30);
+            this.btnAgregarRegistro.TabIndex = 5;
+            this.btnAgregarRegistro.Text = "+";
+            this.btnAgregarRegistro.UseVisualStyleBackColor = true;
+            this.btnAgregarRegistro.Click += new System.EventHandler(this.btnAgregarRegistro_Click);
+            // 
+            // btnSeleccionarRegistroParaEliminar
+            // 
+            this.btnSeleccionarRegistroParaEliminar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSeleccionarRegistroParaEliminar.Location = new System.Drawing.Point(219, 3);
+            this.btnSeleccionarRegistroParaEliminar.Name = "btnSeleccionarRegistroParaEliminar";
+            this.btnSeleccionarRegistroParaEliminar.Size = new System.Drawing.Size(48, 30);
+            this.btnSeleccionarRegistroParaEliminar.TabIndex = 4;
+            this.btnSeleccionarRegistroParaEliminar.Text = "-";
+            this.btnSeleccionarRegistroParaEliminar.UseVisualStyleBackColor = true;
+            this.btnSeleccionarRegistroParaEliminar.Click += new System.EventHandler(this.btnSeleccionarRegistroParaEliminar_Click);
+            // 
             // btnIrAlPrimerRegistro
             // 
             this.btnIrAlPrimerRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnIrAlPrimerRegistro.Location = new System.Drawing.Point(3, 3);
             this.btnIrAlPrimerRegistro.Name = "btnIrAlPrimerRegistro";
-            this.btnIrAlPrimerRegistro.Size = new System.Drawing.Size(49, 30);
+            this.btnIrAlPrimerRegistro.Size = new System.Drawing.Size(48, 30);
             this.btnIrAlPrimerRegistro.TabIndex = 0;
             this.btnIrAlPrimerRegistro.Text = "<<";
             this.btnIrAlPrimerRegistro.UseVisualStyleBackColor = true;
@@ -154,9 +226,9 @@
             // btnIrAlUltimoRegistro
             // 
             this.btnIrAlUltimoRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnIrAlUltimoRegistro.Location = new System.Drawing.Point(168, 3);
+            this.btnIrAlUltimoRegistro.Location = new System.Drawing.Point(165, 3);
             this.btnIrAlUltimoRegistro.Name = "btnIrAlUltimoRegistro";
-            this.btnIrAlUltimoRegistro.Size = new System.Drawing.Size(49, 30);
+            this.btnIrAlUltimoRegistro.Size = new System.Drawing.Size(48, 30);
             this.btnIrAlUltimoRegistro.TabIndex = 1;
             this.btnIrAlUltimoRegistro.Text = ">>";
             this.btnIrAlUltimoRegistro.UseVisualStyleBackColor = true;
@@ -165,9 +237,9 @@
             // btnIrAlSiguienteRegistro
             // 
             this.btnIrAlSiguienteRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnIrAlSiguienteRegistro.Location = new System.Drawing.Point(113, 3);
+            this.btnIrAlSiguienteRegistro.Location = new System.Drawing.Point(111, 3);
             this.btnIrAlSiguienteRegistro.Name = "btnIrAlSiguienteRegistro";
-            this.btnIrAlSiguienteRegistro.Size = new System.Drawing.Size(49, 30);
+            this.btnIrAlSiguienteRegistro.Size = new System.Drawing.Size(48, 30);
             this.btnIrAlSiguienteRegistro.TabIndex = 3;
             this.btnIrAlSiguienteRegistro.Text = ">";
             this.btnIrAlSiguienteRegistro.UseVisualStyleBackColor = true;
@@ -176,9 +248,9 @@
             // btnIrAlAnteriorRegistro
             // 
             this.btnIrAlAnteriorRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnIrAlAnteriorRegistro.Location = new System.Drawing.Point(58, 3);
+            this.btnIrAlAnteriorRegistro.Location = new System.Drawing.Point(57, 3);
             this.btnIrAlAnteriorRegistro.Name = "btnIrAlAnteriorRegistro";
-            this.btnIrAlAnteriorRegistro.Size = new System.Drawing.Size(49, 30);
+            this.btnIrAlAnteriorRegistro.Size = new System.Drawing.Size(48, 30);
             this.btnIrAlAnteriorRegistro.TabIndex = 2;
             this.btnIrAlAnteriorRegistro.Text = "<";
             this.btnIrAlAnteriorRegistro.UseVisualStyleBackColor = true;
@@ -191,7 +263,7 @@
             this.panelMidFormVehiculos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMidFormVehiculos.Location = new System.Drawing.Point(0, 42);
             this.panelMidFormVehiculos.Name = "panelMidFormVehiculos";
-            this.panelMidFormVehiculos.Size = new System.Drawing.Size(994, 738);
+            this.panelMidFormVehiculos.Size = new System.Drawing.Size(990, 435);
             this.panelMidFormVehiculos.TabIndex = 3;
             // 
             // tableLayoutPanel3
@@ -206,8 +278,8 @@
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 525F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(994, 738);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 738F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(990, 435);
             this.tableLayoutPanel3.TabIndex = 11;
             // 
             // vehicleDataGridView
@@ -222,9 +294,9 @@
             this.dataGridViewTextBoxColumn5});
             this.vehicleDataGridView.DataSource = this.vehicleBindingSource;
             this.vehicleDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.vehicleDataGridView.Location = new System.Drawing.Point(500, 3);
+            this.vehicleDataGridView.Location = new System.Drawing.Point(498, 3);
             this.vehicleDataGridView.Name = "vehicleDataGridView";
-            this.vehicleDataGridView.Size = new System.Drawing.Size(491, 732);
+            this.vehicleDataGridView.Size = new System.Drawing.Size(489, 429);
             this.vehicleDataGridView.TabIndex = 10;
             // 
             // dataGridViewTextBoxColumn1
@@ -264,7 +336,7 @@
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(50);
-            this.panel1.Size = new System.Drawing.Size(491, 732);
+            this.panel1.Size = new System.Drawing.Size(489, 429);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -285,162 +357,8 @@
             this.panel2.Location = new System.Drawing.Point(50, 50);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(2);
-            this.panel2.Size = new System.Drawing.Size(391, 632);
+            this.panel2.Size = new System.Drawing.Size(389, 329);
             this.panel2.TabIndex = 0;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.btnValidarRegistro, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(824, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(167, 40);
-            this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // btnValidarRegistro
-            // 
-            this.btnValidarRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnValidarRegistro.Location = new System.Drawing.Point(86, 3);
-            this.btnValidarRegistro.Name = "btnValidarRegistro";
-            this.btnValidarRegistro.Size = new System.Drawing.Size(78, 34);
-            this.btnValidarRegistro.TabIndex = 1;
-            this.btnValidarRegistro.Text = "Validar";
-            this.btnValidarRegistro.UseVisualStyleBackColor = true;
-            this.btnValidarRegistro.Click += new System.EventHandler(this.btnValidarRegistro_Click);
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(77, 34);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Cancelar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // panelBotFormVehiculos
-            // 
-            this.panelBotFormVehiculos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(28)))));
-            this.panelBotFormVehiculos.Controls.Add(this.tableLayoutPanel1);
-            this.panelBotFormVehiculos.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBotFormVehiculos.Location = new System.Drawing.Point(0, 734);
-            this.panelBotFormVehiculos.Name = "panelBotFormVehiculos";
-            this.panelBotFormVehiculos.Size = new System.Drawing.Size(994, 46);
-            this.panelBotFormVehiculos.TabIndex = 4;
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Location = new System.Drawing.Point(223, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(49, 30);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "-";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // btnAgregarRegistro
-            // 
-            this.btnAgregarRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAgregarRegistro.Location = new System.Drawing.Point(278, 3);
-            this.btnAgregarRegistro.Name = "btnAgregarRegistro";
-            this.btnAgregarRegistro.Size = new System.Drawing.Size(49, 30);
-            this.btnAgregarRegistro.TabIndex = 5;
-            this.btnAgregarRegistro.Text = "+";
-            this.btnAgregarRegistro.UseVisualStyleBackColor = true;
-            this.btnAgregarRegistro.Click += new System.EventHandler(this.btnAgregarRegistro_Click);
-            // 
-            // matriculaLabel
-            // 
-            matriculaLabel.AutoSize = true;
-            matriculaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            matriculaLabel.Location = new System.Drawing.Point(66, 58);
-            matriculaLabel.Name = "matriculaLabel";
-            matriculaLabel.Size = new System.Drawing.Size(77, 20);
-            matriculaLabel.TabIndex = 0;
-            matriculaLabel.Text = "matricula:";
-            // 
-            // matriculaTextBox
-            // 
-            this.matriculaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vehicleBindingSource, "matricula", true));
-            this.matriculaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.matriculaTextBox.Location = new System.Drawing.Point(149, 58);
-            this.matriculaTextBox.Name = "matriculaTextBox";
-            this.matriculaTextBox.Size = new System.Drawing.Size(180, 22);
-            this.matriculaTextBox.TabIndex = 1;
-            // 
-            // tipologiaLabel
-            // 
-            tipologiaLabel.AutoSize = true;
-            tipologiaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            tipologiaLabel.Location = new System.Drawing.Point(71, 95);
-            tipologiaLabel.Name = "tipologiaLabel";
-            tipologiaLabel.Size = new System.Drawing.Size(72, 20);
-            tipologiaLabel.TabIndex = 2;
-            tipologiaLabel.Text = "tipologia:";
-            // 
-            // tipologiaTextBox
-            // 
-            this.tipologiaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vehicleBindingSource, "tipologia", true));
-            this.tipologiaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tipologiaTextBox.Location = new System.Drawing.Point(149, 93);
-            this.tipologiaTextBox.Name = "tipologiaTextBox";
-            this.tipologiaTextBox.Size = new System.Drawing.Size(180, 22);
-            this.tipologiaTextBox.TabIndex = 3;
-            // 
-            // marcaLabel
-            // 
-            marcaLabel.AutoSize = true;
-            marcaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            marcaLabel.Location = new System.Drawing.Point(80, 140);
-            marcaLabel.Name = "marcaLabel";
-            marcaLabel.Size = new System.Drawing.Size(57, 20);
-            marcaLabel.TabIndex = 4;
-            marcaLabel.Text = "marca:";
-            // 
-            // marcaTextBox
-            // 
-            this.marcaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vehicleBindingSource, "marca", true));
-            this.marcaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.marcaTextBox.Location = new System.Drawing.Point(149, 140);
-            this.marcaTextBox.Name = "marcaTextBox";
-            this.marcaTextBox.Size = new System.Drawing.Size(180, 22);
-            this.marcaTextBox.TabIndex = 5;
-            // 
-            // modelLabel
-            // 
-            modelLabel.AutoSize = true;
-            modelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            modelLabel.Location = new System.Drawing.Point(81, 193);
-            modelLabel.Name = "modelLabel";
-            modelLabel.Size = new System.Drawing.Size(56, 20);
-            modelLabel.TabIndex = 6;
-            modelLabel.Text = "model:";
-            // 
-            // modelTextBox
-            // 
-            this.modelTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vehicleBindingSource, "model", true));
-            this.modelTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modelTextBox.Location = new System.Drawing.Point(149, 193);
-            this.modelTextBox.Name = "modelTextBox";
-            this.modelTextBox.Size = new System.Drawing.Size(180, 22);
-            this.modelTextBox.TabIndex = 7;
-            // 
-            // colorLabel
-            // 
-            colorLabel.AutoSize = true;
-            colorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            colorLabel.Location = new System.Drawing.Point(90, 238);
-            colorLabel.Name = "colorLabel";
-            colorLabel.Size = new System.Drawing.Size(47, 20);
-            colorLabel.TabIndex = 8;
-            colorLabel.Text = "color:";
             // 
             // colorTextBox
             // 
@@ -451,11 +369,95 @@
             this.colorTextBox.Size = new System.Drawing.Size(180, 22);
             this.colorTextBox.TabIndex = 9;
             // 
+            // modelTextBox
+            // 
+            this.modelTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vehicleBindingSource, "model", true));
+            this.modelTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modelTextBox.Location = new System.Drawing.Point(149, 193);
+            this.modelTextBox.Name = "modelTextBox";
+            this.modelTextBox.Size = new System.Drawing.Size(180, 22);
+            this.modelTextBox.TabIndex = 7;
+            // 
+            // marcaTextBox
+            // 
+            this.marcaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vehicleBindingSource, "marca", true));
+            this.marcaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.marcaTextBox.Location = new System.Drawing.Point(149, 140);
+            this.marcaTextBox.Name = "marcaTextBox";
+            this.marcaTextBox.Size = new System.Drawing.Size(180, 22);
+            this.marcaTextBox.TabIndex = 5;
+            // 
+            // tipologiaTextBox
+            // 
+            this.tipologiaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vehicleBindingSource, "tipologia", true));
+            this.tipologiaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tipologiaTextBox.Location = new System.Drawing.Point(149, 93);
+            this.tipologiaTextBox.Name = "tipologiaTextBox";
+            this.tipologiaTextBox.Size = new System.Drawing.Size(180, 22);
+            this.tipologiaTextBox.TabIndex = 3;
+            // 
+            // matriculaTextBox
+            // 
+            this.matriculaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vehicleBindingSource, "matricula", true));
+            this.matriculaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.matriculaTextBox.Location = new System.Drawing.Point(149, 58);
+            this.matriculaTextBox.Name = "matriculaTextBox";
+            this.matriculaTextBox.Size = new System.Drawing.Size(180, 22);
+            this.matriculaTextBox.TabIndex = 1;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.btnValidarRegistro, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnCancelarValidarRegistro, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(629, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(358, 40);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // btnValidarRegistro
+            // 
+            this.btnValidarRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnValidarRegistro.Location = new System.Drawing.Point(182, 3);
+            this.btnValidarRegistro.Name = "btnValidarRegistro";
+            this.btnValidarRegistro.Size = new System.Drawing.Size(173, 34);
+            this.btnValidarRegistro.TabIndex = 1;
+            this.btnValidarRegistro.Text = "Validar";
+            this.btnValidarRegistro.UseVisualStyleBackColor = true;
+            this.btnValidarRegistro.Click += new System.EventHandler(this.btnValidarRegistro_Click);
+            // 
+            // btnCancelarValidarRegistro
+            // 
+            this.btnCancelarValidarRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnCancelarValidarRegistro.Location = new System.Drawing.Point(3, 3);
+            this.btnCancelarValidarRegistro.Name = "btnCancelarValidarRegistro";
+            this.btnCancelarValidarRegistro.Size = new System.Drawing.Size(173, 34);
+            this.btnCancelarValidarRegistro.TabIndex = 0;
+            this.btnCancelarValidarRegistro.Text = "Cancelar";
+            this.btnCancelarValidarRegistro.UseVisualStyleBackColor = true;
+            this.btnCancelarValidarRegistro.Click += new System.EventHandler(this.btnCancelarValidarRegistro_Click);
+            // 
+            // panelBotFormVehiculos
+            // 
+            this.panelBotFormVehiculos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(28)))));
+            this.panelBotFormVehiculos.Controls.Add(this.tableLayoutPanel1);
+            this.panelBotFormVehiculos.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBotFormVehiculos.Location = new System.Drawing.Point(0, 431);
+            this.panelBotFormVehiculos.Name = "panelBotFormVehiculos";
+            this.panelBotFormVehiculos.Size = new System.Drawing.Size(990, 46);
+            this.panelBotFormVehiculos.TabIndex = 4;
+            // 
             // menuVehiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(994, 780);
+            this.ClientSize = new System.Drawing.Size(990, 477);
             this.Controls.Add(this.panelBotFormVehiculos);
             this.Controls.Add(this.panelMidFormVehiculos);
             this.Controls.Add(this.panelTopFormVehiculos);
@@ -502,9 +504,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btnValidarRegistro;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCancelarValidarRegistro;
         private System.Windows.Forms.Panel panelBotFormVehiculos;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnSeleccionarRegistroParaEliminar;
         private System.Windows.Forms.Button btnAgregarRegistro;
         private System.Windows.Forms.TextBox colorTextBox;
         private System.Windows.Forms.TextBox modelTextBox;

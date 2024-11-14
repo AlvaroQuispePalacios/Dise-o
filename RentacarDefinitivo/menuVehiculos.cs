@@ -22,14 +22,15 @@ namespace RentacarDefinitivo
             this.Validate();
             this.vehicleBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.rentacarDataSet);
-
+            OcultarBotonesValidarCancelar();
         }
 
         private void menuVehiculos_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'rentacarDataSet.vehicle' Puede moverla o quitarla según sea necesario.
             this.vehicleTableAdapter.Fill(this.rentacarDataSet.vehicle);
-
+            btnValidarRegistro.Hide();
+            btnCancelarValidarRegistro.Hide();
         }
 
         private void btnIrAlPrimerRegistro_Click(object sender, EventArgs e)
@@ -52,31 +53,90 @@ namespace RentacarDefinitivo
             this.vehicleBindingSource.MoveLast();
         }
 
+        // ------------------------------------------------------------------------
+
         private void btnAgregarRegistro_Click(object sender, EventArgs e)
         {
             this.vehicleBindingSource.AddNew();
+            btnValidarRegistro.Text = "Crear Nuevo Registro";
+            btnCancelarValidarRegistro.Text = "Cancelar";
+            MostrarBotonesValidarCancelar();
+        }
 
-
+        private void btnSeleccionarRegistroParaEliminar_Click(object sender, EventArgs e)
+        {
+            
+            
         }
 
         private void btnValidarRegistro_Click(object sender, EventArgs e)
         {
-            this.Validate();
+            foreach (Control item in panelTopFormVehiculos.Controls)
+            {
+                switch (item.Text)
+                {
+                    case "+":
+                        if (this.Validate())
+                        {
+                            this.vehicleBindingSource.EndEdit();
+                            this.tableAdapterManager.UpdateAll(this.rentacarDataSet);
+                        }
+                        else
+                        {
+                            this.Validate();
+                            MessageBox.Show("D:");
+                        }
+                }
 
-            //this.vehicleBindingSource.EndEdit();
-            //foreach(var item in this.vehicleBindingSource.List)
-            //{
-            //    Console.WriteLine(item.ToString());
-            //}
-            //MessageBox.Show(vehicleBindingSource.List);
-            //string matricula = tbMatricula.Text;
-            //string tipologia = tbTipologia.Text;
-            //string marca = tbMarca.Text;
-            //string modelo = tbModelo.Text;
-            //string color = tbColor.Text;
-            //this.vehicleDataGridView.Rows.Add(new object[] {
-            //   matricula, tipologia, marca, modelo, color
-            //});
+                //if (item.Text == "+")
+                //{
+                //    if (this.Validate())
+                //    {
+                //        this.vehicleBindingSource.EndEdit();
+                //        this.tableAdapterManager.UpdateAll(this.rentacarDataSet);
+                //    }
+                //    else
+                //    {
+                //        this.Validate();
+                //        MessageBox.Show("D:");
+                //    }
+                //}
+            }
+            // Cuando presionas dos veces Agregar registro explota 
+            // Cuando intentas agregar un registro sin datos explota (LA TABLA NECESITA PRIMARY KEY)
+
+
         }
+
+        private void btnCancelarValidarRegistro_Click(object sender, EventArgs e)
+        {
+            foreach(Control item in panelTopFormVehiculos.Controls)
+            {
+                if(item.Text == "+")
+                {
+
+                }
+            }
+     
+
+            this.vehicleBindingSource.Remove();
+
+            this.vehicleBindingSource.CancelEdit();
+            OcultarBotonesValidarCancelar();
+        }
+
+        private void OcultarBotonesValidarCancelar()
+        {
+            btnValidarRegistro.Hide();
+            btnCancelarValidarRegistro.Hide();
+        }
+
+        private void MostrarBotonesValidarCancelar()
+        {
+            btnValidarRegistro.Visible = true;
+            btnCancelarValidarRegistro.Visible = true;
+        }
+
+ 
     }
 }
