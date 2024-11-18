@@ -65,6 +65,7 @@
             this.btnValidarRegistro = new System.Windows.Forms.Button();
             this.btnCancelarValidarRegistro = new System.Windows.Forms.Button();
             this.panelBotFormVehiculos = new System.Windows.Forms.Panel();
+            this.btnModificarRegistro = new System.Windows.Forms.Button();
             matriculaLabel = new System.Windows.Forms.Label();
             tipologiaLabel = new System.Windows.Forms.Label();
             marcaLabel = new System.Windows.Forms.Label();
@@ -170,32 +171,34 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 6;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnCount = 7;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.77188F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.77188F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.77188F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.77188F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.77188F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.77188F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.36871F));
             this.tableLayoutPanel2.Controls.Add(this.btnAgregarRegistro, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnSeleccionarRegistroParaEliminar, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnIrAlPrimerRegistro, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnIrAlUltimoRegistro, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnIrAlSiguienteRegistro, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnIrAlAnteriorRegistro, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnModificarRegistro, 6, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(330, 36);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(448, 36);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
             // btnAgregarRegistro
             // 
             this.btnAgregarRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAgregarRegistro.Location = new System.Drawing.Point(273, 3);
+            this.btnAgregarRegistro.Location = new System.Drawing.Point(288, 3);
             this.btnAgregarRegistro.Name = "btnAgregarRegistro";
-            this.btnAgregarRegistro.Size = new System.Drawing.Size(54, 30);
+            this.btnAgregarRegistro.Size = new System.Drawing.Size(51, 30);
             this.btnAgregarRegistro.TabIndex = 5;
             this.btnAgregarRegistro.Text = "+";
             this.btnAgregarRegistro.UseVisualStyleBackColor = true;
@@ -204,9 +207,9 @@
             // btnSeleccionarRegistroParaEliminar
             // 
             this.btnSeleccionarRegistroParaEliminar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSeleccionarRegistroParaEliminar.Location = new System.Drawing.Point(219, 3);
+            this.btnSeleccionarRegistroParaEliminar.Location = new System.Drawing.Point(231, 3);
             this.btnSeleccionarRegistroParaEliminar.Name = "btnSeleccionarRegistroParaEliminar";
-            this.btnSeleccionarRegistroParaEliminar.Size = new System.Drawing.Size(48, 30);
+            this.btnSeleccionarRegistroParaEliminar.Size = new System.Drawing.Size(51, 30);
             this.btnSeleccionarRegistroParaEliminar.TabIndex = 4;
             this.btnSeleccionarRegistroParaEliminar.Text = "-";
             this.btnSeleccionarRegistroParaEliminar.UseVisualStyleBackColor = true;
@@ -217,7 +220,7 @@
             this.btnIrAlPrimerRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnIrAlPrimerRegistro.Location = new System.Drawing.Point(3, 3);
             this.btnIrAlPrimerRegistro.Name = "btnIrAlPrimerRegistro";
-            this.btnIrAlPrimerRegistro.Size = new System.Drawing.Size(48, 30);
+            this.btnIrAlPrimerRegistro.Size = new System.Drawing.Size(51, 30);
             this.btnIrAlPrimerRegistro.TabIndex = 0;
             this.btnIrAlPrimerRegistro.Text = "<<";
             this.btnIrAlPrimerRegistro.UseVisualStyleBackColor = true;
@@ -226,9 +229,9 @@
             // btnIrAlUltimoRegistro
             // 
             this.btnIrAlUltimoRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnIrAlUltimoRegistro.Location = new System.Drawing.Point(165, 3);
+            this.btnIrAlUltimoRegistro.Location = new System.Drawing.Point(174, 3);
             this.btnIrAlUltimoRegistro.Name = "btnIrAlUltimoRegistro";
-            this.btnIrAlUltimoRegistro.Size = new System.Drawing.Size(48, 30);
+            this.btnIrAlUltimoRegistro.Size = new System.Drawing.Size(51, 30);
             this.btnIrAlUltimoRegistro.TabIndex = 1;
             this.btnIrAlUltimoRegistro.Text = ">>";
             this.btnIrAlUltimoRegistro.UseVisualStyleBackColor = true;
@@ -237,9 +240,9 @@
             // btnIrAlSiguienteRegistro
             // 
             this.btnIrAlSiguienteRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnIrAlSiguienteRegistro.Location = new System.Drawing.Point(111, 3);
+            this.btnIrAlSiguienteRegistro.Location = new System.Drawing.Point(117, 3);
             this.btnIrAlSiguienteRegistro.Name = "btnIrAlSiguienteRegistro";
-            this.btnIrAlSiguienteRegistro.Size = new System.Drawing.Size(48, 30);
+            this.btnIrAlSiguienteRegistro.Size = new System.Drawing.Size(51, 30);
             this.btnIrAlSiguienteRegistro.TabIndex = 3;
             this.btnIrAlSiguienteRegistro.Text = ">";
             this.btnIrAlSiguienteRegistro.UseVisualStyleBackColor = true;
@@ -248,9 +251,9 @@
             // btnIrAlAnteriorRegistro
             // 
             this.btnIrAlAnteriorRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnIrAlAnteriorRegistro.Location = new System.Drawing.Point(57, 3);
+            this.btnIrAlAnteriorRegistro.Location = new System.Drawing.Point(60, 3);
             this.btnIrAlAnteriorRegistro.Name = "btnIrAlAnteriorRegistro";
-            this.btnIrAlAnteriorRegistro.Size = new System.Drawing.Size(48, 30);
+            this.btnIrAlAnteriorRegistro.Size = new System.Drawing.Size(51, 30);
             this.btnIrAlAnteriorRegistro.TabIndex = 2;
             this.btnIrAlAnteriorRegistro.Text = "<";
             this.btnIrAlAnteriorRegistro.UseVisualStyleBackColor = true;
@@ -278,7 +281,7 @@
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 738F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 435F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(990, 435);
             this.tableLayoutPanel3.TabIndex = 11;
             // 
@@ -453,6 +456,17 @@
             this.panelBotFormVehiculos.Size = new System.Drawing.Size(990, 46);
             this.panelBotFormVehiculos.TabIndex = 4;
             // 
+            // btnModificarRegistro
+            // 
+            this.btnModificarRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnModificarRegistro.Location = new System.Drawing.Point(345, 3);
+            this.btnModificarRegistro.Name = "btnModificarRegistro";
+            this.btnModificarRegistro.Size = new System.Drawing.Size(100, 30);
+            this.btnModificarRegistro.TabIndex = 6;
+            this.btnModificarRegistro.Text = "Modificar";
+            this.btnModificarRegistro.UseVisualStyleBackColor = true;
+            this.btnModificarRegistro.Click += new System.EventHandler(this.btnModificarRegistro_Click);
+            // 
             // menuVehiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -513,5 +527,6 @@
         private System.Windows.Forms.TextBox marcaTextBox;
         private System.Windows.Forms.TextBox tipologiaTextBox;
         private System.Windows.Forms.TextBox matriculaTextBox;
+        private System.Windows.Forms.Button btnModificarRegistro;
     }
 }

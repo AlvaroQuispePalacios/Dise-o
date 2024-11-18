@@ -57,86 +57,105 @@ namespace RentacarDefinitivo
 
         private void btnAgregarRegistro_Click(object sender, EventArgs e)
         {
+            DeshabilitarBotonesDelPanelTopExceptoSeleccionado(btnAgregarRegistro.Text);
             this.vehicleBindingSource.AddNew();
-            btnValidarRegistro.Text = "Crear Nuevo Registro";
-            btnCancelarValidarRegistro.Text = "Cancelar";
-            MostrarBotonesValidarCancelar();
+            MostrarBotonesValidarCancelar("Crear Nuevo Registro");
         }
 
         private void btnSeleccionarRegistroParaEliminar_Click(object sender, EventArgs e)
         {
-            
-            
+            DeshabilitarBotonesDelPanelTopExceptoSeleccionado(btnSeleccionarRegistroParaEliminar.Text);
+            MostrarBotonesValidarCancelar("Eliminar Registro");
+        }
+
+        private void btnModificarRegistro_Click(object sender, EventArgs e)
+        {
+            DeshabilitarBotonesDelPanelTopExceptoSeleccionado(btnModificarRegistro.Text);
+            MostrarBotonesValidarCancelar("Modificar Registro");
+
         }
 
         private void btnValidarRegistro_Click(object sender, EventArgs e)
         {
-            foreach (Control item in panelTopFormVehiculos.Controls)
+            foreach (Control item in tableLayoutPanel1.Controls)
             {
-                switch (item.Text)
+                if (item.Text.Equals("Crear Nuevo Registro"))
                 {
-                    case "+":
-                        if (this.Validate())
-                        {
-                            this.vehicleBindingSource.EndEdit();
-                            this.tableAdapterManager.UpdateAll(this.rentacarDataSet);
-                        }
-                        else
-                        {
-                            this.Validate();
-                            MessageBox.Show("D:");
-                        }
+                    if (this.Validate())
+                    {
+                        this.vehicleBindingSource.EndEdit();
+                        this.tableAdapterManager.UpdateAll(this.rentacarDataSet);
+                    }
                 }
+                else if (item.Text.Equals("Eliminar Registro"))
+                {
+                    this.vehicleBindingSource.RemoveCurrent();
+                    this.tableAdapterManager.UpdateAll(this.rentacarDataSet);
+                }
+                else if (item.Text.Equals("Modificar Registro"))
+                {
+                    // Falta que el boton funcionar haga cosas
+                    // Luego que Modelo sea una tabla aparte que este relacionado con los vehiculos 
+                    // La tabla de modelo tendra Marca, Modelo, Tipologia y Eliminamos estos atributos de la tabla vehicle
+                    // Hacer un combo box para elegir 
+                    if (this.Validate())
+                    {
+                        // ??
+                        this.vehicleBindingSource.EndEdit();
+                        this.tableAdapterManager.UpdateAll(this.rentacarDataSet);
+                    }
+    
 
-                //if (item.Text == "+")
-                //{
-                //    if (this.Validate())
-                //    {
-                //        this.vehicleBindingSource.EndEdit();
-                //        this.tableAdapterManager.UpdateAll(this.rentacarDataSet);
-                //    }
-                //    else
-                //    {
-                //        this.Validate();
-                //        MessageBox.Show("D:");
-                //    }
-                //}
+                }
             }
-            // Cuando presionas dos veces Agregar registro explota 
-            // Cuando intentas agregar un registro sin datos explota (LA TABLA NECESITA PRIMARY KEY)
-
-
+            OcultarBotonesValidarCancelar();
+            HabilitarBotonesPanelTop();
         }
 
         private void btnCancelarValidarRegistro_Click(object sender, EventArgs e)
         {
-            foreach(Control item in panelTopFormVehiculos.Controls)
-            {
-                if(item.Text == "+")
-                {
-
-                }
-            }
-     
-
-            this.vehicleBindingSource.Remove();
-
             this.vehicleBindingSource.CancelEdit();
             OcultarBotonesValidarCancelar();
+            HabilitarBotonesPanelTop();
         }
 
+  
+
+
+        // ------------------------------- H ------------------------------------
         private void OcultarBotonesValidarCancelar()
         {
             btnValidarRegistro.Hide();
             btnCancelarValidarRegistro.Hide();
         }
 
-        private void MostrarBotonesValidarCancelar()
+        private void MostrarBotonesValidarCancelar(String MensajeBtnValidar = "Validar")
         {
+            btnValidarRegistro.Text = MensajeBtnValidar;
             btnValidarRegistro.Visible = true;
             btnCancelarValidarRegistro.Visible = true;
         }
 
- 
+        // Deshabilita los botones del panel top cuando presionas encima de agregar, eliminar o modificar
+        private void DeshabilitarBotonesDelPanelTopExceptoSeleccionado(String botonText)
+        {
+            foreach(Control item in tableLayoutPanel2.Controls)
+            {
+                if (!item.Text.Equals(botonText))
+                {
+                    item.Enabled = false;
+                }
+            }
+        }
+
+        private void HabilitarBotonesPanelTop()
+        {
+            foreach (Control item in tableLayoutPanel2.Controls)
+            {
+                item.Enabled = true;
+            }
+        }
+
+
     }
 }
