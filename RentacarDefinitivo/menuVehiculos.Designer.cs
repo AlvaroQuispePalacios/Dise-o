@@ -34,6 +34,7 @@
             System.Windows.Forms.Label marcaLabel;
             System.Windows.Forms.Label modelLabel;
             System.Windows.Forms.Label colorLabel;
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.rentacarDataSet = new RentacarDefinitivo.rentacarDataSet();
             this.vehicleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vehicleTableAdapter = new RentacarDefinitivo.rentacarDataSetTableAdapters.vehicleTableAdapter();
@@ -46,6 +47,7 @@
             this.btnIrAlUltimoRegistro = new System.Windows.Forms.Button();
             this.btnIrAlSiguienteRegistro = new System.Windows.Forms.Button();
             this.btnIrAlAnteriorRegistro = new System.Windows.Forms.Button();
+            this.btnModificarRegistro = new System.Windows.Forms.Button();
             this.panelMidFormVehiculos = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.vehicleDataGridView = new System.Windows.Forms.DataGridView();
@@ -65,7 +67,6 @@
             this.btnValidarRegistro = new System.Windows.Forms.Button();
             this.btnCancelarValidarRegistro = new System.Windows.Forms.Button();
             this.panelBotFormVehiculos = new System.Windows.Forms.Panel();
-            this.btnModificarRegistro = new System.Windows.Forms.Button();
             matriculaLabel = new System.Windows.Forms.Label();
             tipologiaLabel = new System.Windows.Forms.Label();
             marcaLabel = new System.Windows.Forms.Label();
@@ -214,6 +215,7 @@
             this.btnSeleccionarRegistroParaEliminar.Text = "-";
             this.btnSeleccionarRegistroParaEliminar.UseVisualStyleBackColor = true;
             this.btnSeleccionarRegistroParaEliminar.Click += new System.EventHandler(this.btnSeleccionarRegistroParaEliminar_Click);
+            this.btnSeleccionarRegistroParaEliminar.MouseHover += new System.EventHandler(this.btnSeleccionarRegistroParaEliminar_MouseHover);
             // 
             // btnIrAlPrimerRegistro
             // 
@@ -259,6 +261,17 @@
             this.btnIrAlAnteriorRegistro.UseVisualStyleBackColor = true;
             this.btnIrAlAnteriorRegistro.Click += new System.EventHandler(this.btnIrAlAnteriorRegistro_Click);
             // 
+            // btnModificarRegistro
+            // 
+            this.btnModificarRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnModificarRegistro.Location = new System.Drawing.Point(345, 3);
+            this.btnModificarRegistro.Name = "btnModificarRegistro";
+            this.btnModificarRegistro.Size = new System.Drawing.Size(100, 30);
+            this.btnModificarRegistro.TabIndex = 6;
+            this.btnModificarRegistro.Text = "Modificar";
+            this.btnModificarRegistro.UseVisualStyleBackColor = true;
+            this.btnModificarRegistro.Click += new System.EventHandler(this.btnModificarRegistro_Click);
+            // 
             // panelMidFormVehiculos
             // 
             this.panelMidFormVehiculos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
@@ -287,6 +300,8 @@
             // 
             // vehicleDataGridView
             // 
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            this.vehicleDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.vehicleDataGridView.AutoGenerateColumns = false;
             this.vehicleDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.vehicleDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -455,17 +470,6 @@
             this.panelBotFormVehiculos.Name = "panelBotFormVehiculos";
             this.panelBotFormVehiculos.Size = new System.Drawing.Size(990, 46);
             this.panelBotFormVehiculos.TabIndex = 4;
-            // 
-            // btnModificarRegistro
-            // 
-            this.btnModificarRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnModificarRegistro.Location = new System.Drawing.Point(345, 3);
-            this.btnModificarRegistro.Name = "btnModificarRegistro";
-            this.btnModificarRegistro.Size = new System.Drawing.Size(100, 30);
-            this.btnModificarRegistro.TabIndex = 6;
-            this.btnModificarRegistro.Text = "Modificar";
-            this.btnModificarRegistro.UseVisualStyleBackColor = true;
-            this.btnModificarRegistro.Click += new System.EventHandler(this.btnModificarRegistro_Click);
             // 
             // menuVehiculos
             // 

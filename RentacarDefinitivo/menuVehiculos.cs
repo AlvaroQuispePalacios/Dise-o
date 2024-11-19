@@ -31,6 +31,12 @@ namespace RentacarDefinitivo
             this.vehicleTableAdapter.Fill(this.rentacarDataSet.vehicle);
             btnValidarRegistro.Hide();
             btnCancelarValidarRegistro.Hide();
+
+            // Si la tabla vehiculos no tiene filas solo estara habilitado el boton de agregarRegistro
+            if(this.vehicleDataGridView.RowCount <= 0)
+            {
+                DeshabilitarBotonesDelPanelTopExceptoSeleccionado(btnAgregarRegistro.Text);
+            }
         }
 
         private void btnIrAlPrimerRegistro_Click(object sender, EventArgs e)
@@ -94,13 +100,11 @@ namespace RentacarDefinitivo
                 }
                 else if (item.Text.Equals("Modificar Registro"))
                 {
-                    // Falta que el boton funcionar haga cosas
                     // Luego que Modelo sea una tabla aparte que este relacionado con los vehiculos 
                     // La tabla de modelo tendra Marca, Modelo, Tipologia y Eliminamos estos atributos de la tabla vehicle
                     // Hacer un combo box para elegir 
                     if (this.Validate())
                     {
-                        // ??
                         this.vehicleBindingSource.EndEdit();
                         this.tableAdapterManager.UpdateAll(this.rentacarDataSet);
                     }
@@ -118,9 +122,6 @@ namespace RentacarDefinitivo
             OcultarBotonesValidarCancelar();
             HabilitarBotonesPanelTop();
         }
-
-  
-
 
         // ------------------------------- H ------------------------------------
         private void OcultarBotonesValidarCancelar()
@@ -144,6 +145,8 @@ namespace RentacarDefinitivo
                 if (!item.Text.Equals(botonText))
                 {
                     item.Enabled = false;
+                    // 
+                    //item.MouseHover(Cursors.No);
                 }
             }
         }
@@ -156,6 +159,14 @@ namespace RentacarDefinitivo
             }
         }
 
+        public void funcion()
+        {
 
+        }
+
+        private void btnSeleccionarRegistroParaEliminar_MouseHover(object sender, EventArgs e)
+        {
+
+        }
     }
 }
