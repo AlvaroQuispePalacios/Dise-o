@@ -17,26 +17,33 @@ namespace RentacarDefinitivo
             InitializeComponent();
         }
 
-        private void vehicleBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.vehicleBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.rentacarDataSet);
-            OcultarBotonesValidarCancelar();
-        }
+        //private void vehicleBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        //{
+        //    this.Validate();
+        //    this.vehicleBindingSource.EndEdit();
+        //    this.tableAdapterManager.UpdateAll(this.rentacarDataSet);
+        //    OcultarBotonesValidarCancelar();
+        //}
 
         private void menuVehiculos_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'rentacarDataSet1.modelo' Puede moverla o quitarla según sea necesario.
+            //this.modeloTableAdapter.Fill(this.rentacarDataSet1.modelo);
+
+            // TODO: esta línea de código carga datos en la tabla 'rentacarDataSet.vehicle_modelo' Puede moverla o quitarla según sea necesario.
+            this.vehicle_modeloTableAdapter.Fill(this.rentacarDataSet.vehicle_modelo);
+
+
             // TODO: esta línea de código carga datos en la tabla 'rentacarDataSet.vehicle' Puede moverla o quitarla según sea necesario.
-            this.vehicleTableAdapter.Fill(this.rentacarDataSet.vehicle);
-            btnValidarRegistro.Hide();
-            btnCancelarValidarRegistro.Hide();
+            //this.vehicleTableAdapter.Fill(this.rentacarDataSet.vehicle);
+
+            OcultarBotonesValidarCancelar();
 
             // Si la tabla vehiculos no tiene filas solo estara habilitado el boton de agregarRegistro
-            if(this.vehicleDataGridView.RowCount <= 0)
-            {
-                DeshabilitarBotonesDelPanelTopExceptoSeleccionado(btnAgregarRegistro.Text);
-            }
+            //if(this.vehicleDataGridView.RowCount <= 0)
+            //{
+            //    DeshabilitarBotonesDelPanelTopExceptoSeleccionado(btnAgregarRegistro.Text);
+            //}
         }
 
         private void btnIrAlPrimerRegistro_Click(object sender, EventArgs e)
@@ -157,16 +164,6 @@ namespace RentacarDefinitivo
             {
                 item.Enabled = true;
             }
-        }
-
-        public void funcion()
-        {
-
-        }
-
-        private void btnSeleccionarRegistroParaEliminar_MouseHover(object sender, EventArgs e)
-        {
-
         }
     }
 }
