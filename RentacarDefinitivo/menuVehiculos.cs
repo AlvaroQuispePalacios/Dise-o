@@ -27,6 +27,13 @@ namespace RentacarDefinitivo
 
         private void menuVehiculos_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'rentacarDataSet1.lista_tipologia_coches' Puede moverla o quitarla según sea necesario.
+            this.lista_tipologia_cochesTableAdapter.Fill(this.rentacarDataSet1.lista_tipologia_coches);
+            // TODO: esta línea de código carga datos en la tabla 'rentacarDataSet1.lista_modelo_coches' Puede moverla o quitarla según sea necesario.
+            this.lista_modelo_cochesTableAdapter.Fill(this.rentacarDataSet1.lista_modelo_coches);
+            // TODO: esta línea de código carga datos en la tabla 'rentacarDataSet1.lista_marcas_coches' Puede moverla o quitarla según sea necesario.
+            this.lista_marcas_cochesTableAdapter.Fill(this.rentacarDataSet1.lista_marcas_coches);
+
             // TODO: esta línea de código carga datos en la tabla 'rentacarDataSet1.modelo' Puede moverla o quitarla según sea necesario.
             //this.modeloTableAdapter.Fill(this.rentacarDataSet1.modelo);
 
@@ -48,22 +55,28 @@ namespace RentacarDefinitivo
 
         private void btnIrAlPrimerRegistro_Click(object sender, EventArgs e)
         {
-            this.vehicleBindingSource.MoveFirst();
+            //this.vehicleBindingSource.MoveFirst();
+            this.vehicle_modeloBindingSource6.MoveFirst();
         }
 
         private void btnIrAlAnteriorRegistro_Click(object sender, EventArgs e)
         {
-            this.vehicleBindingSource.MovePrevious();
+            //this.vehicleBindingSource.MovePrevious();
+            this.vehicle_modeloBindingSource6.MovePrevious();
+
         }
 
         private void btnIrAlSiguienteRegistro_Click(object sender, EventArgs e)
         {
-            this.vehicleBindingSource.MoveNext();
+            //this.vehicleBindingSource.MoveNext();
+            this.vehicle_modeloBindingSource6.MoveNext();
         }
 
         private void btnIrAlUltimoRegistro_Click(object sender, EventArgs e)
         {
-            this.vehicleBindingSource.MoveLast();
+            //this.vehicleBindingSource.MoveLast();
+            this.vehicle_modeloBindingSource6.MoveLast();
+
         }
 
         // ------------------------------------------------------------------------
@@ -71,7 +84,8 @@ namespace RentacarDefinitivo
         private void btnAgregarRegistro_Click(object sender, EventArgs e)
         {
             DeshabilitarBotonesDelPanelTopExceptoSeleccionado(btnAgregarRegistro.Text);
-            this.vehicleBindingSource.AddNew();
+            //this.vehicleBindingSource.AddNew();
+            this.vehicle_modeloBindingSource6.AddNew();
             MostrarBotonesValidarCancelar("Crear Nuevo Registro");
         }
 
@@ -85,7 +99,6 @@ namespace RentacarDefinitivo
         {
             DeshabilitarBotonesDelPanelTopExceptoSeleccionado(btnModificarRegistro.Text);
             MostrarBotonesValidarCancelar("Modificar Registro");
-
         }
 
         private void btnValidarRegistro_Click(object sender, EventArgs e)
@@ -96,14 +109,19 @@ namespace RentacarDefinitivo
                 {
                     if (this.Validate())
                     {
-                        this.vehicleBindingSource.EndEdit();
-                        this.tableAdapterManager.UpdateAll(this.rentacarDataSet);
+                        //this.vehicleBindingSource.EndEdit();
+                        this.vehicle_modeloBindingSource6.EndEdit();
+                        //this.tableAdapterManager.UpdateAll(this.rentacarDataSet);
+                        this.tableAdapterManager.UpdateAll(this.rentacarDataSet1);
                     }
                 }
                 else if (item.Text.Equals("Eliminar Registro"))
                 {
-                    this.vehicleBindingSource.RemoveCurrent();
-                    this.tableAdapterManager.UpdateAll(this.rentacarDataSet);
+                    //this.vehicleBindingSource.RemoveCurrent();
+                    this.vehicle_modeloBindingSource6.RemoveCurrent();
+                    //this.tableAdapterManager.UpdateAll(this.rentacarDataSet);
+                    this.tableAdapterManager.UpdateAll(this.rentacarDataSet1);
+
                 }
                 else if (item.Text.Equals("Modificar Registro"))
                 {
@@ -112,10 +130,13 @@ namespace RentacarDefinitivo
                     // Hacer un combo box para elegir 
                     if (this.Validate())
                     {
-                        this.vehicleBindingSource.EndEdit();
-                        this.tableAdapterManager.UpdateAll(this.rentacarDataSet);
+                        //this.vehicleBindingSource.EndEdit();
+                        this.vehicle_modeloBindingSource6.EndEdit();
+                        //this.tableAdapterManager.UpdateAll(this.rentacarDataSet);
+                        this.tableAdapterManager.UpdateAll(this.rentacarDataSet1);
+
                     }
-    
+
 
                 }
             }
@@ -125,7 +146,8 @@ namespace RentacarDefinitivo
 
         private void btnCancelarValidarRegistro_Click(object sender, EventArgs e)
         {
-            this.vehicleBindingSource.CancelEdit();
+            //this.vehicleBindingSource.CancelEdit();
+            this.vehicle_modeloBindingSource6.CancelEdit();
             OcultarBotonesValidarCancelar();
             HabilitarBotonesPanelTop();
         }
