@@ -187,5 +187,21 @@ namespace RentacarDefinitivo
                 item.Enabled = true;
             }
         }
+
+        // Tipologia
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //comboBox1.
+            //this.vehicle_modeloBindingSource6.Filter $"";
+        }
+
+        //Marca
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //MessageBox.Show(this.vehicle_modeloBindingSource6.Filter);
+            this.modeloBindingSource.Filter = $"tipologia='{comboBox3.Text}'";
+        }
+
+
     }
 }
