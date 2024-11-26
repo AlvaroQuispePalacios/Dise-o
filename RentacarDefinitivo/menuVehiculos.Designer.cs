@@ -392,7 +392,7 @@
             // 
             // comboBox3
             // 
-            this.comboBox3.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.vehicle_modeloBindingSource6, "tipologia", true));
+            this.comboBox3.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.vehicleBindingSource, "modelo", true));
             this.comboBox3.DataSource = this.listatipologiacochesBindingSource;
             this.comboBox3.DisplayMember = "tipologia";
             this.comboBox3.FormattingEnabled = true;

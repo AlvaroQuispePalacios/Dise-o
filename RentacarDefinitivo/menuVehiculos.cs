@@ -192,14 +192,14 @@ namespace RentacarDefinitivo
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
             //comboBox1.
-            this.vehicle_modeloBindingSource6.Filter = $"tipologia = '{comboBox3.Text}'";
+            //this.vehicle_modeloBindingSource6.Filter = $"tipologia = '{comboBox3.Text}'";
         }
 
         //Marca
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //MessageBox.Show(this.vehicle_modeloBindingSource6.Filter);
-            this.modeloBindingSource.Filter = $"tipologia='{comboBox3.Text} AND '";
+            //this.modeloBindingSource.Filter = $"tipologia='{comboBox3.Text} AND '";
         }
 
 

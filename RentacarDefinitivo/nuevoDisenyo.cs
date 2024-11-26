@@ -97,7 +97,7 @@ namespace RentacarDefinitivo
 
         private void btnMostrarFormVehiculo_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new menuVehiculos()); 
+            AbrirFormHijo(new FormVehiculo()); 
         }
     }
 }
