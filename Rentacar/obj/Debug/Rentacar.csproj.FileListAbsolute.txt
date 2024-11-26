@@ -1,0 +1,12 @@
+E:\2DAM\Dise-o\Rentacar\bin\Debug\Rentacar.exe.config
+E:\2DAM\Dise-o\Rentacar\bin\Debug\Rentacar.exe
+E:\2DAM\Dise-o\Rentacar\bin\Debug\Rentacar.pdb
+E:\2DAM\Dise-o\Rentacar\obj\Debug\Rentacar.csproj.AssemblyReference.cache
+E:\2DAM\Dise-o\Rentacar\obj\Debug\Rentacar.Login.resources
+E:\2DAM\Dise-o\Rentacar\obj\Debug\Rentacar.Properties.Resources.resources
+E:\2DAM\Dise-o\Rentacar\obj\Debug\Rentacar.csproj.GenerateResource.cache
+E:\2DAM\Dise-o\Rentacar\obj\Debug\Rentacar.csproj.CoreCompileInputs.cache
+E:\2DAM\Dise-o\Rentacar\obj\Debug\Rentacar.exe
+E:\2DAM\Dise-o\Rentacar\obj\Debug\Rentacar.pdb
+E:\2DAM\Dise-o\Rentacar\obj\Debug\Rentacar.Form1.resources
+E:\2DAM\Dise-o\Rentacar\obj\Debug\Rentacar.FormVehiculos.resources

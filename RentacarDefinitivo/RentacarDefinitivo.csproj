@@ -102,6 +102,9 @@
     <Compile Include="Pruebas.Designer.cs">
       <DependentUpon>Pruebas.cs</DependentUpon>
     </Compile>
+    <Compile Include="rentacarDataSet.cs">
+      <DependentUpon>rentacarDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="rentacarDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -45,6 +45,12 @@
             this.btnModificarRegistro = new System.Windows.Forms.Button();
             this.panelMidFormVehiculos = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.vehicle_modeloDataGridView = new System.Windows.Forms.DataGridView();
+            this.matriculaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.marcaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modelococheDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipologiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vehicle_modeloBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.rentacarDataSet = new RentacarDefinitivo.rentacarDataSet();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -71,12 +77,6 @@
             this.lista_marcas_cochesTableAdapter = new RentacarDefinitivo.rentacarDataSetTableAdapters.lista_marcas_cochesTableAdapter();
             this.lista_modelo_cochesTableAdapter = new RentacarDefinitivo.rentacarDataSetTableAdapters.lista_modelo_cochesTableAdapter();
             this.lista_tipologia_cochesTableAdapter = new RentacarDefinitivo.rentacarDataSetTableAdapters.lista_tipologia_cochesTableAdapter();
-            this.tipologiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.modelococheDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.marcaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.matriculaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vehicle_modeloDataGridView = new System.Windows.Forms.DataGridView();
             label1 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
@@ -86,6 +86,7 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.panelMidFormVehiculos.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.vehicle_modeloDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehicle_modeloBindingSource6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rentacarDataSet)).BeginInit();
             this.panel1.SuspendLayout();
@@ -98,7 +99,6 @@
             this.panelBotFormVehiculos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vehicleBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.modeloBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vehicle_modeloDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -282,9 +282,56 @@
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 484F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 438F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(934, 438);
             this.tableLayoutPanel3.TabIndex = 11;
+            // 
+            // vehicle_modeloDataGridView
+            // 
+            this.vehicle_modeloDataGridView.AutoGenerateColumns = false;
+            this.vehicle_modeloDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.vehicle_modeloDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.matriculaDataGridViewTextBoxColumn,
+            this.colorDataGridViewTextBoxColumn,
+            this.marcaDataGridViewTextBoxColumn,
+            this.modelococheDataGridViewTextBoxColumn,
+            this.tipologiaDataGridViewTextBoxColumn});
+            this.vehicle_modeloDataGridView.DataSource = this.vehicle_modeloBindingSource6;
+            this.vehicle_modeloDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.vehicle_modeloDataGridView.Location = new System.Drawing.Point(470, 3);
+            this.vehicle_modeloDataGridView.Name = "vehicle_modeloDataGridView";
+            this.vehicle_modeloDataGridView.Size = new System.Drawing.Size(461, 432);
+            this.vehicle_modeloDataGridView.TabIndex = 1;
+            // 
+            // matriculaDataGridViewTextBoxColumn
+            // 
+            this.matriculaDataGridViewTextBoxColumn.DataPropertyName = "matricula";
+            this.matriculaDataGridViewTextBoxColumn.HeaderText = "matricula";
+            this.matriculaDataGridViewTextBoxColumn.Name = "matriculaDataGridViewTextBoxColumn";
+            // 
+            // colorDataGridViewTextBoxColumn
+            // 
+            this.colorDataGridViewTextBoxColumn.DataPropertyName = "color";
+            this.colorDataGridViewTextBoxColumn.HeaderText = "color";
+            this.colorDataGridViewTextBoxColumn.Name = "colorDataGridViewTextBoxColumn";
+            // 
+            // marcaDataGridViewTextBoxColumn
+            // 
+            this.marcaDataGridViewTextBoxColumn.DataPropertyName = "marca";
+            this.marcaDataGridViewTextBoxColumn.HeaderText = "marca";
+            this.marcaDataGridViewTextBoxColumn.Name = "marcaDataGridViewTextBoxColumn";
+            // 
+            // modelococheDataGridViewTextBoxColumn
+            // 
+            this.modelococheDataGridViewTextBoxColumn.DataPropertyName = "modelo_coche";
+            this.modelococheDataGridViewTextBoxColumn.HeaderText = "modelo_coche";
+            this.modelococheDataGridViewTextBoxColumn.Name = "modelococheDataGridViewTextBoxColumn";
+            // 
+            // tipologiaDataGridViewTextBoxColumn
+            // 
+            this.tipologiaDataGridViewTextBoxColumn.DataPropertyName = "tipologia";
+            this.tipologiaDataGridViewTextBoxColumn.HeaderText = "tipologia";
+            this.tipologiaDataGridViewTextBoxColumn.Name = "tipologiaDataGridViewTextBoxColumn";
             // 
             // vehicle_modeloBindingSource6
             // 
@@ -493,53 +540,6 @@
             // 
             this.lista_tipologia_cochesTableAdapter.ClearBeforeFill = true;
             // 
-            // tipologiaDataGridViewTextBoxColumn
-            // 
-            this.tipologiaDataGridViewTextBoxColumn.DataPropertyName = "tipologia";
-            this.tipologiaDataGridViewTextBoxColumn.HeaderText = "tipologia";
-            this.tipologiaDataGridViewTextBoxColumn.Name = "tipologiaDataGridViewTextBoxColumn";
-            // 
-            // modelococheDataGridViewTextBoxColumn
-            // 
-            this.modelococheDataGridViewTextBoxColumn.DataPropertyName = "modelo_coche";
-            this.modelococheDataGridViewTextBoxColumn.HeaderText = "modelo_coche";
-            this.modelococheDataGridViewTextBoxColumn.Name = "modelococheDataGridViewTextBoxColumn";
-            // 
-            // marcaDataGridViewTextBoxColumn
-            // 
-            this.marcaDataGridViewTextBoxColumn.DataPropertyName = "marca";
-            this.marcaDataGridViewTextBoxColumn.HeaderText = "marca";
-            this.marcaDataGridViewTextBoxColumn.Name = "marcaDataGridViewTextBoxColumn";
-            // 
-            // colorDataGridViewTextBoxColumn
-            // 
-            this.colorDataGridViewTextBoxColumn.DataPropertyName = "color";
-            this.colorDataGridViewTextBoxColumn.HeaderText = "color";
-            this.colorDataGridViewTextBoxColumn.Name = "colorDataGridViewTextBoxColumn";
-            // 
-            // matriculaDataGridViewTextBoxColumn
-            // 
-            this.matriculaDataGridViewTextBoxColumn.DataPropertyName = "matricula";
-            this.matriculaDataGridViewTextBoxColumn.HeaderText = "matricula";
-            this.matriculaDataGridViewTextBoxColumn.Name = "matriculaDataGridViewTextBoxColumn";
-            // 
-            // vehicle_modeloDataGridView
-            // 
-            this.vehicle_modeloDataGridView.AutoGenerateColumns = false;
-            this.vehicle_modeloDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.vehicle_modeloDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.matriculaDataGridViewTextBoxColumn,
-            this.colorDataGridViewTextBoxColumn,
-            this.marcaDataGridViewTextBoxColumn,
-            this.modelococheDataGridViewTextBoxColumn,
-            this.tipologiaDataGridViewTextBoxColumn});
-            this.vehicle_modeloDataGridView.DataSource = this.vehicle_modeloBindingSource6;
-            this.vehicle_modeloDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.vehicle_modeloDataGridView.Location = new System.Drawing.Point(470, 3);
-            this.vehicle_modeloDataGridView.Name = "vehicle_modeloDataGridView";
-            this.vehicle_modeloDataGridView.Size = new System.Drawing.Size(461, 432);
-            this.vehicle_modeloDataGridView.TabIndex = 1;
-            // 
             // menuVehiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -556,6 +556,7 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panelMidFormVehiculos.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.vehicle_modeloDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehicle_modeloBindingSource6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rentacarDataSet)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -569,7 +570,6 @@
             this.panelBotFormVehiculos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.vehicleBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.modeloBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vehicle_modeloDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
