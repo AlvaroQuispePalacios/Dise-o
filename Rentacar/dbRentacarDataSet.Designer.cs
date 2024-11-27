@@ -32,15 +32,9 @@ namespace Rentacar {
         
         private vehiculoDataTable tablevehiculo;
         
-        private marcasDataTable tablemarcas;
-        
-        private modelos_cochesDataTable tablemodelos_coches;
-        
         private tipologiasDataTable tabletipologias;
         
-        private vehiculos_modelosDataTable tablevehiculos_modelos;
-        
-        private global::System.Data.DataRelation relationFK_vehiculo_modelo;
+        private marcas_cochesDataTable tablemarcas_coches;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -82,17 +76,11 @@ namespace Rentacar {
                 if ((ds.Tables["vehiculo"] != null)) {
                     base.Tables.Add(new vehiculoDataTable(ds.Tables["vehiculo"]));
                 }
-                if ((ds.Tables["marcas"] != null)) {
-                    base.Tables.Add(new marcasDataTable(ds.Tables["marcas"]));
-                }
-                if ((ds.Tables["modelos_coches"] != null)) {
-                    base.Tables.Add(new modelos_cochesDataTable(ds.Tables["modelos_coches"]));
-                }
                 if ((ds.Tables["tipologias"] != null)) {
                     base.Tables.Add(new tipologiasDataTable(ds.Tables["tipologias"]));
                 }
-                if ((ds.Tables["vehiculos_modelos"] != null)) {
-                    base.Tables.Add(new vehiculos_modelosDataTable(ds.Tables["vehiculos_modelos"]));
+                if ((ds.Tables["marcas_coches"] != null)) {
+                    base.Tables.Add(new marcas_cochesDataTable(ds.Tables["marcas_coches"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -156,26 +144,6 @@ namespace Rentacar {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public marcasDataTable marcas {
-            get {
-                return this.tablemarcas;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public modelos_cochesDataTable modelos_coches {
-            get {
-                return this.tablemodelos_coches;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
         public tipologiasDataTable tipologias {
             get {
                 return this.tabletipologias;
@@ -186,9 +154,9 @@ namespace Rentacar {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public vehiculos_modelosDataTable vehiculos_modelos {
+        public marcas_cochesDataTable marcas_coches {
             get {
-                return this.tablevehiculos_modelos;
+                return this.tablemarcas_coches;
             }
         }
         
@@ -271,17 +239,11 @@ namespace Rentacar {
                 if ((ds.Tables["vehiculo"] != null)) {
                     base.Tables.Add(new vehiculoDataTable(ds.Tables["vehiculo"]));
                 }
-                if ((ds.Tables["marcas"] != null)) {
-                    base.Tables.Add(new marcasDataTable(ds.Tables["marcas"]));
-                }
-                if ((ds.Tables["modelos_coches"] != null)) {
-                    base.Tables.Add(new modelos_cochesDataTable(ds.Tables["modelos_coches"]));
-                }
                 if ((ds.Tables["tipologias"] != null)) {
                     base.Tables.Add(new tipologiasDataTable(ds.Tables["tipologias"]));
                 }
-                if ((ds.Tables["vehiculos_modelos"] != null)) {
-                    base.Tables.Add(new vehiculos_modelosDataTable(ds.Tables["vehiculos_modelos"]));
+                if ((ds.Tables["marcas_coches"] != null)) {
+                    base.Tables.Add(new marcas_cochesDataTable(ds.Tables["marcas_coches"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -340,31 +302,18 @@ namespace Rentacar {
                     this.tablevehiculo.InitVars();
                 }
             }
-            this.tablemarcas = ((marcasDataTable)(base.Tables["marcas"]));
-            if ((initTable == true)) {
-                if ((this.tablemarcas != null)) {
-                    this.tablemarcas.InitVars();
-                }
-            }
-            this.tablemodelos_coches = ((modelos_cochesDataTable)(base.Tables["modelos_coches"]));
-            if ((initTable == true)) {
-                if ((this.tablemodelos_coches != null)) {
-                    this.tablemodelos_coches.InitVars();
-                }
-            }
             this.tabletipologias = ((tipologiasDataTable)(base.Tables["tipologias"]));
             if ((initTable == true)) {
                 if ((this.tabletipologias != null)) {
                     this.tabletipologias.InitVars();
                 }
             }
-            this.tablevehiculos_modelos = ((vehiculos_modelosDataTable)(base.Tables["vehiculos_modelos"]));
+            this.tablemarcas_coches = ((marcas_cochesDataTable)(base.Tables["marcas_coches"]));
             if ((initTable == true)) {
-                if ((this.tablevehiculos_modelos != null)) {
-                    this.tablevehiculos_modelos.InitVars();
+                if ((this.tablemarcas_coches != null)) {
+                    this.tablemarcas_coches.InitVars();
                 }
             }
-            this.relationFK_vehiculo_modelo = this.Relations["FK_vehiculo_modelo"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -383,18 +332,10 @@ namespace Rentacar {
             base.Tables.Add(this.tableusuario);
             this.tablevehiculo = new vehiculoDataTable();
             base.Tables.Add(this.tablevehiculo);
-            this.tablemarcas = new marcasDataTable();
-            base.Tables.Add(this.tablemarcas);
-            this.tablemodelos_coches = new modelos_cochesDataTable();
-            base.Tables.Add(this.tablemodelos_coches);
             this.tabletipologias = new tipologiasDataTable();
             base.Tables.Add(this.tabletipologias);
-            this.tablevehiculos_modelos = new vehiculos_modelosDataTable();
-            base.Tables.Add(this.tablevehiculos_modelos);
-            this.relationFK_vehiculo_modelo = new global::System.Data.DataRelation("FK_vehiculo_modelo", new global::System.Data.DataColumn[] {
-                        this.tablemodelo.modelo_idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablevehiculo.modeloColumn}, false);
-            this.Relations.Add(this.relationFK_vehiculo_modelo);
+            this.tablemarcas_coches = new marcas_cochesDataTable();
+            base.Tables.Add(this.tablemarcas_coches);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -423,25 +364,13 @@ namespace Rentacar {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializemarcas() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializemodelos_coches() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private bool ShouldSerializetipologias() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializevehiculos_modelos() {
+        private bool ShouldSerializemarcas_coches() {
             return false;
         }
         
@@ -513,16 +442,10 @@ namespace Rentacar {
         public delegate void vehiculoRowChangeEventHandler(object sender, vehiculoRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void marcasRowChangeEventHandler(object sender, marcasRowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void modelos_cochesRowChangeEventHandler(object sender, modelos_cochesRowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void tipologiasRowChangeEventHandler(object sender, tipologiasRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void vehiculos_modelosRowChangeEventHandler(object sender, vehiculos_modelosRowChangeEvent e);
+        public delegate void marcas_cochesRowChangeEventHandler(object sender, marcas_cochesRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -1424,8 +1347,6 @@ namespace Rentacar {
             
             private global::System.Data.DataColumn columnvehiculo_color;
             
-            private global::System.Data.DataColumn columnmodelo;
-            
             private global::System.Data.DataColumn columnvehiculo_tipologia;
             
             private global::System.Data.DataColumn columnvehiculo_marca;
@@ -1478,14 +1399,6 @@ namespace Rentacar {
             public global::System.Data.DataColumn vehiculo_colorColumn {
                 get {
                     return this.columnvehiculo_color;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn modeloColumn {
-                get {
-                    return this.columnmodelo;
                 }
             }
             
@@ -1550,18 +1463,14 @@ namespace Rentacar {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public vehiculoRow AddvehiculoRow(string vehiculo_matricula, string vehiculo_color, modeloRow parentmodeloRowByFK_vehiculo_modelo, string vehiculo_tipologia, string vehiculo_marca, string vehiculo_modelo) {
+            public vehiculoRow AddvehiculoRow(string vehiculo_matricula, string vehiculo_color, string vehiculo_tipologia, string vehiculo_marca, string vehiculo_modelo) {
                 vehiculoRow rowvehiculoRow = ((vehiculoRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         vehiculo_matricula,
                         vehiculo_color,
-                        null,
                         vehiculo_tipologia,
                         vehiculo_marca,
                         vehiculo_modelo};
-                if ((parentmodeloRowByFK_vehiculo_modelo != null)) {
-                    columnValuesArray[2] = parentmodeloRowByFK_vehiculo_modelo[3];
-                }
                 rowvehiculoRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowvehiculoRow);
                 return rowvehiculoRow;
@@ -1593,7 +1502,6 @@ namespace Rentacar {
             internal void InitVars() {
                 this.columnvehiculo_matricula = base.Columns["vehiculo_matricula"];
                 this.columnvehiculo_color = base.Columns["vehiculo_color"];
-                this.columnmodelo = base.Columns["modelo"];
                 this.columnvehiculo_tipologia = base.Columns["vehiculo_tipologia"];
                 this.columnvehiculo_marca = base.Columns["vehiculo_marca"];
                 this.columnvehiculo_modelo = base.Columns["vehiculo_modelo"];
@@ -1606,8 +1514,6 @@ namespace Rentacar {
                 base.Columns.Add(this.columnvehiculo_matricula);
                 this.columnvehiculo_color = new global::System.Data.DataColumn("vehiculo_color", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnvehiculo_color);
-                this.columnmodelo = new global::System.Data.DataColumn("modelo", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnmodelo);
                 this.columnvehiculo_tipologia = new global::System.Data.DataColumn("vehiculo_tipologia", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnvehiculo_tipologia);
                 this.columnvehiculo_marca = new global::System.Data.DataColumn("vehiculo_marca", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1709,502 +1615,6 @@ namespace Rentacar {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "vehiculoDataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class marcasDataTable : global::System.Data.TypedTableBase<marcasRow> {
-            
-            private global::System.Data.DataColumn columnmodelo_marca;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public marcasDataTable() {
-                this.TableName = "marcas";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal marcasDataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected marcasDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn modelo_marcaColumn {
-                get {
-                    return this.columnmodelo_marca;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public marcasRow this[int index] {
-                get {
-                    return ((marcasRow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event marcasRowChangeEventHandler marcasRowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event marcasRowChangeEventHandler marcasRowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event marcasRowChangeEventHandler marcasRowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event marcasRowChangeEventHandler marcasRowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddmarcasRow(marcasRow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public marcasRow AddmarcasRow(string modelo_marca) {
-                marcasRow rowmarcasRow = ((marcasRow)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        modelo_marca};
-                rowmarcasRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowmarcasRow);
-                return rowmarcasRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                marcasDataTable cln = ((marcasDataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new marcasDataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal void InitVars() {
-                this.columnmodelo_marca = base.Columns["modelo_marca"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            private void InitClass() {
-                this.columnmodelo_marca = new global::System.Data.DataColumn("modelo_marca", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnmodelo_marca);
-                this.columnmodelo_marca.MaxLength = 50;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public marcasRow NewmarcasRow() {
-                return ((marcasRow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new marcasRow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(marcasRow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.marcasRowChanged != null)) {
-                    this.marcasRowChanged(this, new marcasRowChangeEvent(((marcasRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.marcasRowChanging != null)) {
-                    this.marcasRowChanging(this, new marcasRowChangeEvent(((marcasRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.marcasRowDeleted != null)) {
-                    this.marcasRowDeleted(this, new marcasRowChangeEvent(((marcasRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.marcasRowDeleting != null)) {
-                    this.marcasRowDeleting(this, new marcasRowChangeEvent(((marcasRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemovemarcasRow(marcasRow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dbRentacarDataSet ds = new dbRentacarDataSet();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "marcasDataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class modelos_cochesDataTable : global::System.Data.TypedTableBase<modelos_cochesRow> {
-            
-            private global::System.Data.DataColumn columnmodelo_coche;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public modelos_cochesDataTable() {
-                this.TableName = "modelos_coches";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal modelos_cochesDataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected modelos_cochesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn modelo_cocheColumn {
-                get {
-                    return this.columnmodelo_coche;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public modelos_cochesRow this[int index] {
-                get {
-                    return ((modelos_cochesRow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event modelos_cochesRowChangeEventHandler modelos_cochesRowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event modelos_cochesRowChangeEventHandler modelos_cochesRowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event modelos_cochesRowChangeEventHandler modelos_cochesRowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event modelos_cochesRowChangeEventHandler modelos_cochesRowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Addmodelos_cochesRow(modelos_cochesRow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public modelos_cochesRow Addmodelos_cochesRow(string modelo_coche) {
-                modelos_cochesRow rowmodelos_cochesRow = ((modelos_cochesRow)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        modelo_coche};
-                rowmodelos_cochesRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowmodelos_cochesRow);
-                return rowmodelos_cochesRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                modelos_cochesDataTable cln = ((modelos_cochesDataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new modelos_cochesDataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal void InitVars() {
-                this.columnmodelo_coche = base.Columns["modelo_coche"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            private void InitClass() {
-                this.columnmodelo_coche = new global::System.Data.DataColumn("modelo_coche", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnmodelo_coche);
-                this.columnmodelo_coche.MaxLength = 50;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public modelos_cochesRow Newmodelos_cochesRow() {
-                return ((modelos_cochesRow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new modelos_cochesRow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(modelos_cochesRow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.modelos_cochesRowChanged != null)) {
-                    this.modelos_cochesRowChanged(this, new modelos_cochesRowChangeEvent(((modelos_cochesRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.modelos_cochesRowChanging != null)) {
-                    this.modelos_cochesRowChanging(this, new modelos_cochesRowChangeEvent(((modelos_cochesRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.modelos_cochesRowDeleted != null)) {
-                    this.modelos_cochesRowDeleted(this, new modelos_cochesRowChangeEvent(((modelos_cochesRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.modelos_cochesRowDeleting != null)) {
-                    this.modelos_cochesRowDeleting(this, new modelos_cochesRowChangeEvent(((modelos_cochesRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Removemodelos_cochesRow(modelos_cochesRow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dbRentacarDataSet ds = new dbRentacarDataSet();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "modelos_cochesDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -2498,22 +1908,14 @@ namespace Rentacar {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class vehiculos_modelosDataTable : global::System.Data.TypedTableBase<vehiculos_modelosRow> {
-            
-            private global::System.Data.DataColumn columnvehiculo_matricula;
-            
-            private global::System.Data.DataColumn columnvehiculo_color;
-            
-            private global::System.Data.DataColumn columnmodelo_tipologia;
+        public partial class marcas_cochesDataTable : global::System.Data.TypedTableBase<marcas_cochesRow> {
             
             private global::System.Data.DataColumn columnmodelo_marca;
             
-            private global::System.Data.DataColumn columnmodelo_coche;
-            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public vehiculos_modelosDataTable() {
-                this.TableName = "vehiculos_modelos";
+            public marcas_cochesDataTable() {
+                this.TableName = "marcas_coches";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -2521,7 +1923,7 @@ namespace Rentacar {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal vehiculos_modelosDataTable(global::System.Data.DataTable table) {
+            internal marcas_cochesDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -2538,33 +1940,9 @@ namespace Rentacar {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected vehiculos_modelosDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected marcas_cochesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn vehiculo_matriculaColumn {
-                get {
-                    return this.columnvehiculo_matricula;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn vehiculo_colorColumn {
-                get {
-                    return this.columnvehiculo_color;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn modelo_tipologiaColumn {
-                get {
-                    return this.columnmodelo_tipologia;
-                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2572,14 +1950,6 @@ namespace Rentacar {
             public global::System.Data.DataColumn modelo_marcaColumn {
                 get {
                     return this.columnmodelo_marca;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn modelo_cocheColumn {
-                get {
-                    return this.columnmodelo_coche;
                 }
             }
             
@@ -2594,56 +1964,45 @@ namespace Rentacar {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public vehiculos_modelosRow this[int index] {
+            public marcas_cochesRow this[int index] {
                 get {
-                    return ((vehiculos_modelosRow)(this.Rows[index]));
+                    return ((marcas_cochesRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event vehiculos_modelosRowChangeEventHandler vehiculos_modelosRowChanging;
+            public event marcas_cochesRowChangeEventHandler marcas_cochesRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event vehiculos_modelosRowChangeEventHandler vehiculos_modelosRowChanged;
+            public event marcas_cochesRowChangeEventHandler marcas_cochesRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event vehiculos_modelosRowChangeEventHandler vehiculos_modelosRowDeleting;
+            public event marcas_cochesRowChangeEventHandler marcas_cochesRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event vehiculos_modelosRowChangeEventHandler vehiculos_modelosRowDeleted;
+            public event marcas_cochesRowChangeEventHandler marcas_cochesRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Addvehiculos_modelosRow(vehiculos_modelosRow row) {
+            public void Addmarcas_cochesRow(marcas_cochesRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public vehiculos_modelosRow Addvehiculos_modelosRow(string vehiculo_matricula, string vehiculo_color, string modelo_tipologia, string modelo_marca, string modelo_coche) {
-                vehiculos_modelosRow rowvehiculos_modelosRow = ((vehiculos_modelosRow)(this.NewRow()));
+            public marcas_cochesRow Addmarcas_cochesRow(string modelo_marca) {
+                marcas_cochesRow rowmarcas_cochesRow = ((marcas_cochesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        vehiculo_matricula,
-                        vehiculo_color,
-                        modelo_tipologia,
-                        modelo_marca,
-                        modelo_coche};
-                rowvehiculos_modelosRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowvehiculos_modelosRow);
-                return rowvehiculos_modelosRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public vehiculos_modelosRow FindByvehiculo_matricula(string vehiculo_matricula) {
-                return ((vehiculos_modelosRow)(this.Rows.Find(new object[] {
-                            vehiculo_matricula})));
+                        modelo_marca};
+                rowmarcas_cochesRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowmarcas_cochesRow);
+                return rowmarcas_cochesRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                vehiculos_modelosDataTable cln = ((vehiculos_modelosDataTable)(base.Clone()));
+                marcas_cochesDataTable cln = ((marcas_cochesDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -2651,67 +2010,47 @@ namespace Rentacar {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new vehiculos_modelosDataTable();
+                return new marcas_cochesDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnvehiculo_matricula = base.Columns["vehiculo_matricula"];
-                this.columnvehiculo_color = base.Columns["vehiculo_color"];
-                this.columnmodelo_tipologia = base.Columns["modelo_tipologia"];
                 this.columnmodelo_marca = base.Columns["modelo_marca"];
-                this.columnmodelo_coche = base.Columns["modelo_coche"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnvehiculo_matricula = new global::System.Data.DataColumn("vehiculo_matricula", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnvehiculo_matricula);
-                this.columnvehiculo_color = new global::System.Data.DataColumn("vehiculo_color", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnvehiculo_color);
-                this.columnmodelo_tipologia = new global::System.Data.DataColumn("modelo_tipologia", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnmodelo_tipologia);
                 this.columnmodelo_marca = new global::System.Data.DataColumn("modelo_marca", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnmodelo_marca);
-                this.columnmodelo_coche = new global::System.Data.DataColumn("modelo_coche", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnmodelo_coche);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnvehiculo_matricula}, true));
-                this.columnvehiculo_matricula.AllowDBNull = false;
-                this.columnvehiculo_matricula.Unique = true;
-                this.columnvehiculo_matricula.MaxLength = 50;
-                this.columnvehiculo_color.MaxLength = 50;
-                this.columnmodelo_tipologia.MaxLength = 50;
                 this.columnmodelo_marca.MaxLength = 50;
-                this.columnmodelo_coche.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public vehiculos_modelosRow Newvehiculos_modelosRow() {
-                return ((vehiculos_modelosRow)(this.NewRow()));
+            public marcas_cochesRow Newmarcas_cochesRow() {
+                return ((marcas_cochesRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new vehiculos_modelosRow(builder);
+                return new marcas_cochesRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(vehiculos_modelosRow);
+                return typeof(marcas_cochesRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.vehiculos_modelosRowChanged != null)) {
-                    this.vehiculos_modelosRowChanged(this, new vehiculos_modelosRowChangeEvent(((vehiculos_modelosRow)(e.Row)), e.Action));
+                if ((this.marcas_cochesRowChanged != null)) {
+                    this.marcas_cochesRowChanged(this, new marcas_cochesRowChangeEvent(((marcas_cochesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2719,8 +2058,8 @@ namespace Rentacar {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.vehiculos_modelosRowChanging != null)) {
-                    this.vehiculos_modelosRowChanging(this, new vehiculos_modelosRowChangeEvent(((vehiculos_modelosRow)(e.Row)), e.Action));
+                if ((this.marcas_cochesRowChanging != null)) {
+                    this.marcas_cochesRowChanging(this, new marcas_cochesRowChangeEvent(((marcas_cochesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2728,8 +2067,8 @@ namespace Rentacar {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.vehiculos_modelosRowDeleted != null)) {
-                    this.vehiculos_modelosRowDeleted(this, new vehiculos_modelosRowChangeEvent(((vehiculos_modelosRow)(e.Row)), e.Action));
+                if ((this.marcas_cochesRowDeleted != null)) {
+                    this.marcas_cochesRowDeleted(this, new marcas_cochesRowChangeEvent(((marcas_cochesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2737,14 +2076,14 @@ namespace Rentacar {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.vehiculos_modelosRowDeleting != null)) {
-                    this.vehiculos_modelosRowDeleting(this, new vehiculos_modelosRowChangeEvent(((vehiculos_modelosRow)(e.Row)), e.Action));
+                if ((this.marcas_cochesRowDeleting != null)) {
+                    this.marcas_cochesRowDeleting(this, new marcas_cochesRowChangeEvent(((marcas_cochesRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Removevehiculos_modelosRow(vehiculos_modelosRow row) {
+            public void Removemarcas_cochesRow(marcas_cochesRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -2771,7 +2110,7 @@ namespace Rentacar {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "vehiculos_modelosDataTable";
+                attribute2.FixedValue = "marcas_cochesDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -3058,17 +2397,6 @@ namespace Rentacar {
             public void Setmodelo_tipologiaNull() {
                 this[this.tablemodelo.modelo_tipologiaColumn] = global::System.Convert.DBNull;
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public vehiculoRow[] GetvehiculoRows() {
-                if ((this.Table.ChildRelations["FK_vehiculo_modelo"] == null)) {
-                    return new vehiculoRow[0];
-                }
-                else {
-                    return ((vehiculoRow[])(base.GetChildRows(this.Table.ChildRelations["FK_vehiculo_modelo"])));
-                }
-            }
         }
         
         /// <summary>
@@ -3185,22 +2513,6 @@ namespace Rentacar {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int modelo {
-                get {
-                    try {
-                        return ((int)(this[this.tablevehiculo.modeloColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'modelo\' de la tabla \'vehiculo\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablevehiculo.modeloColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string vehiculo_tipologia {
                 get {
                     try {
@@ -3249,17 +2561,6 @@ namespace Rentacar {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public modeloRow modeloRow {
-                get {
-                    return ((modeloRow)(this.GetParentRow(this.Table.ParentRelations["FK_vehiculo_modelo"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_vehiculo_modelo"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool Isvehiculo_colorNull() {
                 return this.IsNull(this.tablevehiculo.vehiculo_colorColumn);
             }
@@ -3268,18 +2569,6 @@ namespace Rentacar {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void Setvehiculo_colorNull() {
                 this[this.tablevehiculo.vehiculo_colorColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsmodeloNull() {
-                return this.IsNull(this.tablevehiculo.modeloColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetmodeloNull() {
-                this[this.tablevehiculo.modeloColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3316,92 +2605,6 @@ namespace Rentacar {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void Setvehiculo_modeloNull() {
                 this[this.tablevehiculo.vehiculo_modeloColumn] = global::System.Convert.DBNull;
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
-        public partial class marcasRow : global::System.Data.DataRow {
-            
-            private marcasDataTable tablemarcas;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal marcasRow(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tablemarcas = ((marcasDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string modelo_marca {
-                get {
-                    try {
-                        return ((string)(this[this.tablemarcas.modelo_marcaColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'modelo_marca\' de la tabla \'marcas\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablemarcas.modelo_marcaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Ismodelo_marcaNull() {
-                return this.IsNull(this.tablemarcas.modelo_marcaColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setmodelo_marcaNull() {
-                this[this.tablemarcas.modelo_marcaColumn] = global::System.Convert.DBNull;
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
-        public partial class modelos_cochesRow : global::System.Data.DataRow {
-            
-            private modelos_cochesDataTable tablemodelos_coches;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal modelos_cochesRow(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tablemodelos_coches = ((modelos_cochesDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string modelo_coche {
-                get {
-                    try {
-                        return ((string)(this[this.tablemodelos_coches.modelo_cocheColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'modelo_coche\' de la tabla \'modelos_coches\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablemodelos_coches.modelo_cocheColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Ismodelo_cocheNull() {
-                return this.IsNull(this.tablemodelos_coches.modelo_cocheColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setmodelo_cocheNull() {
-                this[this.tablemodelos_coches.modelo_cocheColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -3451,60 +2654,15 @@ namespace Rentacar {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class vehiculos_modelosRow : global::System.Data.DataRow {
+        public partial class marcas_cochesRow : global::System.Data.DataRow {
             
-            private vehiculos_modelosDataTable tablevehiculos_modelos;
+            private marcas_cochesDataTable tablemarcas_coches;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal vehiculos_modelosRow(global::System.Data.DataRowBuilder rb) : 
+            internal marcas_cochesRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablevehiculos_modelos = ((vehiculos_modelosDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string vehiculo_matricula {
-                get {
-                    return ((string)(this[this.tablevehiculos_modelos.vehiculo_matriculaColumn]));
-                }
-                set {
-                    this[this.tablevehiculos_modelos.vehiculo_matriculaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string vehiculo_color {
-                get {
-                    try {
-                        return ((string)(this[this.tablevehiculos_modelos.vehiculo_colorColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'vehiculo_color\' de la tabla \'vehiculos_modelos\' es DBNull" +
-                                ".", e);
-                    }
-                }
-                set {
-                    this[this.tablevehiculos_modelos.vehiculo_colorColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string modelo_tipologia {
-                get {
-                    try {
-                        return ((string)(this[this.tablevehiculos_modelos.modelo_tipologiaColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'modelo_tipologia\' de la tabla \'vehiculos_modelos\' es DBNu" +
-                                "ll.", e);
-                    }
-                }
-                set {
-                    this[this.tablevehiculos_modelos.modelo_tipologiaColumn] = value;
-                }
+                this.tablemarcas_coches = ((marcas_cochesDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3512,79 +2670,27 @@ namespace Rentacar {
             public string modelo_marca {
                 get {
                     try {
-                        return ((string)(this[this.tablevehiculos_modelos.modelo_marcaColumn]));
+                        return ((string)(this[this.tablemarcas_coches.modelo_marcaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'modelo_marca\' de la tabla \'vehiculos_modelos\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'modelo_marca\' de la tabla \'marcas_coches\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablevehiculos_modelos.modelo_marcaColumn] = value;
+                    this[this.tablemarcas_coches.modelo_marcaColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string modelo_coche {
-                get {
-                    try {
-                        return ((string)(this[this.tablevehiculos_modelos.modelo_cocheColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'modelo_coche\' de la tabla \'vehiculos_modelos\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablevehiculos_modelos.modelo_cocheColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Isvehiculo_colorNull() {
-                return this.IsNull(this.tablevehiculos_modelos.vehiculo_colorColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setvehiculo_colorNull() {
-                this[this.tablevehiculos_modelos.vehiculo_colorColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Ismodelo_tipologiaNull() {
-                return this.IsNull(this.tablevehiculos_modelos.modelo_tipologiaColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setmodelo_tipologiaNull() {
-                this[this.tablevehiculos_modelos.modelo_tipologiaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool Ismodelo_marcaNull() {
-                return this.IsNull(this.tablevehiculos_modelos.modelo_marcaColumn);
+                return this.IsNull(this.tablemarcas_coches.modelo_marcaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void Setmodelo_marcaNull() {
-                this[this.tablevehiculos_modelos.modelo_marcaColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Ismodelo_cocheNull() {
-                return this.IsNull(this.tablevehiculos_modelos.modelo_cocheColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setmodelo_cocheNull() {
-                this[this.tablevehiculos_modelos.modelo_cocheColumn] = global::System.Convert.DBNull;
+                this[this.tablemarcas_coches.modelo_marcaColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -3728,74 +2834,6 @@ namespace Rentacar {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class marcasRowChangeEvent : global::System.EventArgs {
-            
-            private marcasRow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public marcasRowChangeEvent(marcasRow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public marcasRow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class modelos_cochesRowChangeEvent : global::System.EventArgs {
-            
-            private modelos_cochesRow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public modelos_cochesRowChangeEvent(modelos_cochesRow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public modelos_cochesRow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public class tipologiasRowChangeEvent : global::System.EventArgs {
             
             private tipologiasRow eventRow;
@@ -3830,22 +2868,22 @@ namespace Rentacar {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class vehiculos_modelosRowChangeEvent : global::System.EventArgs {
+        public class marcas_cochesRowChangeEvent : global::System.EventArgs {
             
-            private vehiculos_modelosRow eventRow;
+            private marcas_cochesRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public vehiculos_modelosRowChangeEvent(vehiculos_modelosRow row, global::System.Data.DataRowAction action) {
+            public marcas_cochesRowChangeEvent(marcas_cochesRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public vehiculos_modelosRow Row {
+            public marcas_cochesRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -5068,20 +4106,17 @@ SELECT modelo_coche, modelo_marca, modelo_tipologia, modelo_id FROM modelo WHERE
             tableMapping.DataSetTable = "vehiculo";
             tableMapping.ColumnMappings.Add("vehiculo_matricula", "vehiculo_matricula");
             tableMapping.ColumnMappings.Add("vehiculo_color", "vehiculo_color");
-            tableMapping.ColumnMappings.Add("modelo", "modelo");
             tableMapping.ColumnMappings.Add("vehiculo_tipologia", "vehiculo_tipologia");
             tableMapping.ColumnMappings.Add("vehiculo_marca", "vehiculo_marca");
             tableMapping.ColumnMappings.Add("vehiculo_modelo", "vehiculo_modelo");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [vehiculo] WHERE (([vehiculo_matricula] = @Original_vehiculo_matricula) AND ((@IsNull_vehiculo_color = 1 AND [vehiculo_color] IS NULL) OR ([vehiculo_color] = @Original_vehiculo_color)) AND ((@IsNull_modelo = 1 AND [modelo] IS NULL) OR ([modelo] = @Original_modelo)) AND ((@IsNull_vehiculo_marca = 1 AND [vehiculo_marca] IS NULL) OR ([vehiculo_marca] = @Original_vehiculo_marca)) AND ((@IsNull_vehiculo_modelo = 1 AND [vehiculo_modelo] IS NULL) OR ([vehiculo_modelo] = @Original_vehiculo_modelo)) AND ((@IsNull_vehiculo_tipologia = 1 AND [vehiculo_tipologia] IS NULL) OR ([vehiculo_tipologia] = @Original_vehiculo_tipologia)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [vehiculo] WHERE (([vehiculo_matricula] = @Original_vehiculo_matricula) AND ((@IsNull_vehiculo_color = 1 AND [vehiculo_color] IS NULL) OR ([vehiculo_color] = @Original_vehiculo_color)) AND ((@IsNull_vehiculo_marca = 1 AND [vehiculo_marca] IS NULL) OR ([vehiculo_marca] = @Original_vehiculo_marca)) AND ((@IsNull_vehiculo_modelo = 1 AND [vehiculo_modelo] IS NULL) OR ([vehiculo_modelo] = @Original_vehiculo_modelo)) AND ((@IsNull_vehiculo_tipologia = 1 AND [vehiculo_tipologia] IS NULL) OR ([vehiculo_tipologia] = @Original_vehiculo_tipologia)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_vehiculo_matricula", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_matricula", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_vehiculo_color", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_color", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_vehiculo_color", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_color", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_modelo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "modelo", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_modelo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "modelo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_vehiculo_marca", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_marca", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_vehiculo_marca", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_marca", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_vehiculo_modelo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_modelo", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -5090,31 +4125,27 @@ SELECT modelo_coche, modelo_marca, modelo_tipologia, modelo_id FROM modelo WHERE
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_vehiculo_tipologia", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_tipologia", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [vehiculo] ([vehiculo_matricula], [vehiculo_color], [modelo], [vehiculo_marca], [vehiculo_modelo], [vehiculo_tipologia]) VALUES (@vehiculo_matricula, @vehiculo_color, @modelo, @vehiculo_marca, @vehiculo_modelo, @vehiculo_tipologia);
-SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_modelo, vehiculo_tipologia FROM vehiculo WHERE (vehiculo_matricula = @vehiculo_matricula)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [vehiculo] ([vehiculo_matricula], [vehiculo_color], [vehiculo_marca], [vehiculo_modelo], [vehiculo_tipologia]) VALUES (@vehiculo_matricula, @vehiculo_color, @vehiculo_marca, @vehiculo_modelo, @vehiculo_tipologia);
+SELECT vehiculo_matricula, vehiculo_color, vehiculo_marca, vehiculo_modelo, vehiculo_tipologia FROM vehiculo WHERE (vehiculo_matricula = @vehiculo_matricula)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@vehiculo_matricula", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_matricula", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@vehiculo_color", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_color", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@modelo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "modelo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@vehiculo_marca", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_marca", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@vehiculo_modelo", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_modelo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@vehiculo_tipologia", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_tipologia", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [vehiculo] SET [vehiculo_matricula] = @vehiculo_matricula, [vehiculo_color] = @vehiculo_color, [modelo] = @modelo, [vehiculo_marca] = @vehiculo_marca, [vehiculo_modelo] = @vehiculo_modelo, [vehiculo_tipologia] = @vehiculo_tipologia WHERE (([vehiculo_matricula] = @Original_vehiculo_matricula) AND ((@IsNull_vehiculo_color = 1 AND [vehiculo_color] IS NULL) OR ([vehiculo_color] = @Original_vehiculo_color)) AND ((@IsNull_modelo = 1 AND [modelo] IS NULL) OR ([modelo] = @Original_modelo)) AND ((@IsNull_vehiculo_marca = 1 AND [vehiculo_marca] IS NULL) OR ([vehiculo_marca] = @Original_vehiculo_marca)) AND ((@IsNull_vehiculo_modelo = 1 AND [vehiculo_modelo] IS NULL) OR ([vehiculo_modelo] = @Original_vehiculo_modelo)) AND ((@IsNull_vehiculo_tipologia = 1 AND [vehiculo_tipologia] IS NULL) OR ([vehiculo_tipologia] = @Original_vehiculo_tipologia)));
-SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_modelo, vehiculo_tipologia FROM vehiculo WHERE (vehiculo_matricula = @vehiculo_matricula)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [vehiculo] SET [vehiculo_matricula] = @vehiculo_matricula, [vehiculo_color] = @vehiculo_color, [vehiculo_marca] = @vehiculo_marca, [vehiculo_modelo] = @vehiculo_modelo, [vehiculo_tipologia] = @vehiculo_tipologia WHERE (([vehiculo_matricula] = @Original_vehiculo_matricula) AND ((@IsNull_vehiculo_color = 1 AND [vehiculo_color] IS NULL) OR ([vehiculo_color] = @Original_vehiculo_color)) AND ((@IsNull_vehiculo_marca = 1 AND [vehiculo_marca] IS NULL) OR ([vehiculo_marca] = @Original_vehiculo_marca)) AND ((@IsNull_vehiculo_modelo = 1 AND [vehiculo_modelo] IS NULL) OR ([vehiculo_modelo] = @Original_vehiculo_modelo)) AND ((@IsNull_vehiculo_tipologia = 1 AND [vehiculo_tipologia] IS NULL) OR ([vehiculo_tipologia] = @Original_vehiculo_tipologia)));
+SELECT vehiculo_matricula, vehiculo_color, vehiculo_marca, vehiculo_modelo, vehiculo_tipologia FROM vehiculo WHERE (vehiculo_matricula = @vehiculo_matricula)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@vehiculo_matricula", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_matricula", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@vehiculo_color", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_color", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@modelo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "modelo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@vehiculo_marca", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_marca", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@vehiculo_modelo", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_modelo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@vehiculo_tipologia", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_tipologia", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_vehiculo_matricula", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_matricula", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_vehiculo_color", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_color", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_vehiculo_color", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_color", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_modelo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "modelo", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_modelo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "modelo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_vehiculo_marca", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_marca", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_vehiculo_marca", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_marca", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_vehiculo_modelo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "vehiculo_modelo", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -5136,8 +4167,8 @@ SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_mode
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_model" +
-                "o, vehiculo_tipologia FROM vehiculo";
+            this._commandCollection[0].CommandText = "SELECT vehiculo_matricula, vehiculo_color, vehiculo_marca, vehiculo_modelo, vehic" +
+                "ulo_tipologia FROM vehiculo";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -5198,7 +4229,7 @@ SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_mode
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_vehiculo_matricula, string Original_vehiculo_color, global::System.Nullable<int> Original_modelo, string Original_vehiculo_marca, string Original_vehiculo_modelo, string Original_vehiculo_tipologia) {
+        public virtual int Delete(string Original_vehiculo_matricula, string Original_vehiculo_color, string Original_vehiculo_marca, string Original_vehiculo_modelo, string Original_vehiculo_tipologia) {
             if ((Original_vehiculo_matricula == null)) {
                 throw new global::System.ArgumentNullException("Original_vehiculo_matricula");
             }
@@ -5213,37 +4244,29 @@ SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_mode
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_vehiculo_color));
             }
-            if ((Original_modelo.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_modelo.Value));
-            }
-            else {
+            if ((Original_vehiculo_marca == null)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            if ((Original_vehiculo_marca == null)) {
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_vehiculo_marca));
+            }
+            if ((Original_vehiculo_modelo == null)) {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_vehiculo_marca));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_vehiculo_modelo));
             }
-            if ((Original_vehiculo_modelo == null)) {
+            if ((Original_vehiculo_tipologia == null)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_vehiculo_modelo));
-            }
-            if ((Original_vehiculo_tipologia == null)) {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_vehiculo_tipologia));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_vehiculo_tipologia));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -5265,7 +4288,7 @@ SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_mode
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string vehiculo_matricula, string vehiculo_color, global::System.Nullable<int> modelo, string vehiculo_marca, string vehiculo_modelo, string vehiculo_tipologia) {
+        public virtual int Insert(string vehiculo_matricula, string vehiculo_color, string vehiculo_marca, string vehiculo_modelo, string vehiculo_tipologia) {
             if ((vehiculo_matricula == null)) {
                 throw new global::System.ArgumentNullException("vehiculo_matricula");
             }
@@ -5278,29 +4301,23 @@ SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_mode
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(vehiculo_color));
             }
-            if ((modelo.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((int)(modelo.Value));
-            }
-            else {
+            if ((vehiculo_marca == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            if ((vehiculo_marca == null)) {
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(vehiculo_marca));
+            }
+            if ((vehiculo_modelo == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(vehiculo_marca));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(vehiculo_modelo));
             }
-            if ((vehiculo_modelo == null)) {
+            if ((vehiculo_tipologia == null)) {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(vehiculo_modelo));
-            }
-            if ((vehiculo_tipologia == null)) {
-                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(vehiculo_tipologia));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(vehiculo_tipologia));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -5322,7 +4339,7 @@ SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_mode
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string vehiculo_matricula, string vehiculo_color, global::System.Nullable<int> modelo, string vehiculo_marca, string vehiculo_modelo, string vehiculo_tipologia, string Original_vehiculo_matricula, string Original_vehiculo_color, global::System.Nullable<int> Original_modelo, string Original_vehiculo_marca, string Original_vehiculo_modelo, string Original_vehiculo_tipologia) {
+        public virtual int Update(string vehiculo_matricula, string vehiculo_color, string vehiculo_marca, string vehiculo_modelo, string vehiculo_tipologia, string Original_vehiculo_matricula, string Original_vehiculo_color, string Original_vehiculo_marca, string Original_vehiculo_modelo, string Original_vehiculo_tipologia) {
             if ((vehiculo_matricula == null)) {
                 throw new global::System.ArgumentNullException("vehiculo_matricula");
             }
@@ -5335,75 +4352,61 @@ SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_mode
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(vehiculo_color));
             }
-            if ((modelo.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(modelo.Value));
-            }
-            else {
+            if ((vehiculo_marca == null)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            if ((vehiculo_marca == null)) {
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(vehiculo_marca));
+            }
+            if ((vehiculo_modelo == null)) {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(vehiculo_marca));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(vehiculo_modelo));
             }
-            if ((vehiculo_modelo == null)) {
+            if ((vehiculo_tipologia == null)) {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(vehiculo_modelo));
-            }
-            if ((vehiculo_tipologia == null)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(vehiculo_tipologia));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(vehiculo_tipologia));
             }
             if ((Original_vehiculo_matricula == null)) {
                 throw new global::System.ArgumentNullException("Original_vehiculo_matricula");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_vehiculo_matricula));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_vehiculo_matricula));
             }
             if ((Original_vehiculo_color == null)) {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_vehiculo_color));
-            }
-            if ((Original_modelo.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_modelo.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_vehiculo_color));
             }
             if ((Original_vehiculo_marca == null)) {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_vehiculo_marca));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_vehiculo_marca));
             }
             if ((Original_vehiculo_modelo == null)) {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_vehiculo_modelo));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_vehiculo_modelo));
             }
             if ((Original_vehiculo_tipologia == null)) {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_vehiculo_tipologia));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_vehiculo_tipologia));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -5425,342 +4428,8 @@ SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_mode
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string vehiculo_color, global::System.Nullable<int> modelo, string vehiculo_marca, string vehiculo_modelo, string vehiculo_tipologia, string Original_vehiculo_matricula, string Original_vehiculo_color, global::System.Nullable<int> Original_modelo, string Original_vehiculo_marca, string Original_vehiculo_modelo, string Original_vehiculo_tipologia) {
-            return this.Update(Original_vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_modelo, vehiculo_tipologia, Original_vehiculo_matricula, Original_vehiculo_color, Original_modelo, Original_vehiculo_marca, Original_vehiculo_modelo, Original_vehiculo_tipologia);
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class marcasTableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
-        
-        private global::System.Data.SqlClient.SqlConnection _connection;
-        
-        private global::System.Data.SqlClient.SqlTransaction _transaction;
-        
-        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public marcasTableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        internal global::System.Data.SqlClient.SqlConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        internal global::System.Data.SqlClient.SqlTransaction Transaction {
-            get {
-                return this._transaction;
-            }
-            set {
-                this._transaction = value;
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    this.CommandCollection[i].Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.DeleteCommand != null))) {
-                    this.Adapter.DeleteCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.InsertCommand != null))) {
-                    this.Adapter.InsertCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.UpdateCommand != null))) {
-                    this.Adapter.UpdateCommand.Transaction = this._transaction;
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "marcas";
-            tableMapping.ColumnMappings.Add("modelo_marca", "modelo_marca");
-            this._adapter.TableMappings.Add(tableMapping);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Rentacar.Properties.Settings.Default.dbRentacarConnectionString;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
-            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT modelo_marca FROM dbo.marcas";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dbRentacarDataSet.marcasDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dbRentacarDataSet.marcasDataTable GetData() {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            dbRentacarDataSet.marcasDataTable dataTable = new dbRentacarDataSet.marcasDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class modelos_cochesTableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
-        
-        private global::System.Data.SqlClient.SqlConnection _connection;
-        
-        private global::System.Data.SqlClient.SqlTransaction _transaction;
-        
-        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public modelos_cochesTableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        internal global::System.Data.SqlClient.SqlConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        internal global::System.Data.SqlClient.SqlTransaction Transaction {
-            get {
-                return this._transaction;
-            }
-            set {
-                this._transaction = value;
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    this.CommandCollection[i].Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.DeleteCommand != null))) {
-                    this.Adapter.DeleteCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.InsertCommand != null))) {
-                    this.Adapter.InsertCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.UpdateCommand != null))) {
-                    this.Adapter.UpdateCommand.Transaction = this._transaction;
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "modelos_coches";
-            tableMapping.ColumnMappings.Add("modelo_coche", "modelo_coche");
-            this._adapter.TableMappings.Add(tableMapping);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Rentacar.Properties.Settings.Default.dbRentacarConnectionString;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
-            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT modelo_coche FROM dbo.modelos_coches";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dbRentacarDataSet.modelos_cochesDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dbRentacarDataSet.modelos_cochesDataTable GetData() {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            dbRentacarDataSet.modelos_cochesDataTable dataTable = new dbRentacarDataSet.modelos_cochesDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
+        public virtual int Update(string vehiculo_color, string vehiculo_marca, string vehiculo_modelo, string vehiculo_tipologia, string Original_vehiculo_matricula, string Original_vehiculo_color, string Original_vehiculo_marca, string Original_vehiculo_modelo, string Original_vehiculo_tipologia) {
+            return this.Update(Original_vehiculo_matricula, vehiculo_color, vehiculo_marca, vehiculo_modelo, vehiculo_tipologia, Original_vehiculo_matricula, Original_vehiculo_color, Original_vehiculo_marca, Original_vehiculo_modelo, Original_vehiculo_tipologia);
         }
     }
     
@@ -5940,7 +4609,7 @@ SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_mode
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class vehiculos_modelosTableAdapter : global::System.ComponentModel.Component {
+    public partial class marcas_cochesTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -5954,7 +4623,7 @@ SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_mode
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public vehiculos_modelosTableAdapter() {
+        public marcas_cochesTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -6051,12 +4720,8 @@ SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_mode
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "vehiculos_modelos";
-            tableMapping.ColumnMappings.Add("vehiculo_matricula", "vehiculo_matricula");
-            tableMapping.ColumnMappings.Add("vehiculo_color", "vehiculo_color");
-            tableMapping.ColumnMappings.Add("modelo_tipologia", "modelo_tipologia");
+            tableMapping.DataSetTable = "marcas_coches";
             tableMapping.ColumnMappings.Add("modelo_marca", "modelo_marca");
-            tableMapping.ColumnMappings.Add("modelo_coche", "modelo_coche");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -6073,8 +4738,7 @@ SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_mode
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT vehiculo_matricula, vehiculo_color, modelo_tipologia, modelo_marca, modelo" +
-                "_coche FROM dbo.vehiculos_modelos";
+            this._commandCollection[0].CommandText = "SELECT modelo_marca FROM dbo.marcas_coches";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -6082,7 +4746,7 @@ SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_mode
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dbRentacarDataSet.vehiculos_modelosDataTable dataTable) {
+        public virtual int Fill(dbRentacarDataSet.marcas_cochesDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -6095,9 +4759,9 @@ SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_mode
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dbRentacarDataSet.vehiculos_modelosDataTable GetData() {
+        public virtual dbRentacarDataSet.marcas_cochesDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            dbRentacarDataSet.vehiculos_modelosDataTable dataTable = new dbRentacarDataSet.vehiculos_modelosDataTable();
+            dbRentacarDataSet.marcas_cochesDataTable dataTable = new dbRentacarDataSet.marcas_cochesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -6265,21 +4929,21 @@ SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_mode
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateUpdatedRows(dbRentacarDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._modeloTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.modelo.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._modeloTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._clienteTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.cliente.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._clienteTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._modeloTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.modelo.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._modeloTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -6311,19 +4975,19 @@ SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_mode
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateInsertedRows(dbRentacarDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._modeloTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.modelo.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._modeloTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._clienteTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.cliente.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._clienteTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._modeloTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.modelo.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._modeloTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -6369,19 +5033,19 @@ SELECT vehiculo_matricula, vehiculo_color, modelo, vehiculo_marca, vehiculo_mode
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._clienteTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.cliente.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._clienteTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._modeloTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.modelo.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._modeloTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._clienteTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.cliente.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._clienteTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\2DAM\\Dise-o\\Rentacar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6C602C4-265D-4E3B-B989-84219BA0AF1A}|Rentacar.csproj|e:\\2dam\\dise-o\\rentacar\\formvehiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6C602C4-265D-4E3B-B989-84219BA0AF1A}|Rentacar.csproj|solutionrelative:formvehiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E6C602C4-265D-4E3B-B989-84219BA0AF1A}|Rentacar.csproj|e:\\2dam\\dise-o\\rentacar\\formvehiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6C602C4-265D-4E3B-B989-84219BA0AF1A}|Rentacar.csproj|solutionrelative:formvehiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6C602C4-265D-4E3B-B989-84219BA0AF1A}|Rentacar.csproj|E:\\2DAM\\Dise-o\\Rentacar\\formvehiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6C602C4-265D-4E3B-B989-84219BA0AF1A}|Rentacar.csproj|solutionrelative:formvehiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6C602C4-265D-4E3B-B989-84219BA0AF1A}|Rentacar.csproj|E:\\2DAM\\Dise-o\\Rentacar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,19 +43,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormVehiculos.cs",
-              "DocumentMoniker": "E:\\2DAM\\Dise-o\\Rentacar\\FormVehiculos.cs",
-              "RelativeDocumentMoniker": "FormVehiculos.cs",
-              "ToolTip": "E:\\2DAM\\Dise-o\\Rentacar\\FormVehiculos.cs*",
-              "RelativeToolTip": "FormVehiculos.cs*",
-              "ViewState": "AgIAADcAAAAAAAAAAAAmwEkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:28:59.935Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "FormVehiculos.cs [Dise\u00F1o]",
               "DocumentMoniker": "E:\\2DAM\\Dise-o\\Rentacar\\FormVehiculos.cs",
               "RelativeDocumentMoniker": "FormVehiculos.cs",
@@ -67,6 +54,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormVehiculos.cs",
+              "DocumentMoniker": "E:\\2DAM\\Dise-o\\Rentacar\\FormVehiculos.cs",
+              "RelativeDocumentMoniker": "FormVehiculos.cs",
+              "ToolTip": "E:\\2DAM\\Dise-o\\Rentacar\\FormVehiculos.cs*",
+              "RelativeToolTip": "FormVehiculos.cs*",
+              "ViewState": "AgIAAHsAAAAAAAAAAAApwI8AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T12:28:59.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "E:\\2DAM\\Dise-o\\Rentacar\\Form1.cs",
@@ -75,8 +75,7 @@
               "RelativeToolTip": "Form1.cs",
               "ViewState": "AgIAABEAAAAAAAAAAADwvxEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T23:05:19.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T23:05:19.767Z"
             },
             {
               "$type": "Document",
@@ -87,8 +86,7 @@
               "ToolTip": "E:\\2DAM\\Dise-o\\Rentacar\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T22:17:31.713Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-11-25T22:17:31.713Z"
             },
             {
               "$type": "Document",
@@ -100,8 +98,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T22:44:15.947Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T22:44:15.947Z"
             }
           ]
         }
