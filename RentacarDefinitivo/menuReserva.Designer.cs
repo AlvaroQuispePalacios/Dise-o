@@ -83,7 +83,7 @@
             this.tableAdapterManager.reservaTableAdapter = this.reservaTableAdapter;
             this.tableAdapterManager.UpdateOrder = RentacarDefinitivo.rentacarDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.usuarioTableAdapter = null;
-            this.tableAdapterManager.vehicleTableAdapter = null;
+            //this.tableAdapterManager.vehicleTableAdapter = null;
             // 
             // reservaBindingNavigator
             // 

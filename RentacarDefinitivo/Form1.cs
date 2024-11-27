@@ -33,8 +33,8 @@ namespace RentacarDefinitivo
 
         private void vehicleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            menuVehiculos mnVehiculos = new menuVehiculos();
-            mnVehiculos.ShowDialog();
+            //menuVehiculos mnVehiculos = new menuVehiculos();
+            //mnVehiculos.ShowDialog();
         }
 
         private void reservaToolStripMenuItem_Click(object sender, EventArgs e)

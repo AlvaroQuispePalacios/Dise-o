@@ -88,12 +88,6 @@
     <Compile Include="menuReserva.Designer.cs">
       <DependentUpon>menuReserva.cs</DependentUpon>
     </Compile>
-    <Compile Include="menuVehiculos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="menuVehiculos.Designer.cs">
-      <DependentUpon>menuVehiculos.cs</DependentUpon>
-    </Compile>
     <Compile Include="nuevoDisenyo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,9 +130,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="menuReserva.resx">
       <DependentUpon>menuReserva.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="menuVehiculos.resx">
-      <DependentUpon>menuVehiculos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="nuevoDisenyo.resx">
       <DependentUpon>nuevoDisenyo.cs</DependentUpon>

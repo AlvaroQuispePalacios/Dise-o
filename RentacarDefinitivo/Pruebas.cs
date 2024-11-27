@@ -20,7 +20,7 @@ namespace RentacarDefinitivo
         private void Pruebas_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'rentacarDataSet.vehicle_modelo' Puede moverla o quitarla según sea necesario.
-            this.vehicle_modeloTableAdapter.Fill(this.rentacarDataSet.vehicle_modelo);
+            //this.vehicle_modeloTableAdapter.Fill(this.rentacarDataSet.vehicle_modelo);
 
         }
     }

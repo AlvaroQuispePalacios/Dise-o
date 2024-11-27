@@ -27,10 +27,10 @@ namespace RentacarDefinitivo
 
         private void FormVehiculo_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'rentacarDataSet1.lista_marcas_coches' Puede moverla o quitarla según sea necesario.
+            this.lista_marcas_cochesTableAdapter.Fill(this.rentacarDataSet.lista_marcas_coches);
             // TODO: esta línea de código carga datos en la tabla 'rentacarDataSet.modelo' Puede moverla o quitarla según sea necesario.
             this.modeloTableAdapter.Fill(this.rentacarDataSet.modelo);
-            // TODO: esta línea de código carga datos en la tabla 'rentacarDataSet.lista_modelo_coches' Puede moverla o quitarla según sea necesario.
-            this.lista_modelo_cochesTableAdapter.Fill(this.rentacarDataSet.lista_modelo_coches);
             // TODO: esta línea de código carga datos en la tabla 'rentacarDataSet.lista_marcas_coches' Puede moverla o quitarla según sea necesario.
             this.lista_marcas_cochesTableAdapter.Fill(this.rentacarDataSet.lista_marcas_coches);
             // TODO: esta línea de código carga datos en la tabla 'rentacarDataSet.lista_tipologia_coches' Puede moverla o quitarla según sea necesario.
@@ -65,6 +65,7 @@ namespace RentacarDefinitivo
         {
             MensajeBtnConfirmar("Eliminar Registro");
             MostrarPanelBot();
+            DeshabilitarBotonExceptoSeleccionado(btnEliminarRegistro.Text);
         }
 
         private void btnAgregarRegistro_Click(object sender, EventArgs e)
@@ -72,14 +73,35 @@ namespace RentacarDefinitivo
             this.vehiculoBindingSource.AddNew();
             MensajeBtnConfirmar("Agregar Registro");
             MostrarPanelBot();
+            DeshabilitarBotonExceptoSeleccionado(btnAgregarRegistro.Text);
+
         }
 
         private void btnModificarRegistro_Click(object sender, EventArgs e)
         {
             MensajeBtnConfirmar("Modificar Registro");
             this.MostrarPanelBot();
+            DeshabilitarBotonExceptoSeleccionado(btnModificarRegistro.Text);
+
         }
 
+        private void DeshabilitarBotonExceptoSeleccionado(string botonTexto)
+        {
+            foreach(Control item in tableLayoutPanelContenedorTopBotones.Controls)
+            {
+                if (!item.Text.Equals(botonTexto)){
+                    item.Enabled = false;
+                }
+            }
+        }
+
+        private void HabilitarBotonesTop()
+        {
+            foreach (Control item in tableLayoutPanelContenedorTopBotones.Controls)
+            {
+                item.Enabled = true;
+            }
+        }
 
         private void OcultarPanelBot()
         {
@@ -125,9 +147,20 @@ namespace RentacarDefinitivo
                 }
 
             }
-
+            HabilitarBotonesTop();
             OcultarPanelBot();
+
         }
 
+        private void cbTipologia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.listamarcascochesBindingSource.Filter = $"tipologia='{cbTipologia.Text}'";
+            this.modeloBindingSource.Filter = $"tipologia='{cbTipologia.Text}'";
+        }
+
+        private void cbMarca_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.modeloBindingSource.Filter = $"tipologia='{cbTipologia.Text}' AND marca='{cbMarca.Text}'";
+        }
     }
 }

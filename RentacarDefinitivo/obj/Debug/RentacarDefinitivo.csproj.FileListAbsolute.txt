@@ -9,7 +9,6 @@ C:\Users\ciclesgs\Desktop\2DAM\Diseño\RentacarDefinitivo\obj\Debug\RentacarDefi
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.exe
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.pdb
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.menuClientes.resources
-C:\Users\ciclesgs\Desktop\2DAM\Diseño\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.menuVehiculos.resources
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.menuCargos.resources
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.menuReserva.resources
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.menuContrato.resources

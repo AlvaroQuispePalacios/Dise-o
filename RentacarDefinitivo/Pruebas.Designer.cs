@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pruebas));
             this.rentacarDataSet = new RentacarDefinitivo.rentacarDataSet();
             this.vehicle_modeloBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vehicle_modeloTableAdapter = new RentacarDefinitivo.rentacarDataSetTableAdapters.vehicle_modeloTableAdapter();
+            //this.vehicle_modeloTableAdapter = new RentacarDefinitivo.rentacarDataSetTableAdapters.vehicle_modeloTableAdapter();
             this.tableAdapterManager = new RentacarDefinitivo.rentacarDataSetTableAdapters.TableAdapterManager();
             this.vehicle_modeloBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -72,7 +72,7 @@
             // 
             // vehicle_modeloTableAdapter
             // 
-            this.vehicle_modeloTableAdapter.ClearBeforeFill = true;
+            //this.vehicle_modeloTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
@@ -86,7 +86,7 @@
             this.tableAdapterManager.restriccionesTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = RentacarDefinitivo.rentacarDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.usuarioTableAdapter = null;
-            this.tableAdapterManager.vehicleTableAdapter = null;
+            //this.tableAdapterManager.vehicleTableAdapter = null;
             // 
             // vehicle_modeloBindingNavigator
             // 
@@ -284,7 +284,7 @@
 
         private rentacarDataSet rentacarDataSet;
         private System.Windows.Forms.BindingSource vehicle_modeloBindingSource;
-        private rentacarDataSetTableAdapters.vehicle_modeloTableAdapter vehicle_modeloTableAdapter;
+        //private rentacarDataSetTableAdapters.vehicle_modeloTableAdapter vehicle_modeloTableAdapter;
         private rentacarDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator vehicle_modeloBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
