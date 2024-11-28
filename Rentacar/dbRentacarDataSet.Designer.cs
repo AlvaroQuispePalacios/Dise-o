@@ -1912,6 +1912,8 @@ namespace Rentacar {
             
             private global::System.Data.DataColumn columnmodelo_marca;
             
+            private global::System.Data.DataColumn columnmodelo_tipologia;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public marcas_cochesDataTable() {
@@ -1955,6 +1957,14 @@ namespace Rentacar {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn modelo_tipologiaColumn {
+                get {
+                    return this.columnmodelo_tipologia;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1990,10 +2000,11 @@ namespace Rentacar {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public marcas_cochesRow Addmarcas_cochesRow(string modelo_marca) {
+            public marcas_cochesRow Addmarcas_cochesRow(string modelo_marca, string modelo_tipologia) {
                 marcas_cochesRow rowmarcas_cochesRow = ((marcas_cochesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        modelo_marca};
+                        modelo_marca,
+                        modelo_tipologia};
                 rowmarcas_cochesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowmarcas_cochesRow);
                 return rowmarcas_cochesRow;
@@ -2017,6 +2028,7 @@ namespace Rentacar {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
                 this.columnmodelo_marca = base.Columns["modelo_marca"];
+                this.columnmodelo_tipologia = base.Columns["modelo_tipologia"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2024,7 +2036,10 @@ namespace Rentacar {
             private void InitClass() {
                 this.columnmodelo_marca = new global::System.Data.DataColumn("modelo_marca", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnmodelo_marca);
+                this.columnmodelo_tipologia = new global::System.Data.DataColumn("modelo_tipologia", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmodelo_tipologia);
                 this.columnmodelo_marca.MaxLength = 50;
+                this.columnmodelo_tipologia.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2683,6 +2698,22 @@ namespace Rentacar {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string modelo_tipologia {
+                get {
+                    try {
+                        return ((string)(this[this.tablemarcas_coches.modelo_tipologiaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'modelo_tipologia\' de la tabla \'marcas_coches\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablemarcas_coches.modelo_tipologiaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool Ismodelo_marcaNull() {
                 return this.IsNull(this.tablemarcas_coches.modelo_marcaColumn);
             }
@@ -2691,6 +2722,18 @@ namespace Rentacar {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void Setmodelo_marcaNull() {
                 this[this.tablemarcas_coches.modelo_marcaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Ismodelo_tipologiaNull() {
+                return this.IsNull(this.tablemarcas_coches.modelo_tipologiaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setmodelo_tipologiaNull() {
+                this[this.tablemarcas_coches.modelo_tipologiaColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -4722,6 +4765,7 @@ SELECT vehiculo_matricula, vehiculo_color, vehiculo_marca, vehiculo_modelo, vehi
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "marcas_coches";
             tableMapping.ColumnMappings.Add("modelo_marca", "modelo_marca");
+            tableMapping.ColumnMappings.Add("modelo_tipologia", "modelo_tipologia");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -4738,7 +4782,7 @@ SELECT vehiculo_matricula, vehiculo_color, vehiculo_marca, vehiculo_modelo, vehi
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT modelo_marca FROM dbo.marcas_coches";
+            this._commandCollection[0].CommandText = "SELECT modelo_marca, modelo_tipologia FROM marcas_coches";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

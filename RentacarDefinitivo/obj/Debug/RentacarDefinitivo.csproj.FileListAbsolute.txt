@@ -25,7 +25,6 @@ E:\2DAM\Dise-o\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.menuCargos.resour
 E:\2DAM\Dise-o\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.menuClientes.resources
 E:\2DAM\Dise-o\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.menuContrato.resources
 E:\2DAM\Dise-o\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.menuReserva.resources
-E:\2DAM\Dise-o\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.menuVehiculos.resources
 E:\2DAM\Dise-o\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.nuevoDisenyo.resources
 E:\2DAM\Dise-o\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.Properties.Resources.resources
 E:\2DAM\Dise-o\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.Pruebas.resources
@@ -34,3 +33,4 @@ E:\2DAM\Dise-o\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.csproj.CoreCompil
 E:\2DAM\Dise-o\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.exe
 E:\2DAM\Dise-o\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.pdb
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.FormVehiculo.resources
+E:\2DAM\Dise-o\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.FormVehiculo.resources

@@ -132,23 +132,19 @@ namespace Rentacar
 
         private void cbTipologia_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //this.modelsBindingSource.Filter = "tipologia = '" + comboBox1.Text + "'";
-            //this.marcasBindingSource.Filter = "tipologia = '" + comboBox1.Text + "'";
-            Console.WriteLine($"Filtro aplicado: {modeloBindingSource.Filter}");
+            this.marcascochesBindingSource.Filter = $"modelo_tipologia='{cbTipologia.Text}'";
+            this.modeloBindingSource.Filter = $"modelo_tipologia='{cbTipologia.Text}'";
 
         }
 
         private void cbMarca_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.modeloBindingSource.Filter = $"modelo_tipologia='{cbTipologia.Text}'";
-            //Console.WriteLine($"Filtro aplicado: {modeloBindingSource.Filter}");
-
+            this.modeloBindingSource.Filter = $"modelo_tipologia='{cbTipologia.Text}' AND modelo_marca='{cbMarca.Text}'";
         }
 
         private void cbModelo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.modeloBindingSource.Filter = $"modelo_tipologia = '{cbTipologia.Text}' AND modelo_marca = '{cbMarca.Text}'";
-            Console.WriteLine($"Filtro aplicado: {modeloBindingSource.Filter}");
+            
         }
     }
 }

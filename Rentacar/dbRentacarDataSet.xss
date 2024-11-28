@@ -11,7 +11,7 @@
     <Shape ID="DesignTable:usuario" ZOrder="3" X="300" Y="330" Height="115" Width="187" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
     <Shape ID="DesignTable:vehiculo" ZOrder="4" X="734" Y="133" Height="172" Width="193" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
     <Shape ID="DesignTable:tipologias" ZOrder="2" X="997" Y="113" Height="96" Width="202" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="46" />
-    <Shape ID="DesignTable:marcas_coches" ZOrder="1" X="1269" Y="113" Height="96" Width="229" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="46" />
+    <Shape ID="DesignTable:marcas_coches" ZOrder="1" X="1269" Y="113" Height="115" Width="229" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
   </Shapes>
   <Connectors />
 </DiagramLayout>

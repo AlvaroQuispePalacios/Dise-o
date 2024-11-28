@@ -38,6 +38,30 @@ namespace Rentacar
             panelContenedorHijo.Tag = formularioHijo; // Asigna el formulario como tag del panel
             formularioHijo.BringToFront(); // Lleva el formulario al frente
             formularioHijo.Show(); // Muestra el formulario
-        } 
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            if(this.WindowState == FormWindowState.Normal)
+            {
+                btnMaximizar.Text = "C";
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                btnMaximizar.Text = "c";
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

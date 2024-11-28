@@ -30,9 +30,9 @@
         {
             this.panelTop = new System.Windows.Forms.Panel();
             this.tableLayoutPanelTopBotones = new System.Windows.Forms.TableLayoutPanel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnMaximizar = new System.Windows.Forms.Button();
+            this.btnMinimizar = new System.Windows.Forms.Button();
             this.tableLayoutPanelContenedor = new System.Windows.Forms.TableLayoutPanel();
             this.panelContenedorMenu = new System.Windows.Forms.Panel();
             this.flowLayoutPanelContenedorMenuBotones = new System.Windows.Forms.FlowLayoutPanel();
@@ -65,9 +65,9 @@
             this.tableLayoutPanelTopBotones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanelTopBotones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanelTopBotones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanelTopBotones.Controls.Add(this.button8, 2, 0);
-            this.tableLayoutPanelTopBotones.Controls.Add(this.button7, 1, 0);
-            this.tableLayoutPanelTopBotones.Controls.Add(this.button6, 0, 0);
+            this.tableLayoutPanelTopBotones.Controls.Add(this.btnCerrar, 2, 0);
+            this.tableLayoutPanelTopBotones.Controls.Add(this.btnMaximizar, 1, 0);
+            this.tableLayoutPanelTopBotones.Controls.Add(this.btnMinimizar, 0, 0);
             this.tableLayoutPanelTopBotones.Location = new System.Drawing.Point(613, 0);
             this.tableLayoutPanelTopBotones.Name = "tableLayoutPanelTopBotones";
             this.tableLayoutPanelTopBotones.RowCount = 1;
@@ -75,35 +75,38 @@
             this.tableLayoutPanelTopBotones.Size = new System.Drawing.Size(187, 37);
             this.tableLayoutPanelTopBotones.TabIndex = 0;
             // 
-            // button8
+            // btnCerrar
             // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button8.Location = new System.Drawing.Point(127, 3);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(57, 31);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnCerrar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnCerrar.Location = new System.Drawing.Point(127, 3);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(57, 31);
+            this.btnCerrar.TabIndex = 2;
+            this.btnCerrar.Text = "X";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // button7
+            // btnMaximizar
             // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.Location = new System.Drawing.Point(65, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(56, 31);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnMaximizar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMaximizar.Location = new System.Drawing.Point(65, 3);
+            this.btnMaximizar.Name = "btnMaximizar";
+            this.btnMaximizar.Size = new System.Drawing.Size(56, 31);
+            this.btnMaximizar.TabIndex = 1;
+            this.btnMaximizar.Text = "c";
+            this.btnMaximizar.UseVisualStyleBackColor = true;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
             // 
-            // button6
+            // btnMinimizar
             // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button6.Location = new System.Drawing.Point(3, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(56, 31);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMinimizar.Location = new System.Drawing.Point(3, 3);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(56, 31);
+            this.btnMinimizar.TabIndex = 0;
+            this.btnMinimizar.Text = "_";
+            this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // tableLayoutPanelContenedor
             // 
@@ -225,9 +228,9 @@
         private System.Windows.Forms.Panel panelContenedorMenu;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelContenedorMenuBotones;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelTopBotones;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnMaximizar;
+        private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnMostrarFormVehiculos;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

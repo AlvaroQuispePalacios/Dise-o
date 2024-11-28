@@ -259,7 +259,7 @@ SELECT vehiculo_matricula, vehiculo_color, vehiculo_marca, vehiculo_modelo, vehi
               <DbSource ConnectionRef="dbRentacarConnectionString (Settings)" DbObjectName="dbRentacar.dbo.marcas_coches" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT modelo_marca FROM dbo.marcas_coches</CommandText>
+                    <CommandText>SELECT modelo_marca, modelo_tipologia FROM marcas_coches</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -267,6 +267,7 @@ SELECT vehiculo_matricula, vehiculo_color, vehiculo_marca, vehiculo_modelo, vehi
             </MainSource>
             <Mappings>
               <Mapping SourceColumn="modelo_marca" DataSetColumn="modelo_marca" />
+              <Mapping SourceColumn="modelo_tipologia" DataSetColumn="modelo_tipologia" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -408,10 +409,10 @@ SELECT vehiculo_matricula, vehiculo_color, vehiculo_marca, vehiculo_modelo, vehi
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tipologias" msprop:Generator_RowClassName="tipologiasRow" msprop:Generator_RowEvHandlerName="tipologiasRowChangeEventHandler" msprop:Generator_RowDeletedName="tipologiasRowDeleted" msprop:Generator_RowDeletingName="tipologiasRowDeleting" msprop:Generator_RowEvArgName="tipologiasRowChangeEvent" msprop:Generator_TablePropName="tipologias" msprop:Generator_RowChangedName="tipologiasRowChanged" msprop:Generator_UserTableName="tipologias" msprop:Generator_RowChangingName="tipologiasRowChanging" msprop:Generator_TableClassName="tipologiasDataTable" msprop:Generator_TableVarName="tabletipologias">
+        <xs:element name="tipologias" msprop:Generator_RowEvHandlerName="tipologiasRowChangeEventHandler" msprop:Generator_RowDeletedName="tipologiasRowDeleted" msprop:Generator_RowDeletingName="tipologiasRowDeleting" msprop:Generator_RowEvArgName="tipologiasRowChangeEvent" msprop:Generator_TablePropName="tipologias" msprop:Generator_RowChangedName="tipologiasRowChanged" msprop:Generator_UserTableName="tipologias" msprop:Generator_RowChangingName="tipologiasRowChanging" msprop:Generator_RowClassName="tipologiasRow" msprop:Generator_TableClassName="tipologiasDataTable" msprop:Generator_TableVarName="tabletipologias">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="modelo_tipologia" msprop:Generator_UserColumnName="modelo_tipologia" msprop:Generator_ColumnPropNameInTable="modelo_tipologiaColumn" msprop:Generator_ColumnPropNameInRow="modelo_tipologia" msprop:Generator_ColumnVarNameInTable="columnmodelo_tipologia" minOccurs="0">
+              <xs:element name="modelo_tipologia" msprop:Generator_ColumnPropNameInTable="modelo_tipologiaColumn" msprop:Generator_ColumnPropNameInRow="modelo_tipologia" msprop:Generator_UserColumnName="modelo_tipologia" msprop:Generator_ColumnVarNameInTable="columnmodelo_tipologia" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
@@ -421,10 +422,17 @@ SELECT vehiculo_matricula, vehiculo_color, vehiculo_marca, vehiculo_modelo, vehi
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="marcas_coches" msprop:Generator_RowEvHandlerName="marcas_cochesRowChangeEventHandler" msprop:Generator_RowDeletedName="marcas_cochesRowDeleted" msprop:Generator_RowDeletingName="marcas_cochesRowDeleting" msprop:Generator_RowEvArgName="marcas_cochesRowChangeEvent" msprop:Generator_TablePropName="marcas_coches" msprop:Generator_RowChangedName="marcas_cochesRowChanged" msprop:Generator_RowChangingName="marcas_cochesRowChanging" msprop:Generator_TableClassName="marcas_cochesDataTable" msprop:Generator_RowClassName="marcas_cochesRow" msprop:Generator_TableVarName="tablemarcas_coches" msprop:Generator_UserTableName="marcas_coches">
+        <xs:element name="marcas_coches" msprop:Generator_RowClassName="marcas_cochesRow" msprop:Generator_RowEvHandlerName="marcas_cochesRowChangeEventHandler" msprop:Generator_RowDeletedName="marcas_cochesRowDeleted" msprop:Generator_RowDeletingName="marcas_cochesRowDeleting" msprop:Generator_RowEvArgName="marcas_cochesRowChangeEvent" msprop:Generator_TablePropName="marcas_coches" msprop:Generator_RowChangedName="marcas_cochesRowChanged" msprop:Generator_UserTableName="marcas_coches" msprop:Generator_RowChangingName="marcas_cochesRowChanging" msprop:Generator_TableClassName="marcas_cochesDataTable" msprop:Generator_TableVarName="tablemarcas_coches">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="modelo_marca" msprop:Generator_ColumnPropNameInRow="modelo_marca" msprop:Generator_ColumnPropNameInTable="modelo_marcaColumn" msprop:Generator_ColumnVarNameInTable="columnmodelo_marca" msprop:Generator_UserColumnName="modelo_marca" minOccurs="0">
+              <xs:element name="modelo_marca" msprop:Generator_UserColumnName="modelo_marca" msprop:Generator_ColumnPropNameInTable="modelo_marcaColumn" msprop:Generator_ColumnPropNameInRow="modelo_marca" msprop:Generator_ColumnVarNameInTable="columnmodelo_marca" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="modelo_tipologia" msprop:Generator_ColumnPropNameInRow="modelo_tipologia" msprop:Generator_ColumnPropNameInTable="modelo_tipologiaColumn" msprop:Generator_ColumnVarNameInTable="columnmodelo_tipologia" msprop:Generator_UserColumnName="modelo_tipologia" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
