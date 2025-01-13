@@ -22,6 +22,7 @@ namespace RentacarDefinitivo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            
             login lg = new login();
             if (lg.ShowDialog() == DialogResult.OK)
             {

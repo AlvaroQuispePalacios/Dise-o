@@ -34,3 +34,4 @@ E:\2DAM\Dise-o\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.exe
 E:\2DAM\Dise-o\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.pdb
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.FormVehiculo.resources
 E:\2DAM\Dise-o\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.FormVehiculo.resources
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\RentacarDefinitivo\obj\Debug\RentacarDefinitivo.FormReportVehiculo.resources

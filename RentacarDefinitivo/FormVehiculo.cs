@@ -39,6 +39,7 @@ namespace RentacarDefinitivo
             this.vehiculoTableAdapter.Fill(this.rentacarDataSet.vehiculo);
             OcultarPanelBot();
 
+            this.reportViewer1.RefreshReport();
         }
 
         private void btnIrAlPrimerRegistro_Click(object sender, EventArgs e)

@@ -55,6 +55,7 @@
             this.modeloBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.cbMarca = new System.Windows.Forms.ComboBox();
+            this.listamarcascochesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.cbTipologia = new System.Windows.Forms.ComboBox();
             this.listatipologiacochesBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -68,7 +69,6 @@
             this.vehiculoTableAdapter = new RentacarDefinitivo.rentacarDataSetTableAdapters.vehiculoTableAdapter();
             this.tableAdapterManager = new RentacarDefinitivo.rentacarDataSetTableAdapters.TableAdapterManager();
             this.modeloTableAdapter = new RentacarDefinitivo.rentacarDataSetTableAdapters.modeloTableAdapter();
-            this.listamarcascochesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             colorLabel = new System.Windows.Forms.Label();
             matriculaLabel = new System.Windows.Forms.Label();
             this.panelTop.SuspendLayout();
@@ -79,10 +79,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.rentacarDataSet)).BeginInit();
             this.panelContenedorFormularioVehiculo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.modeloBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listamarcascochesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listatipologiacochesBindingSource)).BeginInit();
             this.panelBot.SuspendLayout();
             this.tableLayoutPanelBotContenedorBotones.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listamarcascochesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // colorLabel
@@ -225,7 +225,7 @@
             this.tableLayoutPanelContenedor.Name = "tableLayoutPanelContenedor";
             this.tableLayoutPanelContenedor.RowCount = 1;
             this.tableLayoutPanelContenedor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelContenedor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 416F));
+            this.tableLayoutPanelContenedor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 453F));
             this.tableLayoutPanelContenedor.Size = new System.Drawing.Size(837, 453);
             this.tableLayoutPanelContenedor.TabIndex = 1;
             // 
@@ -348,6 +348,11 @@
             this.cbMarca.TabIndex = 6;
             this.cbMarca.SelectedIndexChanged += new System.EventHandler(this.cbMarca_SelectedIndexChanged);
             // 
+            // listamarcascochesBindingSource
+            // 
+            this.listamarcascochesBindingSource.DataMember = "lista_marcas_coches";
+            this.listamarcascochesBindingSource.DataSource = this.rentacarDataSet;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -457,11 +462,6 @@
             // 
             this.modeloTableAdapter.ClearBeforeFill = true;
             // 
-            // listamarcascochesBindingSource
-            // 
-            this.listamarcascochesBindingSource.DataMember = "lista_marcas_coches";
-            this.listamarcascochesBindingSource.DataSource = this.rentacarDataSet;
-            // 
             // FormVehiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -482,10 +482,10 @@
             this.panelContenedorFormularioVehiculo.ResumeLayout(false);
             this.panelContenedorFormularioVehiculo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.modeloBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listamarcascochesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listatipologiacochesBindingSource)).EndInit();
             this.panelBot.ResumeLayout(false);
             this.tableLayoutPanelBotContenedorBotones.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.listamarcascochesBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
