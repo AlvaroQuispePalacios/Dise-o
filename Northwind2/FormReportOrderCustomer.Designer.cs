@@ -30,20 +30,45 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.customer_order_detail_productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.northwindDataSet = new Northwind2.NorthwindDataSet();
             this.panelTop = new System.Windows.Forms.Panel();
             this.panelReport = new System.Windows.Forms.Panel();
-            this.northwindDataSet = new Northwind2.NorthwindDataSet();
-            this.customer_order_detail_productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.customer_order_detail_productTableAdapter = new Northwind2.NorthwindDataSetTableAdapters.customer_order_detail_productTableAdapter();
             this.tableAdapterManager = new Northwind2.NorthwindDataSetTableAdapters.TableAdapterManager();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.panelReport.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
+            this.lbCompanyName = new System.Windows.Forms.Label();
+            this.tbCompanyName = new System.Windows.Forms.TextBox();
+            this.btnFilter = new System.Windows.Forms.Button();
+            this.lbOrderDate = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.lbDateFinal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.customer_order_detail_productBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
+            this.panelTop.SuspendLayout();
+            this.panelReport.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // customer_order_detail_productBindingSource
+            // 
+            this.customer_order_detail_productBindingSource.DataMember = "customer_order_detail_product";
+            this.customer_order_detail_productBindingSource.DataSource = this.northwindDataSet;
+            // 
+            // northwindDataSet
+            // 
+            this.northwindDataSet.DataSetName = "NorthwindDataSet";
+            this.northwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panelTop
             // 
+            this.panelTop.Controls.Add(this.lbDateFinal);
+            this.panelTop.Controls.Add(this.dateTimePicker2);
+            this.panelTop.Controls.Add(this.dateTimePicker1);
+            this.panelTop.Controls.Add(this.lbOrderDate);
+            this.panelTop.Controls.Add(this.btnFilter);
+            this.panelTop.Controls.Add(this.tbCompanyName);
+            this.panelTop.Controls.Add(this.lbCompanyName);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
@@ -59,15 +84,18 @@
             this.panelReport.Size = new System.Drawing.Size(800, 377);
             this.panelReport.TabIndex = 1;
             // 
-            // northwindDataSet
+            // reportViewer1
             // 
-            this.northwindDataSet.DataSetName = "NorthwindDataSet";
-            this.northwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // customer_order_detail_productBindingSource
-            // 
-            this.customer_order_detail_productBindingSource.DataMember = "customer_order_detail_product";
-            this.customer_order_detail_productBindingSource.DataSource = this.northwindDataSet;
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "DataSetReportOrder";
+            reportDataSource1.Value = this.customer_order_detail_productBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Northwind2.ReportOrder.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(800, 377);
+            this.reportViewer1.TabIndex = 0;
             // 
             // customer_order_detail_productTableAdapter
             // 
@@ -92,18 +120,63 @@
             this.tableAdapterManager.TerritoriesTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Northwind2.NorthwindDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // reportViewer1
+            // lbCompanyName
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DataSetReportOrder";
-            reportDataSource1.Value = this.customer_order_detail_productBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Northwind2.ReportOrder.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(800, 377);
-            this.reportViewer1.TabIndex = 0;
+            this.lbCompanyName.AutoSize = true;
+            this.lbCompanyName.Location = new System.Drawing.Point(12, 21);
+            this.lbCompanyName.Name = "lbCompanyName";
+            this.lbCompanyName.Size = new System.Drawing.Size(82, 13);
+            this.lbCompanyName.TabIndex = 0;
+            this.lbCompanyName.Text = "Company Name";
+            // 
+            // tbCompanyName
+            // 
+            this.tbCompanyName.Location = new System.Drawing.Point(100, 18);
+            this.tbCompanyName.Name = "tbCompanyName";
+            this.tbCompanyName.Size = new System.Drawing.Size(181, 20);
+            this.tbCompanyName.TabIndex = 1;
+            // 
+            // btnFilter
+            // 
+            this.btnFilter.Location = new System.Drawing.Point(725, 16);
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.Size = new System.Drawing.Size(75, 23);
+            this.btnFilter.TabIndex = 2;
+            this.btnFilter.Text = "Filtrar";
+            this.btnFilter.UseVisualStyleBackColor = true;
+            this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
+            // 
+            // lbOrderDate
+            // 
+            this.lbOrderDate.AutoSize = true;
+            this.lbOrderDate.Location = new System.Drawing.Point(12, 59);
+            this.lbOrderDate.Name = "lbOrderDate";
+            this.lbOrderDate.Size = new System.Drawing.Size(43, 13);
+            this.lbOrderDate.TabIndex = 3;
+            this.lbOrderDate.Text = "Date ini";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(100, 53);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(181, 20);
+            this.dateTimePicker1.TabIndex = 5;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(410, 59);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.TabIndex = 6;
+            // 
+            // lbDateFinal
+            // 
+            this.lbDateFinal.AutoSize = true;
+            this.lbDateFinal.Location = new System.Drawing.Point(349, 59);
+            this.lbDateFinal.Name = "lbDateFinal";
+            this.lbDateFinal.Size = new System.Drawing.Size(55, 13);
+            this.lbDateFinal.TabIndex = 7;
+            this.lbDateFinal.Text = "Date Final";
             // 
             // FormReportOrderCustomer
             // 
@@ -115,9 +188,11 @@
             this.Name = "FormReportOrderCustomer";
             this.Text = "FormReportOrderCustomer";
             this.Load += new System.EventHandler(this.FormReportOrderCustomer_Load);
-            this.panelReport.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customer_order_detail_productBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).EndInit();
+            this.panelTop.ResumeLayout(false);
+            this.panelTop.PerformLayout();
+            this.panelReport.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -131,5 +206,12 @@
         private NorthwindDataSetTableAdapters.customer_order_detail_productTableAdapter customer_order_detail_productTableAdapter;
         private NorthwindDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.TextBox tbCompanyName;
+        private System.Windows.Forms.Label lbCompanyName;
+        private System.Windows.Forms.Button btnFilter;
+        private System.Windows.Forms.Label lbOrderDate;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label lbDateFinal;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }

@@ -21,45 +21,16 @@ namespace Northwind2
         {
             // TODO: esta línea de código carga datos en la tabla 'northwindDataSet.customer_order_detail_product' Puede moverla o quitarla según sea necesario.
             this.customer_order_detail_productTableAdapter.Fill(this.northwindDataSet.customer_order_detail_product);
-
-
             this.reportViewer1.RefreshReport();
         }
+
+        private void btnFilter_Click(object sender, EventArgs e)
+        {
+            DateTime dateIni = dateTimePicker1.Value;
+            DateTime dateFinal = dateTimePicker2.Value;
+            customer_order_detail_productBindingSource.Filter = $"CompanyName Like '%{tbCompanyName.Text}%' AND OrderDate >= '{dateIni:yyyy-MM-dd}' AND OrderDate <= '{dateFinal:yyyy-MM-dd}'";
+            this.reportViewer1.RefreshReport();
+
+        }
     }
-
-
-
-
-
-
-
-
-    /*
-SELECT * FROM Customers cu
-INNER JOIN Orders ON Orders.CustomerID = cu.CustomerID
-INNER JOIN [Order Details] ON [Order Details].OrderID = Orders.OrderID
-INNER JOIN Products ON Products.ProductID = [Order Details].ProductID
-     * 
-     * 
-     * REPORT
-     * AGRUPAR por ORDERID
-     * AGRUPAR POR ORDERDETAIL
-     * 
-     * 
-        order - orderID
-        order- orderDate
-
-        cliente -nombre
-        fechapedido
-        clientecontacto
-
-        nombreProducto
-        cantidad de producto
-        precioUNitario
-        descuento
-
-
-    companyNAme
-    orderDate intervalo de fechas
-     */
 }
