@@ -48,5 +48,11 @@ namespace Northwind2
             AbrirFormHijo(new FormReportOrderCustomer());
 
         }
+
+        private void reportesPorAñoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new FormMultiplesReports());
+
+        }
     }
 }

@@ -33,21 +33,25 @@
             this.customer_order_detail_productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.northwindDataSet = new Northwind2.NorthwindDataSet();
             this.panelTop = new System.Windows.Forms.Panel();
+            this.lbDateFinal = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.lbOrderDate = new System.Windows.Forms.Label();
+            this.btnFilter = new System.Windows.Forms.Button();
+            this.tbCompanyName = new System.Windows.Forms.TextBox();
+            this.lbCompanyName = new System.Windows.Forms.Label();
             this.panelReport = new System.Windows.Forms.Panel();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.customer_order_detail_productTableAdapter = new Northwind2.NorthwindDataSetTableAdapters.customer_order_detail_productTableAdapter();
             this.tableAdapterManager = new Northwind2.NorthwindDataSetTableAdapters.TableAdapterManager();
-            this.lbCompanyName = new System.Windows.Forms.Label();
-            this.tbCompanyName = new System.Windows.Forms.TextBox();
-            this.btnFilter = new System.Windows.Forms.Button();
-            this.lbOrderDate = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.lbDateFinal = new System.Windows.Forms.Label();
+            this.cbCompanyName = new System.Windows.Forms.ComboBox();
+            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.customersTableAdapter = new Northwind2.NorthwindDataSetTableAdapters.CustomersTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.customer_order_detail_productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
             this.panelTop.SuspendLayout();
             this.panelReport.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // customer_order_detail_productBindingSource
@@ -62,6 +66,7 @@
             // 
             // panelTop
             // 
+            this.panelTop.Controls.Add(this.cbCompanyName);
             this.panelTop.Controls.Add(this.lbDateFinal);
             this.panelTop.Controls.Add(this.dateTimePicker2);
             this.panelTop.Controls.Add(this.dateTimePicker1);
@@ -74,6 +79,64 @@
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(800, 86);
             this.panelTop.TabIndex = 0;
+            // 
+            // lbDateFinal
+            // 
+            this.lbDateFinal.AutoSize = true;
+            this.lbDateFinal.Location = new System.Drawing.Point(349, 59);
+            this.lbDateFinal.Name = "lbDateFinal";
+            this.lbDateFinal.Size = new System.Drawing.Size(55, 13);
+            this.lbDateFinal.TabIndex = 7;
+            this.lbDateFinal.Text = "Date Final";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(410, 59);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.TabIndex = 6;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(100, 53);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(181, 20);
+            this.dateTimePicker1.TabIndex = 5;
+            // 
+            // lbOrderDate
+            // 
+            this.lbOrderDate.AutoSize = true;
+            this.lbOrderDate.Location = new System.Drawing.Point(12, 59);
+            this.lbOrderDate.Name = "lbOrderDate";
+            this.lbOrderDate.Size = new System.Drawing.Size(43, 13);
+            this.lbOrderDate.TabIndex = 3;
+            this.lbOrderDate.Text = "Date ini";
+            // 
+            // btnFilter
+            // 
+            this.btnFilter.Location = new System.Drawing.Point(725, 16);
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.Size = new System.Drawing.Size(75, 23);
+            this.btnFilter.TabIndex = 2;
+            this.btnFilter.Text = "Filtrar";
+            this.btnFilter.UseVisualStyleBackColor = true;
+            this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
+            // 
+            // tbCompanyName
+            // 
+            this.tbCompanyName.Location = new System.Drawing.Point(100, 18);
+            this.tbCompanyName.Name = "tbCompanyName";
+            this.tbCompanyName.Size = new System.Drawing.Size(181, 20);
+            this.tbCompanyName.TabIndex = 1;
+            // 
+            // lbCompanyName
+            // 
+            this.lbCompanyName.AutoSize = true;
+            this.lbCompanyName.Location = new System.Drawing.Point(12, 21);
+            this.lbCompanyName.Name = "lbCompanyName";
+            this.lbCompanyName.Size = new System.Drawing.Size(82, 13);
+            this.lbCompanyName.TabIndex = 0;
+            this.lbCompanyName.Text = "Company Name";
             // 
             // panelReport
             // 
@@ -120,63 +183,26 @@
             this.tableAdapterManager.TerritoriesTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Northwind2.NorthwindDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // lbCompanyName
+            // cbCompanyName
             // 
-            this.lbCompanyName.AutoSize = true;
-            this.lbCompanyName.Location = new System.Drawing.Point(12, 21);
-            this.lbCompanyName.Name = "lbCompanyName";
-            this.lbCompanyName.Size = new System.Drawing.Size(82, 13);
-            this.lbCompanyName.TabIndex = 0;
-            this.lbCompanyName.Text = "Company Name";
+            this.cbCompanyName.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.customer_order_detail_productBindingSource, "CompanyName", true));
+            this.cbCompanyName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CompanyName", true));
+            this.cbCompanyName.DataSource = this.customersBindingSource;
+            this.cbCompanyName.DisplayMember = "CompanyName";
+            this.cbCompanyName.FormattingEnabled = true;
+            this.cbCompanyName.Location = new System.Drawing.Point(410, 32);
+            this.cbCompanyName.Name = "cbCompanyName";
+            this.cbCompanyName.Size = new System.Drawing.Size(200, 21);
+            this.cbCompanyName.TabIndex = 8;
             // 
-            // tbCompanyName
+            // customersBindingSource
             // 
-            this.tbCompanyName.Location = new System.Drawing.Point(100, 18);
-            this.tbCompanyName.Name = "tbCompanyName";
-            this.tbCompanyName.Size = new System.Drawing.Size(181, 20);
-            this.tbCompanyName.TabIndex = 1;
+            this.customersBindingSource.DataMember = "Customers";
+            this.customersBindingSource.DataSource = this.northwindDataSet;
             // 
-            // btnFilter
+            // customersTableAdapter
             // 
-            this.btnFilter.Location = new System.Drawing.Point(725, 16);
-            this.btnFilter.Name = "btnFilter";
-            this.btnFilter.Size = new System.Drawing.Size(75, 23);
-            this.btnFilter.TabIndex = 2;
-            this.btnFilter.Text = "Filtrar";
-            this.btnFilter.UseVisualStyleBackColor = true;
-            this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
-            // 
-            // lbOrderDate
-            // 
-            this.lbOrderDate.AutoSize = true;
-            this.lbOrderDate.Location = new System.Drawing.Point(12, 59);
-            this.lbOrderDate.Name = "lbOrderDate";
-            this.lbOrderDate.Size = new System.Drawing.Size(43, 13);
-            this.lbOrderDate.TabIndex = 3;
-            this.lbOrderDate.Text = "Date ini";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(100, 53);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(181, 20);
-            this.dateTimePicker1.TabIndex = 5;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(410, 59);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 6;
-            // 
-            // lbDateFinal
-            // 
-            this.lbDateFinal.AutoSize = true;
-            this.lbDateFinal.Location = new System.Drawing.Point(349, 59);
-            this.lbDateFinal.Name = "lbDateFinal";
-            this.lbDateFinal.Size = new System.Drawing.Size(55, 13);
-            this.lbDateFinal.TabIndex = 7;
-            this.lbDateFinal.Text = "Date Final";
+            this.customersTableAdapter.ClearBeforeFill = true;
             // 
             // FormReportOrderCustomer
             // 
@@ -193,6 +219,7 @@
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
             this.panelReport.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -213,5 +240,8 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label lbDateFinal;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.ComboBox cbCompanyName;
+        private System.Windows.Forms.BindingSource customersBindingSource;
+        private NorthwindDataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
     }
 }

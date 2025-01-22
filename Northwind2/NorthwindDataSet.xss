@@ -43,7 +43,7 @@
     <Shape ID="DesignTable:SalesByCategory" ZOrder="17" X="8491" Y="70" Height="115" Width="249" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
     <Shape ID="DesignTable:Ten Most Expensive Products" ZOrder="16" X="8810" Y="70" Height="115" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
     <Shape ID="DesignTable:customer_order_detail_product" ZOrder="2" X="9180" Y="70" Height="305" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="254" />
-    <Shape ID="DesignTable:all_cu_or_orders_pro" ZOrder="1" X="9550" Y="70" Height="305" Width="262" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="254" />
+    <Shape ID="DesignTable:all_customers_orderDetails_orders_products" ZOrder="1" X="9882" Y="70" Height="305" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="254" />
   </Shapes>
   <Connectors>
     <Connector ID="DesignRelation:FK_CustomerCustomerDemo" ZOrder="15" LineWidth="11">

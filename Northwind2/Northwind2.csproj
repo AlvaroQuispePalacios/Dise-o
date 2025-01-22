@@ -70,6 +70,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMultiplesReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMultiplesReports.Designer.cs">
+      <DependentUpon>FormMultiplesReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormReportCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMultiplesReports.resx">
+      <DependentUpon>FormMultiplesReports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormReportCustomer.resx">
       <DependentUpon>FormReportCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +119,8 @@
     </Compile>
     <EmbeddedResource Include="ReportCustomer.rdlc" />
     <EmbeddedResource Include="ReportOrder.rdlc" />
+    <EmbeddedResource Include="ReportOrder1996.rdlc" />
+    <EmbeddedResource Include="ReportPrueba.rdlc" />
     <None Include="NorthwindDataSet.xsc">
       <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
     </None>

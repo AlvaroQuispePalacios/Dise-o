@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\nuevodisenyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:nuevodisenyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\nuevodisenyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:nuevodisenyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\formvehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:formvehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -19,11 +11,19 @@
       "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:formvehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\nuevodisenyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:nuevodisenyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\rentacardefinitivo\\nuevodisenyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:nuevodisenyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\formreportvehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:formreportvehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\rentacardefinitivo\\formreportvehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\formreportvehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{20D70F3A-D846-4609-868A-2A012D9A6A9C}|RentacarDefinitivo.csproj|solutionrelative:formreportvehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 206,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,8 +74,7 @@
               "RelativeToolTip": "FormReportVehiculo.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T14:18:56.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T14:18:56.043Z"
             },
             {
               "$type": "Document",
@@ -86,8 +85,7 @@
               "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\FormReportVehiculo.cs [Dise\u00F1o]",
               "RelativeToolTip": "FormReportVehiculo.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T14:08:58.954Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-01-13T14:08:58.954Z"
             },
             {
               "$type": "Document",
@@ -113,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "nuevoDisenyo.cs",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\nuevoDisenyo.cs",
               "RelativeDocumentMoniker": "nuevoDisenyo.cs",
@@ -126,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "nuevoDisenyo.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\nuevoDisenyo.cs",
               "RelativeDocumentMoniker": "nuevoDisenyo.cs",
@@ -138,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "FormVehiculo.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\FormVehiculo.cs",
               "RelativeDocumentMoniker": "FormVehiculo.cs",
@@ -150,13 +148,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "FormVehiculo.cs",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\FormVehiculo.cs",
               "RelativeDocumentMoniker": "FormVehiculo.cs",
               "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\RentacarDefinitivo\\FormVehiculo.cs",
               "RelativeToolTip": "FormVehiculo.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAQwFgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAiwFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T19:47:53.775Z",
               "EditorCaption": ""

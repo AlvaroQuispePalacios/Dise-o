@@ -32,6 +32,9 @@
             this.reporteClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteOrdenesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContainer = new System.Windows.Forms.Panel();
+            this.reportesPorAñoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteOrdenes1996ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteOrden1997ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -39,7 +42,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.reporteClientesToolStripMenuItem,
-            this.reporteOrdenesToolStripMenuItem});
+            this.reporteOrdenesToolStripMenuItem,
+            this.reportesPorAñoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -68,6 +72,28 @@
             this.panelContainer.Size = new System.Drawing.Size(800, 426);
             this.panelContainer.TabIndex = 1;
             // 
+            // reportesPorAñoToolStripMenuItem
+            // 
+            this.reportesPorAñoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reporteOrdenes1996ToolStripMenuItem,
+            this.reporteOrden1997ToolStripMenuItem});
+            this.reportesPorAñoToolStripMenuItem.Name = "reportesPorAñoToolStripMenuItem";
+            this.reportesPorAñoToolStripMenuItem.Size = new System.Drawing.Size(149, 20);
+            this.reportesPorAñoToolStripMenuItem.Text = "Reporte ordenes por año";
+            this.reportesPorAñoToolStripMenuItem.Click += new System.EventHandler(this.reportesPorAñoToolStripMenuItem_Click);
+            // 
+            // reporteOrdenes1996ToolStripMenuItem
+            // 
+            this.reporteOrdenes1996ToolStripMenuItem.Name = "reporteOrdenes1996ToolStripMenuItem";
+            this.reporteOrdenes1996ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reporteOrdenes1996ToolStripMenuItem.Text = "Reporte orden 1996";
+            // 
+            // reporteOrden1997ToolStripMenuItem
+            // 
+            this.reporteOrden1997ToolStripMenuItem.Name = "reporteOrden1997ToolStripMenuItem";
+            this.reporteOrden1997ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reporteOrden1997ToolStripMenuItem.Text = "Reporte orden 1997";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -91,6 +117,9 @@
         private System.Windows.Forms.ToolStripMenuItem reporteClientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reporteOrdenesToolStripMenuItem;
         private System.Windows.Forms.Panel panelContainer;
+        private System.Windows.Forms.ToolStripMenuItem reportesPorAñoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteOrdenes1996ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteOrden1997ToolStripMenuItem;
     }
 }
 
