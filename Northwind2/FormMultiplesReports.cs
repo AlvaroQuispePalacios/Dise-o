@@ -23,7 +23,6 @@ namespace Northwind2
             this.all_customers_orderDetails_orders_productsTableAdapter.Fill(this.northwindDataSet.all_customers_orderDetails_orders_products);
             cbYear.Items.Add("ReportOrder1996");
             cbYear.Items.Add("ReportPrueba");
-
             this.reportViewer1.RefreshReport();
         }
 

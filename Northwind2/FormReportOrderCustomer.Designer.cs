@@ -33,6 +33,8 @@
             this.customer_order_detail_productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.northwindDataSet = new Northwind2.NorthwindDataSet();
             this.panelTop = new System.Windows.Forms.Panel();
+            this.cbCompanyName = new System.Windows.Forms.ComboBox();
+            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lbDateFinal = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -44,14 +46,13 @@
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.customer_order_detail_productTableAdapter = new Northwind2.NorthwindDataSetTableAdapters.customer_order_detail_productTableAdapter();
             this.tableAdapterManager = new Northwind2.NorthwindDataSetTableAdapters.TableAdapterManager();
-            this.cbCompanyName = new System.Windows.Forms.ComboBox();
-            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customersTableAdapter = new Northwind2.NorthwindDataSetTableAdapters.CustomersTableAdapter();
+            this.btnResetFilter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.customer_order_detail_productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
             this.panelTop.SuspendLayout();
-            this.panelReport.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
+            this.panelReport.SuspendLayout();
             this.SuspendLayout();
             // 
             // customer_order_detail_productBindingSource
@@ -66,6 +67,7 @@
             // 
             // panelTop
             // 
+            this.panelTop.Controls.Add(this.btnResetFilter);
             this.panelTop.Controls.Add(this.cbCompanyName);
             this.panelTop.Controls.Add(this.lbDateFinal);
             this.panelTop.Controls.Add(this.dateTimePicker2);
@@ -79,6 +81,23 @@
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(800, 86);
             this.panelTop.TabIndex = 0;
+            // 
+            // cbCompanyName
+            // 
+            this.cbCompanyName.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.customer_order_detail_productBindingSource, "CompanyName", true));
+            this.cbCompanyName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CompanyName", true));
+            this.cbCompanyName.DataSource = this.customersBindingSource;
+            this.cbCompanyName.DisplayMember = "CompanyName";
+            this.cbCompanyName.FormattingEnabled = true;
+            this.cbCompanyName.Location = new System.Drawing.Point(410, 32);
+            this.cbCompanyName.Name = "cbCompanyName";
+            this.cbCompanyName.Size = new System.Drawing.Size(200, 21);
+            this.cbCompanyName.TabIndex = 8;
+            // 
+            // customersBindingSource
+            // 
+            this.customersBindingSource.DataMember = "Customers";
+            this.customersBindingSource.DataSource = this.northwindDataSet;
             // 
             // lbDateFinal
             // 
@@ -183,26 +202,19 @@
             this.tableAdapterManager.TerritoriesTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Northwind2.NorthwindDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // cbCompanyName
-            // 
-            this.cbCompanyName.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.customer_order_detail_productBindingSource, "CompanyName", true));
-            this.cbCompanyName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CompanyName", true));
-            this.cbCompanyName.DataSource = this.customersBindingSource;
-            this.cbCompanyName.DisplayMember = "CompanyName";
-            this.cbCompanyName.FormattingEnabled = true;
-            this.cbCompanyName.Location = new System.Drawing.Point(410, 32);
-            this.cbCompanyName.Name = "cbCompanyName";
-            this.cbCompanyName.Size = new System.Drawing.Size(200, 21);
-            this.cbCompanyName.TabIndex = 8;
-            // 
-            // customersBindingSource
-            // 
-            this.customersBindingSource.DataMember = "Customers";
-            this.customersBindingSource.DataSource = this.northwindDataSet;
-            // 
             // customersTableAdapter
             // 
             this.customersTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnResetFilter
+            // 
+            this.btnResetFilter.Location = new System.Drawing.Point(725, 54);
+            this.btnResetFilter.Name = "btnResetFilter";
+            this.btnResetFilter.Size = new System.Drawing.Size(75, 23);
+            this.btnResetFilter.TabIndex = 9;
+            this.btnResetFilter.Text = "Reset Filter";
+            this.btnResetFilter.UseVisualStyleBackColor = true;
+            this.btnResetFilter.Click += new System.EventHandler(this.btnResetFilter_Click);
             // 
             // FormReportOrderCustomer
             // 
@@ -218,8 +230,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).EndInit();
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
-            this.panelReport.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
+            this.panelReport.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -243,5 +255,6 @@
         private System.Windows.Forms.ComboBox cbCompanyName;
         private System.Windows.Forms.BindingSource customersBindingSource;
         private NorthwindDataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
+        private System.Windows.Forms.Button btnResetFilter;
     }
 }
