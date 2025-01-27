@@ -7,11 +7,11 @@
       "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:reportorder.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\northwind2\\formreportordercustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\formreportordercustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formreportordercustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\northwind2\\formreportcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\formreportcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formreportcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -47,8 +47,8 @@
               "Title": "ReportOrder.rdlc [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\ReportOrder.rdlc",
               "RelativeDocumentMoniker": "ReportOrder.rdlc",
-              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\ReportOrder.rdlc [Dise\u00F1o]*",
-              "RelativeToolTip": "ReportOrder.rdlc [Dise\u00F1o]*",
+              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\ReportOrder.rdlc [Dise\u00F1o]",
+              "RelativeToolTip": "ReportOrder.rdlc [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
               "WhenOpened": "2025-01-23T19:18:26.423Z",
               "EditorCaption": " [Dise\u00F1o]"
@@ -61,7 +61,7 @@
               "RelativeDocumentMoniker": "FormReportOrderCustomer.cs",
               "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\FormReportOrderCustomer.cs",
               "RelativeToolTip": "FormReportOrderCustomer.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAQwBsAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-23T19:10:53.366Z",
               "EditorCaption": ""
