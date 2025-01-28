@@ -7,6 +7,7 @@
       "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formreportcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|E:\\2DAM\\Dise-o\\Northwind2\\formreportcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formreportcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,6 +18,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|e:\\2dam\\dise-o\\northwind2\\reportorder.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
       "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:reportorder.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
+=======
+      "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\formreportordercustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formreportordercustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\formreportcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formreportcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> b0876c6ffcdaab6601f353bbbaf5c672a54b7194
     }
   ],
   "DocumentGroupContainers": [
@@ -63,7 +72,11 @@
               "Title": "ReportOrder.rdlc [Dise\u00F1o]",
               "DocumentMoniker": "E:\\2DAM\\Dise-o\\Northwind2\\ReportOrder.rdlc",
               "RelativeDocumentMoniker": "ReportOrder.rdlc",
+<<<<<<< HEAD
               "ToolTip": "E:\\2DAM\\Dise-o\\Northwind2\\ReportOrder.rdlc [Dise\u00F1o]",
+=======
+              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\ReportOrder.rdlc [Dise\u00F1o]",
+>>>>>>> b0876c6ffcdaab6601f353bbbaf5c672a54b7194
               "RelativeToolTip": "ReportOrder.rdlc [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
               "WhenOpened": "2025-01-23T19:18:26.423Z",
@@ -77,7 +90,11 @@
               "RelativeDocumentMoniker": "FormReportOrderCustomer.cs",
               "ToolTip": "E:\\2DAM\\Dise-o\\Northwind2\\FormReportOrderCustomer.cs",
               "RelativeToolTip": "FormReportOrderCustomer.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAA8AAAAAAAAAAAAxwBsAAAAuAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwDsAAAAAAAAAAAAAAA==",
+>>>>>>> b0876c6ffcdaab6601f353bbbaf5c672a54b7194
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-23T19:10:53.366Z",
               "EditorCaption": ""

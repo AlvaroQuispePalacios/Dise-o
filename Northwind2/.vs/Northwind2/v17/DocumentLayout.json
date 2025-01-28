@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "E:\\2DAM\\Dise-o\\Northwind2\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|e:\\2dam\\dise-o\\northwind2\\formreportcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formreportcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -13,6 +14,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|E:\\2DAM\\Dise-o\\Northwind2\\formreportordercustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formreportordercustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\northwind2\\formbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\northwind2\\reportorder1996.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:reportorder1996.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\northwind2\\formreportcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formreportcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\northwind2\\formmultiplesreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formmultiplesreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> b0876c6ffcdaab6601f353bbbaf5c672a54b7194
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|e:\\2dam\\dise-o\\northwind2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,14 +51,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 206,
+<<<<<<< HEAD
           "SelectedChildIndex": 3,
+=======
+          "SelectedChildIndex": 5,
+>>>>>>> b0876c6ffcdaab6601f353bbbaf5c672a54b7194
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormMultiplesReports.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\FormMultiplesReports.cs",
+              "RelativeDocumentMoniker": "FormMultiplesReports.cs",
+              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\FormMultiplesReports.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormMultiplesReports.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T15:52:21.184Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReportOrder1996.rdlc [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\ReportOrder1996.rdlc",
+              "RelativeDocumentMoniker": "ReportOrder1996.rdlc",
+              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\ReportOrder1996.rdlc [Dise\u00F1o]",
+              "RelativeToolTip": "ReportOrder1996.rdlc [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
+              "WhenOpened": "2025-01-27T15:52:10.614Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "Form1.cs",
               "DocumentMoniker": "E:\\2DAM\\Dise-o\\Northwind2\\Form1.cs",
@@ -70,6 +116,11 @@
               "DocumentIndex": 0,
               "Title": "FormReportCustomer.cs [Dise\u00F1o]",
               "DocumentMoniker": "E:\\2DAM\\Dise-o\\Northwind2\\FormReportCustomer.cs",
+=======
+              "DocumentIndex": 4,
+              "Title": "FormReportCustomer.cs",
+              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\FormReportCustomer.cs",
+>>>>>>> b0876c6ffcdaab6601f353bbbaf5c672a54b7194
               "RelativeDocumentMoniker": "FormReportCustomer.cs",
               "ToolTip": "E:\\2DAM\\Dise-o\\Northwind2\\FormReportCustomer.cs [Dise\u00F1o]",
               "RelativeToolTip": "FormReportCustomer.cs [Dise\u00F1o]",
@@ -85,13 +136,18 @@
               "RelativeDocumentMoniker": "FormReportCustomer.cs",
               "ToolTip": "E:\\2DAM\\Dise-o\\Northwind2\\FormReportCustomer.cs",
               "RelativeToolTip": "FormReportCustomer.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwCgAAABAAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+>>>>>>> b0876c6ffcdaab6601f353bbbaf5c672a54b7194
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T19:20:59.894Z",
+              "WhenOpened": "2025-01-27T15:22:05.756Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
               "Title": "ReportOrder.rdlc [Dise\u00F1o]",
               "DocumentMoniker": "E:\\2DAM\\Dise-o\\Northwind2\\ReportOrder.rdlc",
@@ -100,10 +156,21 @@
               "RelativeToolTip": "ReportOrder.rdlc [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
               "WhenOpened": "2025-01-23T19:18:26.423Z",
+=======
+              "DocumentIndex": 2,
+              "Title": "FormReportCustomer.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\FormReportCustomer.cs",
+              "RelativeDocumentMoniker": "FormReportCustomer.cs",
+              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\FormReportCustomer.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormReportCustomer.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T15:22:03.547Z",
+>>>>>>> b0876c6ffcdaab6601f353bbbaf5c672a54b7194
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "FormReportOrderCustomer.cs",
               "DocumentMoniker": "E:\\2DAM\\Dise-o\\Northwind2\\FormReportOrderCustomer.cs",
@@ -111,9 +178,17 @@
               "ToolTip": "E:\\2DAM\\Dise-o\\Northwind2\\FormReportOrderCustomer.cs",
               "RelativeToolTip": "FormReportOrderCustomer.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAowBsAAAAuAAAAAAAAAA==",
+=======
+              "DocumentIndex": 0,
+              "Title": "FormBase.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\FormBase.cs",
+              "RelativeDocumentMoniker": "FormBase.cs",
+              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\FormBase.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormBase.cs [Dise\u00F1o]",
+>>>>>>> b0876c6ffcdaab6601f353bbbaf5c672a54b7194
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T19:10:53.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T15:16:33.69Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

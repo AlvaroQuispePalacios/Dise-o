@@ -44,3 +44,14 @@ namespace Northwind2
         }
     }
 }
+
+
+
+/**
+ * Hacer una tabla listados
+ * id
+ * FornName
+ * Nombre del report 
+ * Vista o tabla asociada (Nombre)
+ * Descripcion
+ */
