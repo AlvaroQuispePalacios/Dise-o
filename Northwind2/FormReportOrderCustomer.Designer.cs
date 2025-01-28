@@ -33,6 +33,7 @@
             this.customer_order_detail_productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.northwindDataSet = new Northwind2.NorthwindDataSet();
             this.panelTop = new System.Windows.Forms.Panel();
+            this.btnResetFilter = new System.Windows.Forms.Button();
             this.cbCompanyName = new System.Windows.Forms.ComboBox();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lbDateFinal = new System.Windows.Forms.Label();
@@ -47,7 +48,6 @@
             this.customer_order_detail_productTableAdapter = new Northwind2.NorthwindDataSetTableAdapters.customer_order_detail_productTableAdapter();
             this.tableAdapterManager = new Northwind2.NorthwindDataSetTableAdapters.TableAdapterManager();
             this.customersTableAdapter = new Northwind2.NorthwindDataSetTableAdapters.CustomersTableAdapter();
-            this.btnResetFilter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.customer_order_detail_productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
             this.panelTop.SuspendLayout();
@@ -79,8 +79,18 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(800, 86);
+            this.panelTop.Size = new System.Drawing.Size(773, 86);
             this.panelTop.TabIndex = 0;
+            // 
+            // btnResetFilter
+            // 
+            this.btnResetFilter.Location = new System.Drawing.Point(725, 54);
+            this.btnResetFilter.Name = "btnResetFilter";
+            this.btnResetFilter.Size = new System.Drawing.Size(75, 23);
+            this.btnResetFilter.TabIndex = 9;
+            this.btnResetFilter.Text = "Reset Filter";
+            this.btnResetFilter.UseVisualStyleBackColor = true;
+            this.btnResetFilter.Click += new System.EventHandler(this.btnResetFilter_Click);
             // 
             // cbCompanyName
             // 
@@ -89,7 +99,7 @@
             this.cbCompanyName.DataSource = this.customersBindingSource;
             this.cbCompanyName.DisplayMember = "CompanyName";
             this.cbCompanyName.FormattingEnabled = true;
-            this.cbCompanyName.Location = new System.Drawing.Point(410, 32);
+            this.cbCompanyName.Location = new System.Drawing.Point(287, 18);
             this.cbCompanyName.Name = "cbCompanyName";
             this.cbCompanyName.Size = new System.Drawing.Size(200, 21);
             this.cbCompanyName.TabIndex = 8;
@@ -163,7 +173,7 @@
             this.panelReport.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelReport.Location = new System.Drawing.Point(0, 86);
             this.panelReport.Name = "panelReport";
-            this.panelReport.Size = new System.Drawing.Size(800, 377);
+            this.panelReport.Size = new System.Drawing.Size(773, 339);
             this.panelReport.TabIndex = 1;
             // 
             // reportViewer1
@@ -176,7 +186,7 @@
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(800, 377);
+            this.reportViewer1.Size = new System.Drawing.Size(773, 339);
             this.reportViewer1.TabIndex = 0;
             // 
             // customer_order_detail_productTableAdapter
@@ -206,21 +216,11 @@
             // 
             this.customersTableAdapter.ClearBeforeFill = true;
             // 
-            // btnResetFilter
-            // 
-            this.btnResetFilter.Location = new System.Drawing.Point(725, 54);
-            this.btnResetFilter.Name = "btnResetFilter";
-            this.btnResetFilter.Size = new System.Drawing.Size(75, 23);
-            this.btnResetFilter.TabIndex = 9;
-            this.btnResetFilter.Text = "Reset Filter";
-            this.btnResetFilter.UseVisualStyleBackColor = true;
-            this.btnResetFilter.Click += new System.EventHandler(this.btnResetFilter_Click);
-            // 
             // FormReportOrderCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 463);
+            this.ClientSize = new System.Drawing.Size(773, 425);
             this.Controls.Add(this.panelReport);
             this.Controls.Add(this.panelTop);
             this.Name = "FormReportOrderCustomer";
