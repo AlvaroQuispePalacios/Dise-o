@@ -100,6 +100,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ReportOrders.rdlc" />
+    <EmbeddedResource Include="ReportPrueba.rdlc" />
     <None Include="NorthwindDataSet.xsc">
       <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
     </None>
