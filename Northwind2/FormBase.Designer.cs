@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panelTop = new System.Windows.Forms.Panel();
-            this.panelViewReport = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.cbReports = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panelViewReport = new System.Windows.Forms.Panel();
             this.panelTop.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,13 +45,13 @@
             this.panelTop.Size = new System.Drawing.Size(800, 91);
             this.panelTop.TabIndex = 0;
             // 
-            // panelViewReport
+            // cbReports
             // 
-            this.panelViewReport.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelViewReport.Location = new System.Drawing.Point(0, 91);
-            this.panelViewReport.Name = "panelViewReport";
-            this.panelViewReport.Size = new System.Drawing.Size(800, 359);
-            this.panelViewReport.TabIndex = 1;
+            this.cbReports.FormattingEnabled = true;
+            this.cbReports.Location = new System.Drawing.Point(57, 14);
+            this.cbReports.Name = "cbReports";
+            this.cbReports.Size = new System.Drawing.Size(200, 21);
+            this.cbReports.TabIndex = 1;
             // 
             // button1
             // 
@@ -63,13 +63,13 @@
             this.button1.Text = "Ver";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // cbReports
+            // panelViewReport
             // 
-            this.cbReports.FormattingEnabled = true;
-            this.cbReports.Location = new System.Drawing.Point(57, 14);
-            this.cbReports.Name = "cbReports";
-            this.cbReports.Size = new System.Drawing.Size(200, 21);
-            this.cbReports.TabIndex = 1;
+            this.panelViewReport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelViewReport.Location = new System.Drawing.Point(0, 91);
+            this.panelViewReport.Name = "panelViewReport";
+            this.panelViewReport.Size = new System.Drawing.Size(800, 359);
+            this.panelViewReport.TabIndex = 1;
             // 
             // FormBase
             // 
@@ -87,9 +87,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panelTop;
-        private System.Windows.Forms.Panel panelViewReport;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox cbReports;
+        public System.Windows.Forms.Panel panelTop;
+        public System.Windows.Forms.Panel panelViewReport;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.ComboBox cbReports;
     }
 }

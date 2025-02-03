@@ -64,3 +64,4 @@ C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.Form1.res
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormReportOrderCustomer.resources
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormMultiplesReports.resources
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormBase.resources
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormHeredado.resources

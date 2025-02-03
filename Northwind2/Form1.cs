@@ -54,5 +54,10 @@ namespace Northwind2
             AbrirFormHijo(new FormMultiplesReports());
 
         }
+
+        private void formularioHeredadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new FormHeredado());
+        }
     }
 }
