@@ -59,5 +59,15 @@ namespace Northwind2
         {
             AbrirFormHijo(new FormHeredado());
         }
+
+        private void gestiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gestiónEmployeesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

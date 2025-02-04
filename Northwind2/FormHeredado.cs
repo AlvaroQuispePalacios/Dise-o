@@ -23,10 +23,14 @@ namespace Northwind2
             this.listadosTableAdapter.Fill(this.northwindDataSet.listados);
             // TODO: esta línea de código carga datos en la tabla 'northwindDataSet.all_customers_orderDetails_orders_products' Puede moverla o quitarla según sea necesario.
             this.all_customers_orderDetails_orders_productsTableAdapter.Fill(this.northwindDataSet.all_customers_orderDetails_orders_products);
+            this.listadosBindingSource.Filter = $"nombre_formulario = '{this.Name}'";
+            this.reportViewer1.RefreshReport();
+        }
 
-            Console.WriteLine(this.Name);
-            
-
+        private void btnFiltro_Click(object sender, EventArgs e)
+        {
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = $"Northwind2.{cbReports.SelectedValue}";
+            this.reportViewer1.RefreshReport();
         }
     }
 }

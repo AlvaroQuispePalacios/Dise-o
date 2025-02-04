@@ -34,8 +34,11 @@
             this.reportesPorAñoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteOrdenes1996ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteOrden1997ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panelContainer = new System.Windows.Forms.Panel();
             this.formularioHeredadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelContainer = new System.Windows.Forms.Panel();
+            this.formulariosGestiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestiónEmployeesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +48,8 @@
             this.reporteClientesToolStripMenuItem,
             this.reporteOrdenesToolStripMenuItem,
             this.reportesPorAñoToolStripMenuItem,
-            this.formularioHeredadoToolStripMenuItem});
+            this.formularioHeredadoToolStripMenuItem,
+            this.formulariosGestiónToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -88,6 +92,13 @@
             this.reporteOrden1997ToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.reporteOrden1997ToolStripMenuItem.Text = "Reporte orden 1997";
             // 
+            // formularioHeredadoToolStripMenuItem
+            // 
+            this.formularioHeredadoToolStripMenuItem.Name = "formularioHeredadoToolStripMenuItem";
+            this.formularioHeredadoToolStripMenuItem.Size = new System.Drawing.Size(132, 20);
+            this.formularioHeredadoToolStripMenuItem.Text = "Formulario Heredado";
+            this.formularioHeredadoToolStripMenuItem.Click += new System.EventHandler(this.formularioHeredadoToolStripMenuItem_Click);
+            // 
             // panelContainer
             // 
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -96,12 +107,28 @@
             this.panelContainer.Size = new System.Drawing.Size(800, 426);
             this.panelContainer.TabIndex = 1;
             // 
-            // formularioHeredadoToolStripMenuItem
+            // formulariosGestiónToolStripMenuItem
             // 
-            this.formularioHeredadoToolStripMenuItem.Name = "formularioHeredadoToolStripMenuItem";
-            this.formularioHeredadoToolStripMenuItem.Size = new System.Drawing.Size(132, 20);
-            this.formularioHeredadoToolStripMenuItem.Text = "Formulario Heredado";
-            this.formularioHeredadoToolStripMenuItem.Click += new System.EventHandler(this.formularioHeredadoToolStripMenuItem_Click);
+            this.formulariosGestiónToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gestiónToolStripMenuItem,
+            this.gestiónEmployeesToolStripMenuItem});
+            this.formulariosGestiónToolStripMenuItem.Name = "formulariosGestiónToolStripMenuItem";
+            this.formulariosGestiónToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
+            this.formulariosGestiónToolStripMenuItem.Text = "Formularios Gestión";
+            // 
+            // gestiónToolStripMenuItem
+            // 
+            this.gestiónToolStripMenuItem.Name = "gestiónToolStripMenuItem";
+            this.gestiónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gestiónToolStripMenuItem.Text = "Gestión Customers";
+            this.gestiónToolStripMenuItem.Click += new System.EventHandler(this.gestiónToolStripMenuItem_Click);
+            // 
+            // gestiónEmployeesToolStripMenuItem
+            // 
+            this.gestiónEmployeesToolStripMenuItem.Name = "gestiónEmployeesToolStripMenuItem";
+            this.gestiónEmployeesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gestiónEmployeesToolStripMenuItem.Text = "Gestión Employees";
+            this.gestiónEmployeesToolStripMenuItem.Click += new System.EventHandler(this.gestiónEmployeesToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -130,6 +157,9 @@
         private System.Windows.Forms.ToolStripMenuItem reporteOrdenes1996ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reporteOrden1997ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem formularioHeredadoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem formulariosGestiónToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestiónToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestiónEmployeesToolStripMenuItem;
     }
 }
 

@@ -10,16 +10,13 @@ using System.Windows.Forms;
 
 namespace Northwind2
 {
-    public partial class FormBase : Form
+    public partial class FormGestionBase : Form
     {
-        public FormBase()
+        public FormGestionBase()
         {
             InitializeComponent();
         }
 
-        private void btnFiltro_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

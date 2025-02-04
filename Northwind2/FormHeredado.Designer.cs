@@ -29,39 +29,44 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.northwindDataSet = new Northwind2.NorthwindDataSet();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.all_customers_orderDetails_orders_productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.northwindDataSet = new Northwind2.NorthwindDataSet();
             this.all_customers_orderDetails_orders_productsTableAdapter = new Northwind2.NorthwindDataSetTableAdapters.all_customers_orderDetails_orders_productsTableAdapter();
             this.tableAdapterManager = new Northwind2.NorthwindDataSetTableAdapters.TableAdapterManager();
-            this.listadosTableAdapter = new Northwind2.NorthwindDataSetTableAdapters.listadosTableAdapter();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.listadosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.listadosTableAdapter = new Northwind2.NorthwindDataSetTableAdapters.listadosTableAdapter();
             this.panelTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
+            this.panelViewReport.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.all_customers_orderDetails_orders_productsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listadosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelTop
-            // 
-            this.panelTop.Size = new System.Drawing.Size(859, 91);
-            // 
             // panelViewReport
             // 
-            this.panelViewReport.Size = new System.Drawing.Size(859, 359);
+            this.panelViewReport.Controls.Add(this.reportViewer1);
             // 
-            // button1
+            // btnFiltro
             // 
-            this.button1.Location = new System.Drawing.Point(840, 12);
+            this.btnFiltro.Click += new System.EventHandler(this.btnFiltro_Click);
             // 
-            // northwindDataSet
+            // cbReports
             // 
-            this.northwindDataSet.DataSetName = "NorthwindDataSet";
-            this.northwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.cbReports.DataSource = this.listadosBindingSource;
+            this.cbReports.DisplayMember = "nombre_report";
+            this.cbReports.ValueMember = "nombre_report";
             // 
             // all_customers_orderDetails_orders_productsBindingSource
             // 
             this.all_customers_orderDetails_orders_productsBindingSource.DataMember = "all_customers_orderDetails_orders_products";
             this.all_customers_orderDetails_orders_productsBindingSource.DataSource = this.northwindDataSet;
+            // 
+            // northwindDataSet
+            // 
+            this.northwindDataSet.DataSetName = "NorthwindDataSet";
+            this.northwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // all_customers_orderDetails_orders_productsTableAdapter
             // 
@@ -71,12 +76,13 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.CategoriesTableAdapter = null;
+            this.tableAdapterManager.Connection = null;
             this.tableAdapterManager.CustomerCustomerDemoTableAdapter = null;
             this.tableAdapterManager.CustomerDemographicsTableAdapter = null;
             this.tableAdapterManager.CustomersTableAdapter = null;
             this.tableAdapterManager.EmployeesTableAdapter = null;
             this.tableAdapterManager.EmployeeTerritoriesTableAdapter = null;
-            this.tableAdapterManager.listadosTableAdapter = this.listadosTableAdapter;
+            this.tableAdapterManager.listadosTableAdapter = null;
             this.tableAdapterManager.Order_DetailsTableAdapter = null;
             this.tableAdapterManager.OrdersTableAdapter = null;
             this.tableAdapterManager.ProductsTableAdapter = null;
@@ -86,26 +92,40 @@
             this.tableAdapterManager.TerritoriesTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Northwind2.NorthwindDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // listadosTableAdapter
+            // reportViewer1
             // 
-            this.listadosTableAdapter.ClearBeforeFill = true;
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "DataSetAll";
+            reportDataSource1.Value = this.all_customers_orderDetails_orders_productsBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Northwind2.ReportPrueba.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(800, 359);
+            this.reportViewer1.TabIndex = 0;
             // 
             // listadosBindingSource
             // 
             this.listadosBindingSource.DataMember = "listados";
             this.listadosBindingSource.DataSource = this.northwindDataSet;
             // 
+            // listadosTableAdapter
+            // 
+            this.listadosTableAdapter.ClearBeforeFill = true;
+            // 
             // FormHeredado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(859, 450);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "FormHeredado";
             this.Text = "FormHeredado";
             this.Load += new System.EventHandler(this.FormHeredado_Load);
             this.panelTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).EndInit();
+            this.panelViewReport.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.all_customers_orderDetails_orders_productsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listadosBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -117,7 +137,8 @@
         private System.Windows.Forms.BindingSource all_customers_orderDetails_orders_productsBindingSource;
         private NorthwindDataSetTableAdapters.all_customers_orderDetails_orders_productsTableAdapter all_customers_orderDetails_orders_productsTableAdapter;
         private NorthwindDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private NorthwindDataSetTableAdapters.listadosTableAdapter listadosTableAdapter;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource listadosBindingSource;
+        private NorthwindDataSetTableAdapters.listadosTableAdapter listadosTableAdapter;
     }
 }

@@ -30,7 +30,7 @@
         {
             this.panelTop = new System.Windows.Forms.Panel();
             this.cbReports = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnFiltro = new System.Windows.Forms.Button();
             this.panelViewReport = new System.Windows.Forms.Panel();
             this.panelTop.SuspendLayout();
             this.SuspendLayout();
@@ -38,7 +38,7 @@
             // panelTop
             // 
             this.panelTop.Controls.Add(this.cbReports);
-            this.panelTop.Controls.Add(this.button1);
+            this.panelTop.Controls.Add(this.btnFiltro);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
@@ -53,15 +53,16 @@
             this.cbReports.Size = new System.Drawing.Size(200, 21);
             this.cbReports.TabIndex = 1;
             // 
-            // button1
+            // btnFiltro
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(722, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Ver";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnFiltro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFiltro.Location = new System.Drawing.Point(722, 12);
+            this.btnFiltro.Name = "btnFiltro";
+            this.btnFiltro.Size = new System.Drawing.Size(75, 23);
+            this.btnFiltro.TabIndex = 0;
+            this.btnFiltro.Text = "Ver";
+            this.btnFiltro.UseVisualStyleBackColor = true;
+            this.btnFiltro.Click += new System.EventHandler(this.btnFiltro_Click);
             // 
             // panelViewReport
             // 
@@ -89,7 +90,7 @@
 
         public System.Windows.Forms.Panel panelTop;
         public System.Windows.Forms.Panel panelViewReport;
-        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button btnFiltro;
         public System.Windows.Forms.ComboBox cbReports;
     }
 }

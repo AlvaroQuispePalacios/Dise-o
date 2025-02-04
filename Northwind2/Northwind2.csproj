@@ -76,6 +76,12 @@
     <Compile Include="FormBase.Designer.cs">
       <DependentUpon>FormBase.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGestionBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestionBase.Designer.cs">
+      <DependentUpon>FormGestionBase.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormHeredado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBase.resx">
       <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestionBase.resx">
+      <DependentUpon>FormGestionBase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHeredado.resx">
       <DependentUpon>FormHeredado.cs</DependentUpon>
