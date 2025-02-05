@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace Northwind2
 {
-    public partial class FormGestionBase : Form
+    public partial class FormGestionTablaBase : FormBase
     {
-        public FormGestionBase()
+        public FormGestionTablaBase()
         {
             InitializeComponent();
         }
-
-        
     }
 }

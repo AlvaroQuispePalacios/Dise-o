@@ -76,17 +76,35 @@
     <Compile Include="FormBase.Designer.cs">
       <DependentUpon>FormBase.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormGestionBase.cs">
+    <Compile Include="FormGestionTablaBase.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormGestionBase.Designer.cs">
-      <DependentUpon>FormGestionBase.cs</DependentUpon>
+    <Compile Include="FormGestionTablaBase.Designer.cs">
+      <DependentUpon>FormGestionTablaBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportBase.Designer.cs">
+      <DependentUpon>FormReportBase.cs</DependentUpon>
     </Compile>
     <Compile Include="FormHeredado.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormHeredado.Designer.cs">
       <DependentUpon>FormHeredado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoginBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoginBase.Designer.cs">
+      <DependentUpon>FormLoginBase.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMultiplesReports.cs">
       <SubType>Form</SubType>
@@ -120,8 +138,17 @@
     <EmbeddedResource Include="FormBase.resx">
       <DependentUpon>FormBase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormGestionBase.resx">
-      <DependentUpon>FormGestionBase.cs</DependentUpon>
+    <EmbeddedResource Include="FormGestionTablaBase.resx">
+      <DependentUpon>FormGestionTablaBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoginBase.resx">
+      <DependentUpon>FormLoginBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportBase.resx">
+      <DependentUpon>FormReportBase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHeredado.resx">
       <DependentUpon>FormHeredado.cs</DependentUpon>

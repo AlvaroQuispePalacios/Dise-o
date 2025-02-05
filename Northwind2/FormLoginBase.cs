@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace Northwind2
 {
-    public partial class FormBase : Form
+    public partial class FormLoginBase : Form
     {
-        public FormBase()
+        public FormLoginBase()
         {
             InitializeComponent();
         }
     }
+    /*
+        - Funcion validar usuario (usuario, pwd)
+        - Crear tabla NCLusuario1
+        - Crear tabla NCLSesion (usuario, ip de donde se conectar, fecha)
+        
+     */
 }

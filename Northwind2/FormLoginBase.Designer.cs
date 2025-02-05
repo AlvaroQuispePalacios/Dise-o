@@ -1,6 +1,6 @@
 ﻿namespace Northwind2
 {
-    partial class FormBase
+    partial class FormLoginBase
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelBase = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // panelBase
-            // 
-            this.panelBase.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panelBase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBase.Location = new System.Drawing.Point(0, 0);
-            this.panelBase.Name = "panelBase";
-            this.panelBase.Size = new System.Drawing.Size(800, 450);
-            this.panelBase.TabIndex = 0;
-            // 
-            // FormBase
+            // FormLoginBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panelBase);
-            this.Name = "FormBase";
-            this.Text = "FormBase";
+            this.Name = "FormLoginBase";
+            this.Text = "FormLoginBase";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        public System.Windows.Forms.Panel panelBase;
     }
 }

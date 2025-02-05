@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Northwind2
 {
-    public partial class FormHeredado : FormBase
+    public partial class FormHeredado : FormReportBase
     {
         public FormHeredado()
         {

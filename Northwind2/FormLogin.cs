@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Northwind2
 {
-    public partial class FormBase : Form
+    public partial class FormLogin : FormBase
     {
-        public FormBase()
+        public FormLogin()
         {
             InitializeComponent();
         }

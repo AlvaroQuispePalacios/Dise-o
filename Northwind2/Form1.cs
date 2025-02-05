@@ -62,7 +62,7 @@ namespace Northwind2
 
         private void gestiónToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            AbrirFormHijo(new FormGestionTablaBase());
         }
 
         private void gestiónEmployeesToolStripMenuItem_Click(object sender, EventArgs e)
