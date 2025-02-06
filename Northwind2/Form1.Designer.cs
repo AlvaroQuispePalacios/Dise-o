@@ -35,10 +35,11 @@
             this.reporteOrdenes1996ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteOrden1997ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formularioHeredadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panelContainer = new System.Windows.Forms.Panel();
             this.formulariosGestiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestiónEmployeesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelContainer = new System.Windows.Forms.Panel();
+            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,8 @@
             this.reporteOrdenesToolStripMenuItem,
             this.reportesPorAñoToolStripMenuItem,
             this.formularioHeredadoToolStripMenuItem,
-            this.formulariosGestiónToolStripMenuItem});
+            this.formulariosGestiónToolStripMenuItem,
+            this.loginToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -99,14 +101,6 @@
             this.formularioHeredadoToolStripMenuItem.Text = "Formulario Heredado";
             this.formularioHeredadoToolStripMenuItem.Click += new System.EventHandler(this.formularioHeredadoToolStripMenuItem_Click);
             // 
-            // panelContainer
-            // 
-            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContainer.Location = new System.Drawing.Point(0, 24);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(800, 426);
-            this.panelContainer.TabIndex = 1;
-            // 
             // formulariosGestiónToolStripMenuItem
             // 
             this.formulariosGestiónToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -119,16 +113,31 @@
             // gestiónToolStripMenuItem
             // 
             this.gestiónToolStripMenuItem.Name = "gestiónToolStripMenuItem";
-            this.gestiónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gestiónToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.gestiónToolStripMenuItem.Text = "Gestión Customers";
             this.gestiónToolStripMenuItem.Click += new System.EventHandler(this.gestiónToolStripMenuItem_Click);
             // 
             // gestiónEmployeesToolStripMenuItem
             // 
             this.gestiónEmployeesToolStripMenuItem.Name = "gestiónEmployeesToolStripMenuItem";
-            this.gestiónEmployeesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gestiónEmployeesToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.gestiónEmployeesToolStripMenuItem.Text = "Gestión Employees";
             this.gestiónEmployeesToolStripMenuItem.Click += new System.EventHandler(this.gestiónEmployeesToolStripMenuItem_Click);
+            // 
+            // panelContainer
+            // 
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Location = new System.Drawing.Point(0, 24);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(800, 426);
+            this.panelContainer.TabIndex = 1;
+            // 
+            // loginToolStripMenuItem
+            // 
+            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.loginToolStripMenuItem.Text = "Login";
+            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -160,6 +169,7 @@
         private System.Windows.Forms.ToolStripMenuItem formulariosGestiónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestiónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestiónEmployeesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
     }
 }
 

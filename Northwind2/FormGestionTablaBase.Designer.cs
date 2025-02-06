@@ -261,10 +261,11 @@
             // lbTitle
             // 
             this.lbTitle.AutoSize = true;
+            this.lbTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.Location = new System.Drawing.Point(3, 0);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(57, 24);
+            this.lbTitle.Size = new System.Drawing.Size(268, 35);
             this.lbTitle.TabIndex = 1;
             this.lbTitle.Text = "Datos";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

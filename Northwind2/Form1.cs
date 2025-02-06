@@ -69,5 +69,10 @@ namespace Northwind2
         {
 
         }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new FormLogin());
+        }
     }
 }
