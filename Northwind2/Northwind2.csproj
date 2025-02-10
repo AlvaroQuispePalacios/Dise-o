@@ -76,6 +76,12 @@
     <Compile Include="FormBase.Designer.cs">
       <DependentUpon>FormBase.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGestionCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestionCustomers.Designer.cs">
+      <DependentUpon>FormGestionCustomers.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGestionTablaBase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBase.resx">
       <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestionCustomers.resx">
+      <DependentUpon>FormGestionCustomers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGestionTablaBase.resx">
       <DependentUpon>FormGestionTablaBase.cs</DependentUpon>

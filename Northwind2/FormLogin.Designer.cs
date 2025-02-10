@@ -31,11 +31,11 @@
             this.panelContenedor = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.lbUsuario = new System.Windows.Forms.Label();
-            this.tbUsuario = new System.Windows.Forms.TextBox();
-            this.tbPwd = new System.Windows.Forms.TextBox();
-            this.btnValidarUsuario = new System.Windows.Forms.Button();
             this.lbPwd = new System.Windows.Forms.Label();
+            this.btnValidarUsuario = new System.Windows.Forms.Button();
+            this.tbPwd = new System.Windows.Forms.TextBox();
+            this.tbUsuario = new System.Windows.Forms.TextBox();
+            this.lbUsuario = new System.Windows.Forms.Label();
             this.panelBase.SuspendLayout();
             this.panelContenedor.SuspendLayout();
             this.panelContainer.SuspendLayout();
@@ -86,32 +86,15 @@
             this.panelContainer.Size = new System.Drawing.Size(355, 344);
             this.panelContainer.TabIndex = 1;
             // 
-            // lbUsuario
+            // lbPwd
             // 
-            this.lbUsuario.AutoSize = true;
-            this.lbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUsuario.Location = new System.Drawing.Point(50, 47);
-            this.lbUsuario.Name = "lbUsuario";
-            this.lbUsuario.Size = new System.Drawing.Size(64, 20);
-            this.lbUsuario.TabIndex = 0;
-            this.lbUsuario.Text = "Usuario";
-            // 
-            // tbUsuario
-            // 
-            this.tbUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUsuario.Location = new System.Drawing.Point(54, 70);
-            this.tbUsuario.Name = "tbUsuario";
-            this.tbUsuario.Size = new System.Drawing.Size(252, 24);
-            this.tbUsuario.TabIndex = 2;
-            // 
-            // tbPwd
-            // 
-            this.tbPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPwd.Location = new System.Drawing.Point(54, 128);
-            this.tbPwd.Name = "tbPwd";
-            this.tbPwd.Size = new System.Drawing.Size(252, 24);
-            this.tbPwd.TabIndex = 3;
+            this.lbPwd.AutoSize = true;
+            this.lbPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPwd.Location = new System.Drawing.Point(50, 105);
+            this.lbPwd.Name = "lbPwd";
+            this.lbPwd.Size = new System.Drawing.Size(92, 20);
+            this.lbPwd.TabIndex = 5;
+            this.lbPwd.Text = "Contraseña";
             // 
             // btnValidarUsuario
             // 
@@ -122,16 +105,34 @@
             this.btnValidarUsuario.TabIndex = 4;
             this.btnValidarUsuario.Text = "Ingresar";
             this.btnValidarUsuario.UseVisualStyleBackColor = true;
+            this.btnValidarUsuario.Click += new System.EventHandler(this.btnValidarUsuario_Click);
             // 
-            // lbPwd
+            // tbPwd
             // 
-            this.lbPwd.AutoSize = true;
-            this.lbPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPwd.Location = new System.Drawing.Point(50, 105);
-            this.lbPwd.Name = "lbPwd";
-            this.lbPwd.Size = new System.Drawing.Size(92, 20);
-            this.lbPwd.TabIndex = 5;
-            this.lbPwd.Text = "Contraseña";
+            this.tbPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPwd.Location = new System.Drawing.Point(54, 128);
+            this.tbPwd.Name = "tbPwd";
+            this.tbPwd.Size = new System.Drawing.Size(252, 24);
+            this.tbPwd.TabIndex = 3;
+            // 
+            // tbUsuario
+            // 
+            this.tbUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUsuario.Location = new System.Drawing.Point(54, 70);
+            this.tbUsuario.Name = "tbUsuario";
+            this.tbUsuario.Size = new System.Drawing.Size(252, 24);
+            this.tbUsuario.TabIndex = 2;
+            // 
+            // lbUsuario
+            // 
+            this.lbUsuario.AutoSize = true;
+            this.lbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUsuario.Location = new System.Drawing.Point(50, 47);
+            this.lbUsuario.Name = "lbUsuario";
+            this.lbUsuario.Size = new System.Drawing.Size(64, 20);
+            this.lbUsuario.TabIndex = 0;
+            this.lbUsuario.Text = "Usuario";
             // 
             // FormLogin
             // 

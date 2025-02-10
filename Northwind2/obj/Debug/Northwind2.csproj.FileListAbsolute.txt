@@ -69,3 +69,4 @@ C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormBase.
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormLoginBase.resources
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormLogin.resources
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormGestionTablaBase.resources
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormGestionCustomers.resources

@@ -104,6 +104,7 @@
             this.btnModificarRegistro.TabIndex = 6;
             this.btnModificarRegistro.Text = "Modificar";
             this.btnModificarRegistro.UseVisualStyleBackColor = true;
+            this.btnModificarRegistro.Click += new System.EventHandler(this.btnModificarRegistro_Click);
             // 
             // btnEliminarRegistro
             // 
@@ -114,6 +115,7 @@
             this.btnEliminarRegistro.TabIndex = 5;
             this.btnEliminarRegistro.Text = "Eliminar";
             this.btnEliminarRegistro.UseVisualStyleBackColor = true;
+            this.btnEliminarRegistro.Click += new System.EventHandler(this.btnEliminarRegistro_Click);
             // 
             // btnAgregarRegistro
             // 
@@ -124,6 +126,7 @@
             this.btnAgregarRegistro.TabIndex = 4;
             this.btnAgregarRegistro.Text = "Agregar";
             this.btnAgregarRegistro.UseVisualStyleBackColor = true;
+            this.btnAgregarRegistro.Click += new System.EventHandler(this.btnAgregarRegistro_Click);
             // 
             // btnIrAlUltimo
             // 
@@ -134,6 +137,7 @@
             this.btnIrAlUltimo.TabIndex = 3;
             this.btnIrAlUltimo.Text = ">>";
             this.btnIrAlUltimo.UseVisualStyleBackColor = true;
+            this.btnIrAlUltimo.Click += new System.EventHandler(this.btnIrAlUltimo_Click);
             // 
             // btnIrAlSiguiente
             // 
@@ -144,6 +148,7 @@
             this.btnIrAlSiguiente.TabIndex = 2;
             this.btnIrAlSiguiente.Text = ">";
             this.btnIrAlSiguiente.UseVisualStyleBackColor = true;
+            this.btnIrAlSiguiente.Click += new System.EventHandler(this.btnIrAlSiguiente_Click);
             // 
             // btnIrAlAnterior
             // 
@@ -154,6 +159,7 @@
             this.btnIrAlAnterior.TabIndex = 1;
             this.btnIrAlAnterior.Text = "<";
             this.btnIrAlAnterior.UseVisualStyleBackColor = true;
+            this.btnIrAlAnterior.Click += new System.EventHandler(this.btnIrAlAnterior_Click);
             // 
             // btnIrAlPrimero
             // 
@@ -164,6 +170,7 @@
             this.btnIrAlPrimero.TabIndex = 0;
             this.btnIrAlPrimero.Text = "<<";
             this.btnIrAlPrimero.UseVisualStyleBackColor = true;
+            this.btnIrAlPrimero.Click += new System.EventHandler(this.btnIrAlPrimero_Click);
             // 
             // panelBot
             // 
@@ -198,6 +205,7 @@
             this.btnAceptarCambios.TabIndex = 1;
             this.btnAceptarCambios.Text = "Aceptar";
             this.btnAceptarCambios.UseVisualStyleBackColor = true;
+            this.btnAceptarCambios.Click += new System.EventHandler(this.btnAceptarCambios_Click);
             // 
             // btnCancelarCambios
             // 
@@ -208,6 +216,7 @@
             this.btnCancelarCambios.TabIndex = 0;
             this.btnCancelarCambios.Text = "Cancelar";
             this.btnCancelarCambios.UseVisualStyleBackColor = true;
+            this.btnCancelarCambios.Click += new System.EventHandler(this.btnCancelarCambios_Click);
             // 
             // panelContainerMid
             // 
@@ -290,14 +299,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panelTop;
-        private System.Windows.Forms.TableLayoutPanel panelContainerMid;
-        private System.Windows.Forms.Panel panelBot;
-        private System.Windows.Forms.Panel panelTable;
-        private System.Windows.Forms.TableLayoutPanel panelForm;
-        private System.Windows.Forms.FlowLayoutPanel panelData;
-        private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.TableLayoutPanel panelControles;
         private System.Windows.Forms.Button btnEliminarRegistro;
         private System.Windows.Forms.Button btnAgregarRegistro;
@@ -309,5 +310,12 @@
         private System.Windows.Forms.Button btnAceptarCambios;
         private System.Windows.Forms.Button btnCancelarCambios;
         private System.Windows.Forms.Button btnModificarRegistro;
+        public System.Windows.Forms.Panel panelTable;
+        public System.Windows.Forms.TableLayoutPanel panelContainerMid;
+        public System.Windows.Forms.FlowLayoutPanel panelData;
+        public System.Windows.Forms.Label lbTitle;
+        public System.Windows.Forms.TableLayoutPanel panelForm;
+        public System.Windows.Forms.Panel panelTop;
+        public System.Windows.Forms.Panel panelBot;
     }
 }
