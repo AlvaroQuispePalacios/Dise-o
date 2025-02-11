@@ -144,9 +144,6 @@
     <EmbeddedResource Include="FormBase.resx">
       <DependentUpon>FormBase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormGestionCustomers.resx">
-      <DependentUpon>FormGestionCustomers.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormGestionTablaBase.resx">
       <DependentUpon>FormGestionTablaBase.cs</DependentUpon>
     </EmbeddedResource>

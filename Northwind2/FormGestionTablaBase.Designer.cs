@@ -41,23 +41,19 @@
             this.panelCambios = new System.Windows.Forms.TableLayoutPanel();
             this.btnAceptarCambios = new System.Windows.Forms.Button();
             this.btnCancelarCambios = new System.Windows.Forms.Button();
-            this.panelContainerMid = new System.Windows.Forms.TableLayoutPanel();
-            this.panelTable = new System.Windows.Forms.Panel();
-            this.panelForm = new System.Windows.Forms.TableLayoutPanel();
-            this.panelData = new System.Windows.Forms.FlowLayoutPanel();
-            this.lbTitle = new System.Windows.Forms.Label();
+            this.panelLeft = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panelBase.SuspendLayout();
             this.panelTop.SuspendLayout();
             this.panelControles.SuspendLayout();
             this.panelBot.SuspendLayout();
             this.panelCambios.SuspendLayout();
-            this.panelContainerMid.SuspendLayout();
-            this.panelForm.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelBase
             // 
-            this.panelBase.Controls.Add(this.panelContainerMid);
+            this.panelBase.Controls.Add(this.panel1);
+            this.panelBase.Controls.Add(this.panelLeft);
             this.panelBase.Controls.Add(this.panelBot);
             this.panelBase.Controls.Add(this.panelTop);
             // 
@@ -218,66 +214,21 @@
             this.btnCancelarCambios.UseVisualStyleBackColor = true;
             this.btnCancelarCambios.Click += new System.EventHandler(this.btnCancelarCambios_Click);
             // 
-            // panelContainerMid
+            // panelLeft
             // 
-            this.panelContainerMid.ColumnCount = 2;
-            this.panelContainerMid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.panelContainerMid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
-            this.panelContainerMid.Controls.Add(this.panelTable, 1, 0);
-            this.panelContainerMid.Controls.Add(this.panelForm, 0, 0);
-            this.panelContainerMid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContainerMid.Location = new System.Drawing.Point(0, 45);
-            this.panelContainerMid.Name = "panelContainerMid";
-            this.panelContainerMid.RowCount = 1;
-            this.panelContainerMid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.panelContainerMid.Size = new System.Drawing.Size(800, 363);
-            this.panelContainerMid.TabIndex = 2;
+            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft.Location = new System.Drawing.Point(0, 45);
+            this.panelLeft.Name = "panelLeft";
+            this.panelLeft.Size = new System.Drawing.Size(280, 363);
+            this.panelLeft.TabIndex = 2;
             // 
-            // panelTable
+            // panel1
             // 
-            this.panelTable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelTable.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTable.Location = new System.Drawing.Point(283, 3);
-            this.panelTable.Name = "panelTable";
-            this.panelTable.Size = new System.Drawing.Size(514, 357);
-            this.panelTable.TabIndex = 0;
-            // 
-            // panelForm
-            // 
-            this.panelForm.ColumnCount = 1;
-            this.panelForm.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.panelForm.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.panelForm.Controls.Add(this.panelData, 0, 1);
-            this.panelForm.Controls.Add(this.lbTitle, 0, 0);
-            this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForm.Location = new System.Drawing.Point(3, 3);
-            this.panelForm.Name = "panelForm";
-            this.panelForm.RowCount = 2;
-            this.panelForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.panelForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.panelForm.Size = new System.Drawing.Size(274, 357);
-            this.panelForm.TabIndex = 1;
-            // 
-            // panelData
-            // 
-            this.panelData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelData.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.panelData.Location = new System.Drawing.Point(3, 38);
-            this.panelData.Name = "panelData";
-            this.panelData.Size = new System.Drawing.Size(268, 316);
-            this.panelData.TabIndex = 0;
-            // 
-            // lbTitle
-            // 
-            this.lbTitle.AutoSize = true;
-            this.lbTitle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle.Location = new System.Drawing.Point(3, 0);
-            this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(268, 35);
-            this.lbTitle.TabIndex = 1;
-            this.lbTitle.Text = "Datos";
-            this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(280, 45);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(520, 363);
+            this.panel1.TabIndex = 3;
             // 
             // FormGestionTablaBase
             // 
@@ -291,9 +242,6 @@
             this.panelControles.ResumeLayout(false);
             this.panelBot.ResumeLayout(false);
             this.panelCambios.ResumeLayout(false);
-            this.panelContainerMid.ResumeLayout(false);
-            this.panelForm.ResumeLayout(false);
-            this.panelForm.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -310,12 +258,9 @@
         private System.Windows.Forms.Button btnAceptarCambios;
         private System.Windows.Forms.Button btnCancelarCambios;
         private System.Windows.Forms.Button btnModificarRegistro;
-        public System.Windows.Forms.Panel panelTable;
-        public System.Windows.Forms.TableLayoutPanel panelContainerMid;
-        public System.Windows.Forms.FlowLayoutPanel panelData;
-        public System.Windows.Forms.Label lbTitle;
-        public System.Windows.Forms.TableLayoutPanel panelForm;
         public System.Windows.Forms.Panel panelTop;
         public System.Windows.Forms.Panel panelBot;
+        public System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Panel panelLeft;
     }
 }
