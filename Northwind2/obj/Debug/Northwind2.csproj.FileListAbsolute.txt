@@ -55,9 +55,11 @@ C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\bin\Debug\zh-CHT\Microsoft.Rep
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.csproj.AssemblyReference.cache
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.Form1.resources
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormBase.resources
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormGestionCustomers.resources
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormGestionTablaBase.resources
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormLogin.resources
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormLoginBase.resources
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormPrueba.resources
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormReportBase.resources
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormHeredado.resources
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormMultiplesReports.resources

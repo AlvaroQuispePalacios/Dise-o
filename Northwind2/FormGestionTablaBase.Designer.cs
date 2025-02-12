@@ -42,17 +42,20 @@
             this.btnAceptarCambios = new System.Windows.Forms.Button();
             this.btnCancelarCambios = new System.Windows.Forms.Button();
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelRight = new System.Windows.Forms.Panel();
+            this.dataGridViewForm = new System.Windows.Forms.DataGridView();
             this.panelBase.SuspendLayout();
             this.panelTop.SuspendLayout();
             this.panelControles.SuspendLayout();
             this.panelBot.SuspendLayout();
             this.panelCambios.SuspendLayout();
+            this.panelRight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewForm)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBase
             // 
-            this.panelBase.Controls.Add(this.panel1);
+            this.panelBase.Controls.Add(this.panelRight);
             this.panelBase.Controls.Add(this.panelLeft);
             this.panelBase.Controls.Add(this.panelBot);
             this.panelBase.Controls.Add(this.panelTop);
@@ -216,19 +219,31 @@
             // 
             // panelLeft
             // 
+            this.panelLeft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 45);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(280, 363);
+            this.panelLeft.Size = new System.Drawing.Size(420, 363);
             this.panelLeft.TabIndex = 2;
             // 
-            // panel1
+            // panelRight
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(280, 45);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(520, 363);
-            this.panel1.TabIndex = 3;
+            this.panelRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelRight.Controls.Add(this.dataGridViewForm);
+            this.panelRight.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelRight.Location = new System.Drawing.Point(420, 45);
+            this.panelRight.Name = "panelRight";
+            this.panelRight.Size = new System.Drawing.Size(380, 363);
+            this.panelRight.TabIndex = 3;
+            // 
+            // dataGridViewForm
+            // 
+            this.dataGridViewForm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewForm.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewForm.Name = "dataGridViewForm";
+            this.dataGridViewForm.Size = new System.Drawing.Size(378, 361);
+            this.dataGridViewForm.TabIndex = 0;
             // 
             // FormGestionTablaBase
             // 
@@ -242,6 +257,8 @@
             this.panelControles.ResumeLayout(false);
             this.panelBot.ResumeLayout(false);
             this.panelCambios.ResumeLayout(false);
+            this.panelRight.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewForm)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -260,7 +277,8 @@
         private System.Windows.Forms.Button btnModificarRegistro;
         public System.Windows.Forms.Panel panelTop;
         public System.Windows.Forms.Panel panelBot;
-        public System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Panel panelRight;
         public System.Windows.Forms.Panel panelLeft;
+        private System.Windows.Forms.DataGridView dataGridViewForm;
     }
 }
