@@ -20,18 +20,21 @@ namespace Northwind2
 
         private void btnValidarUsuario_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    SqlConnection conn = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Northwind;User id=usuarioRentacar;Password=rentacar;Trusted_Connection=True;TrustServerCertificate=True");
-            //    conn.Open();
-            //    string sql = $"SELECT * FROM usuario WHERE nombre_usuario='{lbUsuario}' AND pwd_usuario='{lbPwd}'";
-            //    SqlCommand cmd = new SqlCommand(sql, conn);
-            //    SqlDataReader reader = cmd.ExecuteReader();
-            //}
-            //catch (Exception ex)
-            //{
-
-            //}
+            try
+            {
+                SqlConnection conn = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Northwind;Integrated Security=True;TrustServerCertificate=True");
+                conn.Open();
+                String query = $"SELECT * FROM NCLusuario WHERE nombre_usuario = '{tbUsuario}' AND pwd='{tbPwd}'";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    String querySesion = $"INSERT INTO NCLsesion";
+                }
+            }
+            catch (Exception ex) { 
+            
+            }
 
         }
     }

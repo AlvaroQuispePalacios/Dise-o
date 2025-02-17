@@ -19,7 +19,6 @@ namespace Northwind2
         private DataTable tabla = new DataTable();
         private DataGridView dataGridView = null;
         private SqlDataAdapter adaptador = null;
-
         private TableAdapterManager tableAdapterManager = null;
 
         public FormGestionTablaBase()
@@ -78,7 +77,6 @@ namespace Northwind2
 
         private void cargarTabla()
         {
-
             String nombreTabla = null;
 
             try
