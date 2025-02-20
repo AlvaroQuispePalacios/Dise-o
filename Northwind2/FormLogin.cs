@@ -24,16 +24,24 @@ namespace Northwind2
             {
                 SqlConnection conn = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Northwind;Integrated Security=True;TrustServerCertificate=True");
                 conn.Open();
-                String query = $"SELECT * FROM NCLusuario WHERE nombre_usuario = '{tbUsuario}' AND pwd='{tbPwd}'";
+                String query = $"SELECT dbo.usuarioExiste(@usuario_param, @password_param)";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                SqlDataReader reader = cmd.ExecuteReader();
-                if (reader.HasRows)
-                {
-                    String querySesion = $"INSERT INTO NCLsesion";
+                cmd.Parameters.AddWithValue("@usuario_param", tbUsuario.Text);
+                cmd.Parameters.AddWithValue("@password_param", tbPwd.Text);
+                object result = cmd.ExecuteScalar();
+                if (result != null) {
+                    // Ahora verificamos si el usuario no esta bloqueado
+                    String usuarioExiste =(result.ToString());
+                    
                 }
+                else
+                {
+                    Console.WriteLine("Algo fallo");
+                }
+
             }
             catch (Exception ex) { 
-            
+                Console.WriteLine(ex.ToString());
             }
 
         }
