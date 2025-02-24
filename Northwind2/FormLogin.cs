@@ -28,11 +28,15 @@ namespace Northwind2
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@usuario_param", tbUsuario.Text);
                 cmd.Parameters.AddWithValue("@password_param", tbPwd.Text);
-                object result = cmd.ExecuteScalar();
+                SqlDataReader result = cmd.ExecuteReader();
+                //SqlCommand cmdProcedure = new SqlCommand("myProcedure", conn);
+                //cmdProcedure.CommandType = CommandType.StoredProcedure;
+                //cmdProcedure.Parameters.Add(new SqlParameter("@usuario_param", tbUsuario.Text));
+                //cmdProcedure.Parameters.Add(new SqlParameter("@password_param", tbPwd.Text));
+
                 if (result != null) {
-                    // Ahora verificamos si el usuario no esta bloqueado
-                    String usuarioExiste =(result.ToString());
-                    
+                    Console.WriteLine("Todo correcto" + result.ToString());
+
                 }
                 else
                 {
