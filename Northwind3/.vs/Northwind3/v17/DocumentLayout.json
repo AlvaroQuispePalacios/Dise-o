@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\2DAM\\Dise-o\\Northwind3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C9623DF8-8C4A-4390-AFBC-0A526A40E6F4}|Northwind3.csproj|e:\\2dam\\dise-o\\northwind3\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9623DF8-8C4A-4390-AFBC-0A526A40E6F4}|Northwind3.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9623DF8-8C4A-4390-AFBC-0A526A40E6F4}|Northwind3.csproj|e:\\2dam\\dise-o\\northwind3\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C9623DF8-8C4A-4390-AFBC-0A526A40E6F4}|Northwind3.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9623DF8-8C4A-4390-AFBC-0A526A40E6F4}|Northwind3.csproj|e:\\2dam\\dise-o\\northwind3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C9623DF8-8C4A-4390-AFBC-0A526A40E6F4}|Northwind3.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9623DF8-8C4A-4390-AFBC-0A526A40E6F4}|Northwind3.csproj|e:\\2dam\\dise-o\\northwind3\\formbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C9623DF8-8C4A-4390-AFBC-0A526A40E6F4}|Northwind3.csproj|solutionrelative:formbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9623DF8-8C4A-4390-AFBC-0A526A40E6F4}|Northwind3.csproj|e:\\2dam\\dise-o\\northwind3\\northwinddataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{C9623DF8-8C4A-4390-AFBC-0A526A40E6F4}|Northwind3.csproj|solutionrelative:northwinddataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 206,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NorthwindDataSet.xsd",
+              "DocumentMoniker": "E:\\2DAM\\Dise-o\\Northwind3\\NorthwindDataSet.xsd",
+              "RelativeDocumentMoniker": "NorthwindDataSet.xsd",
+              "ToolTip": "E:\\2DAM\\Dise-o\\Northwind3\\NorthwindDataSet.xsd",
+              "RelativeToolTip": "NorthwindDataSet.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2025-02-25T10:20:49.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormLogin.cs",
+              "DocumentMoniker": "E:\\2DAM\\Dise-o\\Northwind3\\FormLogin.cs",
+              "RelativeDocumentMoniker": "FormLogin.cs",
+              "ToolTip": "E:\\2DAM\\Dise-o\\Northwind3\\FormLogin.cs",
+              "RelativeToolTip": "FormLogin.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAgwEwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T10:08:25.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormLogin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\2DAM\\Dise-o\\Northwind3\\FormLogin.cs",
+              "RelativeDocumentMoniker": "FormLogin.cs",
+              "ToolTip": "E:\\2DAM\\Dise-o\\Northwind3\\FormLogin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormLogin.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T10:08:22.618Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormBase.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\2DAM\\Dise-o\\Northwind3\\FormBase.cs",
+              "RelativeDocumentMoniker": "FormBase.cs",
+              "ToolTip": "E:\\2DAM\\Dise-o\\Northwind3\\FormBase.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormBase.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T10:07:14.489Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\2DAM\\Dise-o\\Northwind3\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "E:\\2DAM\\Dise-o\\Northwind3\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T10:05:34.355Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

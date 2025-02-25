@@ -1,0 +1,11 @@
+E:\2DAM\Dise-o\Northwind3\bin\Debug\Northwind3.exe.config
+E:\2DAM\Dise-o\Northwind3\bin\Debug\Northwind3.exe
+E:\2DAM\Dise-o\Northwind3\bin\Debug\Northwind3.pdb
+E:\2DAM\Dise-o\Northwind3\obj\Debug\Northwind3.csproj.AssemblyReference.cache
+E:\2DAM\Dise-o\Northwind3\obj\Debug\Northwind3.FormBase.resources
+E:\2DAM\Dise-o\Northwind3\obj\Debug\Northwind3.Properties.Resources.resources
+E:\2DAM\Dise-o\Northwind3\obj\Debug\Northwind3.csproj.GenerateResource.cache
+E:\2DAM\Dise-o\Northwind3\obj\Debug\Northwind3.csproj.CoreCompileInputs.cache
+E:\2DAM\Dise-o\Northwind3\obj\Debug\Northwind3.exe
+E:\2DAM\Dise-o\Northwind3\obj\Debug\Northwind3.pdb
+E:\2DAM\Dise-o\Northwind3\obj\Debug\Northwind3.FormLogin.resources
