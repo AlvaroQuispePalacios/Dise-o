@@ -74,5 +74,17 @@ namespace Northwind2
         {
             AbrirFormHijo(new FormLogin());
         }
+
+        public void cargarRestricciones() {
+            try
+            {
+                
+
+            }
+            catch (Exception ex) { 
+                Console.WriteLine(ex.ToString());
+            }
+        }
+
     }
 }

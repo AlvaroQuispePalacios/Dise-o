@@ -15,44 +15,63 @@ namespace Northwind2
 {
     public partial class FormGestionTablaBase : FormBase
     {
-        private BindingSource bindingSource = new BindingSource();
-        private DataTable tabla = new DataTable();
-        private DataGridView dataGridView = null;
-        private SqlDataAdapter adaptador = null;
-        private TableAdapterManager tableAdapterManager = null;
+        protected BindingSource conectarBinding;
+
+        public FormGestionTablaBase(BindingSource conectarBinding)
+        {
+            InitializeComponent();
+            this.conectarBinding = conectarBinding;
+        }
+
+
 
         public FormGestionTablaBase()
         {
             InitializeComponent();
-            cargarTabla();
-            this.bindingSource.DataSource = tabla;
-            this.dataGridViewForm.DataSource = bindingSource;
-
         }
 
         private void btnIrAlPrimero_Click(object sender, EventArgs e)
         {
-            //this.bindingSource.MoveFirst();
+            if(conectarBinding != null)
+            {
+                this.conectarBinding.MoveFirst();
+
+            }
         }
 
         private void btnIrAlAnterior_Click(object sender, EventArgs e)
         {
+            if (conectarBinding != null)
+            {
+                this.conectarBinding.MovePrevious();
 
+            }
         }
 
         private void btnIrAlSiguiente_Click(object sender, EventArgs e)
         {
+            if (conectarBinding != null)
+            {
+                this.conectarBinding.MoveNext();
 
+            }
         }
 
         private void btnIrAlUltimo_Click(object sender, EventArgs e)
         {
+            if (conectarBinding != null)
+            {
+                this.conectarBinding.MoveLast();
 
+            }
         }
 
         private void btnAgregarRegistro_Click(object sender, EventArgs e)
         {
+            if(conectarBinding != null)
+            {
 
+            }
         }
 
         private void btnEliminarRegistro_Click(object sender, EventArgs e)
@@ -73,39 +92,6 @@ namespace Northwind2
         private void btnAceptarCambios_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void cargarTabla()
-        {
-            String nombreTabla = null;
-
-            try
-            {
-                // Obtenemos la tabla que esta asociada al formulario de gestión
-                SqlConnection conn = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Northwind;Integrated Security=True;TrustServerCertificate=True");
-                conn.Open();
-                String query = $"SELECT * FROM NCLGestionTablas WHERE nombre_formulario = '{this.Name}'";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                SqlDataReader reader = cmd.ExecuteReader();
-                if (reader.HasRows) {
-                    while (reader.Read())
-                    {
-                        nombreTabla = Convert.ToString(reader["nombre_tabla_asociado"]);
-                    }
-                    reader.Close();
-                }
-
-                // Cargará los datos de la tabla asociado al formulario
-                if (nombreTabla != null) {
-                    String queryObtenerDatosTabla = $"SELECT * FROM {nombreTabla}";
-                    this.adaptador = new SqlDataAdapter(queryObtenerDatosTabla, conn);
-                    // Llenar el dataTable con los datos de la tabla Customers
-                    this.adaptador.Fill(this.tabla);
-                }
-            }
-            catch (Exception ex) { 
-                Console.WriteLine(ex.ToString());
-            }
         }
     }
 }
