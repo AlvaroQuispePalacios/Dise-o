@@ -51,7 +51,7 @@
     <Shape ID="DesignTable:NCLsesion" ZOrder="4" X="11482" Y="70" Height="153" Width="204" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="102" />
     <Shape ID="DesignTable:NCLusuario" ZOrder="3" X="11756" Y="70" Height="153" Width="211" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="102" />
     <Shape ID="DesignTable:login_usuario" ZOrder="2" X="12037" Y="70" Height="153" Width="255" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="102" />
-    <Shape ID="DesignSources:QueriesTableAdapter" ZOrder="1" X="12362" Y="70" Height="48" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="44" />
+    <Shape ID="DesignSources:QueriesTableAdapter" ZOrder="1" X="12362" Y="70" Height="124" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="44" />
   </Shapes>
   <Connectors>
     <Connector ID="DesignRelation:FK_CustomerCustomerDemo" ZOrder="23" LineWidth="11">

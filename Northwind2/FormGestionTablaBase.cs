@@ -92,6 +92,7 @@ namespace Northwind2
                     {
                         nombreTabla = Convert.ToString(reader["nombre_tabla_asociado"]);
                     }
+                    reader.Close();
                 }
 
                 // Cargará los datos de la tabla asociado al formulario

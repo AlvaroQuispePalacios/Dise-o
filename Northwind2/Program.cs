@@ -4,8 +4,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+static class Global
+{
+    public static string userLogin;
+
+}
 namespace Northwind2
 {
+
     internal static class Program
     {
         /// <summary>
@@ -16,9 +23,12 @@ namespace Northwind2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-            //Application.Run(new FormReportCustomer());
 
+            FormLogin lg = new FormLogin();
+            if (lg.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new Form1());
+            }
         }
     }
 }
