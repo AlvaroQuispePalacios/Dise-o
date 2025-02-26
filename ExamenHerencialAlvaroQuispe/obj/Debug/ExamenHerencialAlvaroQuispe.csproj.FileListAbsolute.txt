@@ -1,0 +1,12 @@
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\ExamenHerencialAlvaroQuispe\bin\Debug\ExamenHerencialAlvaroQuispe.exe.config
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\ExamenHerencialAlvaroQuispe\bin\Debug\ExamenHerencialAlvaroQuispe.exe
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\ExamenHerencialAlvaroQuispe\bin\Debug\ExamenHerencialAlvaroQuispe.pdb
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\ExamenHerencialAlvaroQuispe\obj\Debug\ExamenHerencialAlvaroQuispe.csproj.AssemblyReference.cache
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\ExamenHerencialAlvaroQuispe\obj\Debug\ExamenHerencialAlvaroQuispe.FormBase.resources
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\ExamenHerencialAlvaroQuispe\obj\Debug\ExamenHerencialAlvaroQuispe.Properties.Resources.resources
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\ExamenHerencialAlvaroQuispe\obj\Debug\ExamenHerencialAlvaroQuispe.csproj.GenerateResource.cache
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\ExamenHerencialAlvaroQuispe\obj\Debug\ExamenHerencialAlvaroQuispe.csproj.CoreCompileInputs.cache
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\ExamenHerencialAlvaroQuispe\obj\Debug\ExamenHerencialAlvaroQuispe.exe
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\ExamenHerencialAlvaroQuispe\obj\Debug\ExamenHerencialAlvaroQuispe.pdb
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\ExamenHerencialAlvaroQuispe\obj\Debug\ExamenHerencialAlvaroQuispe.FormGestionBase.resources
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\ExamenHerencialAlvaroQuispe\obj\Debug\ExamenHerencialAlvaroQuispe.FormSuppliers.resources
