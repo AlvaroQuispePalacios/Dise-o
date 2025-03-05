@@ -86,5 +86,9 @@ namespace Northwind2
             }
         }
 
+        private void gestionProductsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new FormGestionProducts());
+        }
     }
 }

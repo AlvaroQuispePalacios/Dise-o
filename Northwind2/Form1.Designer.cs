@@ -38,8 +38,9 @@
             this.formulariosGestiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestiónEmployeesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panelContainer = new System.Windows.Forms.Panel();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelContainer = new System.Windows.Forms.Panel();
+            this.gestionProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,7 +106,8 @@
             // 
             this.formulariosGestiónToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gestiónToolStripMenuItem,
-            this.gestiónEmployeesToolStripMenuItem});
+            this.gestiónEmployeesToolStripMenuItem,
+            this.gestionProductsToolStripMenuItem});
             this.formulariosGestiónToolStripMenuItem.Name = "formulariosGestiónToolStripMenuItem";
             this.formulariosGestiónToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
             this.formulariosGestiónToolStripMenuItem.Text = "Formularios Gestión";
@@ -113,16 +115,23 @@
             // gestiónToolStripMenuItem
             // 
             this.gestiónToolStripMenuItem.Name = "gestiónToolStripMenuItem";
-            this.gestiónToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.gestiónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gestiónToolStripMenuItem.Text = "Gestión Customers";
             this.gestiónToolStripMenuItem.Click += new System.EventHandler(this.gestiónToolStripMenuItem_Click);
             // 
             // gestiónEmployeesToolStripMenuItem
             // 
             this.gestiónEmployeesToolStripMenuItem.Name = "gestiónEmployeesToolStripMenuItem";
-            this.gestiónEmployeesToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.gestiónEmployeesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gestiónEmployeesToolStripMenuItem.Text = "Gestión Employees";
             this.gestiónEmployeesToolStripMenuItem.Click += new System.EventHandler(this.gestiónEmployeesToolStripMenuItem_Click);
+            // 
+            // loginToolStripMenuItem
+            // 
+            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.loginToolStripMenuItem.Text = "Login";
+            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // panelContainer
             // 
@@ -132,12 +141,12 @@
             this.panelContainer.Size = new System.Drawing.Size(800, 426);
             this.panelContainer.TabIndex = 1;
             // 
-            // loginToolStripMenuItem
+            // gestionProductsToolStripMenuItem
             // 
-            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
-            this.loginToolStripMenuItem.Text = "Login";
-            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
+            this.gestionProductsToolStripMenuItem.Name = "gestionProductsToolStripMenuItem";
+            this.gestionProductsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gestionProductsToolStripMenuItem.Text = "Gestion Products";
+            this.gestionProductsToolStripMenuItem.Click += new System.EventHandler(this.gestionProductsToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -170,6 +179,7 @@
         private System.Windows.Forms.ToolStripMenuItem gestiónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestiónEmployeesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestionProductsToolStripMenuItem;
     }
 }
 

@@ -120,7 +120,6 @@ namespace ExamenHerencialAlvaroQuispe
             this.panelBot.Hide();
         }
 
-
         private void MostrarPanelBot()
         {
             this.panelBot.Visible = true;

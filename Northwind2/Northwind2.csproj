@@ -82,6 +82,12 @@
     <Compile Include="FormGestionCustomers.Designer.cs">
       <DependentUpon>FormGestionCustomers.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGestionProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestionProducts.Designer.cs">
+      <DependentUpon>FormGestionProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGestionTablaBase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGestionCustomers.resx">
       <DependentUpon>FormGestionCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestionProducts.resx">
+      <DependentUpon>FormGestionProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGestionTablaBase.resx">
       <DependentUpon>FormGestionTablaBase.cs</DependentUpon>

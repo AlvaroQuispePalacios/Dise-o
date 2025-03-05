@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Northwind2.NorthwindDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,8 @@ namespace Northwind2
 {
     public partial class FormGestionCustomers : FormGestionTablaBase
     {
-        public FormGestionCustomers(): base(new BindingSource()) // Se crea un nuevo BindingSource y se pasa al padre
+        public FormGestionCustomers()
+            : base(new BindingSource(), new TableAdapterManager()) // Se pasa también TableAdapterManager
         {
             InitializeComponent();
         }

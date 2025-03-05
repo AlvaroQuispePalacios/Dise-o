@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.Panel panelTop;
-            System.Windows.Forms.TableLayoutPanel panelControles;
+            System.Windows.Forms.TableLayoutPanel panelCambios;
+            this.panelControles = new System.Windows.Forms.TableLayoutPanel();
             this.btnModificarRegistro = new System.Windows.Forms.Button();
             this.btnEliminarRegistro = new System.Windows.Forms.Button();
             this.btnAgregarRegistro = new System.Windows.Forms.Button();
@@ -37,19 +38,18 @@
             this.btnIrAlSiguiente = new System.Windows.Forms.Button();
             this.btnIrAlAnterior = new System.Windows.Forms.Button();
             this.btnIrAlPrimero = new System.Windows.Forms.Button();
-            this.panelBot = new System.Windows.Forms.Panel();
-            this.panelCambios = new System.Windows.Forms.TableLayoutPanel();
             this.btnAceptarCambios = new System.Windows.Forms.Button();
             this.btnCancelarCambios = new System.Windows.Forms.Button();
+            this.panelBot = new System.Windows.Forms.Panel();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.panelRight = new System.Windows.Forms.Panel();
             panelTop = new System.Windows.Forms.Panel();
-            panelControles = new System.Windows.Forms.TableLayoutPanel();
+            panelCambios = new System.Windows.Forms.TableLayoutPanel();
             this.panelBase.SuspendLayout();
             panelTop.SuspendLayout();
-            panelControles.SuspendLayout();
+            this.panelControles.SuspendLayout();
+            panelCambios.SuspendLayout();
             this.panelBot.SuspendLayout();
-            this.panelCambios.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelBase
@@ -62,7 +62,7 @@
             // panelTop
             // 
             panelTop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            panelTop.Controls.Add(panelControles);
+            panelTop.Controls.Add(this.panelControles);
             panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             panelTop.Location = new System.Drawing.Point(0, 0);
             panelTop.Name = "panelTop";
@@ -71,27 +71,27 @@
             // 
             // panelControles
             // 
-            panelControles.ColumnCount = 7;
-            panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            panelControles.Controls.Add(this.btnModificarRegistro, 6, 0);
-            panelControles.Controls.Add(this.btnEliminarRegistro, 5, 0);
-            panelControles.Controls.Add(this.btnAgregarRegistro, 4, 0);
-            panelControles.Controls.Add(this.btnIrAlUltimo, 3, 0);
-            panelControles.Controls.Add(this.btnIrAlSiguiente, 2, 0);
-            panelControles.Controls.Add(this.btnIrAlAnterior, 1, 0);
-            panelControles.Controls.Add(this.btnIrAlPrimero, 0, 0);
-            panelControles.Location = new System.Drawing.Point(3, 3);
-            panelControles.Name = "panelControles";
-            panelControles.RowCount = 1;
-            panelControles.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            panelControles.Size = new System.Drawing.Size(547, 39);
-            panelControles.TabIndex = 0;
+            this.panelControles.ColumnCount = 7;
+            this.panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.panelControles.Controls.Add(this.btnModificarRegistro, 6, 0);
+            this.panelControles.Controls.Add(this.btnEliminarRegistro, 5, 0);
+            this.panelControles.Controls.Add(this.btnAgregarRegistro, 4, 0);
+            this.panelControles.Controls.Add(this.btnIrAlUltimo, 3, 0);
+            this.panelControles.Controls.Add(this.btnIrAlSiguiente, 2, 0);
+            this.panelControles.Controls.Add(this.btnIrAlAnterior, 1, 0);
+            this.panelControles.Controls.Add(this.btnIrAlPrimero, 0, 0);
+            this.panelControles.Location = new System.Drawing.Point(3, 3);
+            this.panelControles.Name = "panelControles";
+            this.panelControles.RowCount = 1;
+            this.panelControles.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.panelControles.Size = new System.Drawing.Size(547, 39);
+            this.panelControles.TabIndex = 0;
             // 
             // btnModificarRegistro
             // 
@@ -170,29 +170,20 @@
             this.btnIrAlPrimero.UseVisualStyleBackColor = true;
             this.btnIrAlPrimero.Click += new System.EventHandler(this.btnIrAlPrimero_Click);
             // 
-            // panelBot
-            // 
-            this.panelBot.Controls.Add(this.panelCambios);
-            this.panelBot.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBot.Location = new System.Drawing.Point(0, 408);
-            this.panelBot.Name = "panelBot";
-            this.panelBot.Size = new System.Drawing.Size(800, 42);
-            this.panelBot.TabIndex = 1;
-            // 
             // panelCambios
             // 
-            this.panelCambios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelCambios.ColumnCount = 2;
-            this.panelCambios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.panelCambios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.panelCambios.Controls.Add(this.btnAceptarCambios, 1, 0);
-            this.panelCambios.Controls.Add(this.btnCancelarCambios, 0, 0);
-            this.panelCambios.Location = new System.Drawing.Point(625, 3);
-            this.panelCambios.Name = "panelCambios";
-            this.panelCambios.RowCount = 1;
-            this.panelCambios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.panelCambios.Size = new System.Drawing.Size(172, 39);
-            this.panelCambios.TabIndex = 0;
+            panelCambios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            panelCambios.ColumnCount = 2;
+            panelCambios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            panelCambios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            panelCambios.Controls.Add(this.btnAceptarCambios, 1, 0);
+            panelCambios.Controls.Add(this.btnCancelarCambios, 0, 0);
+            panelCambios.Location = new System.Drawing.Point(625, 3);
+            panelCambios.Name = "panelCambios";
+            panelCambios.RowCount = 1;
+            panelCambios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            panelCambios.Size = new System.Drawing.Size(172, 39);
+            panelCambios.TabIndex = 0;
             // 
             // btnAceptarCambios
             // 
@@ -215,6 +206,15 @@
             this.btnCancelarCambios.Text = "Cancelar";
             this.btnCancelarCambios.UseVisualStyleBackColor = true;
             this.btnCancelarCambios.Click += new System.EventHandler(this.btnCancelarCambios_Click);
+            // 
+            // panelBot
+            // 
+            this.panelBot.Controls.Add(panelCambios);
+            this.panelBot.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBot.Location = new System.Drawing.Point(0, 408);
+            this.panelBot.Name = "panelBot";
+            this.panelBot.Size = new System.Drawing.Size(800, 42);
+            this.panelBot.TabIndex = 1;
             // 
             // panelLeft
             // 
@@ -241,19 +241,17 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "FormGestionTablaBase";
             this.Text = "FormGestionTablaBase";
+            this.Load += new System.EventHandler(this.FormGestionTablaBase_Load);
             this.panelBase.ResumeLayout(false);
             panelTop.ResumeLayout(false);
-            panelControles.ResumeLayout(false);
+            this.panelControles.ResumeLayout(false);
+            panelCambios.ResumeLayout(false);
             this.panelBot.ResumeLayout(false);
-            this.panelCambios.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.TableLayoutPanel panelCambios;
-        private System.Windows.Forms.Button btnAceptarCambios;
-        private System.Windows.Forms.Button btnCancelarCambios;
         public System.Windows.Forms.Panel panelBot;
         public System.Windows.Forms.Panel panelRight;
         public System.Windows.Forms.Panel panelLeft;
@@ -264,5 +262,8 @@
         public System.Windows.Forms.Button btnIrAlSiguiente;
         public System.Windows.Forms.Button btnIrAlAnterior;
         public System.Windows.Forms.Button btnIrAlPrimero;
+        public System.Windows.Forms.Button btnAceptarCambios;
+        public System.Windows.Forms.Button btnCancelarCambios;
+        private System.Windows.Forms.TableLayoutPanel panelControles;
     }
 }
