@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Panel panelTop;
+            System.Windows.Forms.TableLayoutPanel panelControles;
             System.Windows.Forms.TableLayoutPanel panelCambios;
-            this.panelControles = new System.Windows.Forms.TableLayoutPanel();
+            this.panelTop = new System.Windows.Forms.Panel();
             this.btnModificarRegistro = new System.Windows.Forms.Button();
             this.btnEliminarRegistro = new System.Windows.Forms.Button();
             this.btnAgregarRegistro = new System.Windows.Forms.Button();
@@ -43,11 +43,11 @@
             this.panelBot = new System.Windows.Forms.Panel();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.panelRight = new System.Windows.Forms.Panel();
-            panelTop = new System.Windows.Forms.Panel();
+            panelControles = new System.Windows.Forms.TableLayoutPanel();
             panelCambios = new System.Windows.Forms.TableLayoutPanel();
             this.panelBase.SuspendLayout();
-            panelTop.SuspendLayout();
-            this.panelControles.SuspendLayout();
+            this.panelTop.SuspendLayout();
+            panelControles.SuspendLayout();
             panelCambios.SuspendLayout();
             this.panelBot.SuspendLayout();
             this.SuspendLayout();
@@ -57,41 +57,41 @@
             this.panelBase.Controls.Add(this.panelRight);
             this.panelBase.Controls.Add(this.panelLeft);
             this.panelBase.Controls.Add(this.panelBot);
-            this.panelBase.Controls.Add(panelTop);
+            this.panelBase.Controls.Add(this.panelTop);
             // 
             // panelTop
             // 
-            panelTop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            panelTop.Controls.Add(this.panelControles);
-            panelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            panelTop.Location = new System.Drawing.Point(0, 0);
-            panelTop.Name = "panelTop";
-            panelTop.Size = new System.Drawing.Size(800, 45);
-            panelTop.TabIndex = 0;
+            this.panelTop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelTop.Controls.Add(panelControles);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(800, 45);
+            this.panelTop.TabIndex = 0;
             // 
             // panelControles
             // 
-            this.panelControles.ColumnCount = 7;
-            this.panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.panelControles.Controls.Add(this.btnModificarRegistro, 6, 0);
-            this.panelControles.Controls.Add(this.btnEliminarRegistro, 5, 0);
-            this.panelControles.Controls.Add(this.btnAgregarRegistro, 4, 0);
-            this.panelControles.Controls.Add(this.btnIrAlUltimo, 3, 0);
-            this.panelControles.Controls.Add(this.btnIrAlSiguiente, 2, 0);
-            this.panelControles.Controls.Add(this.btnIrAlAnterior, 1, 0);
-            this.panelControles.Controls.Add(this.btnIrAlPrimero, 0, 0);
-            this.panelControles.Location = new System.Drawing.Point(3, 3);
-            this.panelControles.Name = "panelControles";
-            this.panelControles.RowCount = 1;
-            this.panelControles.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.panelControles.Size = new System.Drawing.Size(547, 39);
-            this.panelControles.TabIndex = 0;
+            panelControles.ColumnCount = 7;
+            panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            panelControles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            panelControles.Controls.Add(this.btnModificarRegistro, 6, 0);
+            panelControles.Controls.Add(this.btnEliminarRegistro, 5, 0);
+            panelControles.Controls.Add(this.btnAgregarRegistro, 4, 0);
+            panelControles.Controls.Add(this.btnIrAlUltimo, 3, 0);
+            panelControles.Controls.Add(this.btnIrAlSiguiente, 2, 0);
+            panelControles.Controls.Add(this.btnIrAlAnterior, 1, 0);
+            panelControles.Controls.Add(this.btnIrAlPrimero, 0, 0);
+            panelControles.Location = new System.Drawing.Point(3, 3);
+            panelControles.Name = "panelControles";
+            panelControles.RowCount = 1;
+            panelControles.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            panelControles.Size = new System.Drawing.Size(547, 39);
+            panelControles.TabIndex = 0;
             // 
             // btnModificarRegistro
             // 
@@ -243,8 +243,8 @@
             this.Text = "FormGestionTablaBase";
             this.Load += new System.EventHandler(this.FormGestionTablaBase_Load);
             this.panelBase.ResumeLayout(false);
-            panelTop.ResumeLayout(false);
-            this.panelControles.ResumeLayout(false);
+            this.panelTop.ResumeLayout(false);
+            panelControles.ResumeLayout(false);
             panelCambios.ResumeLayout(false);
             this.panelBot.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -264,6 +264,6 @@
         public System.Windows.Forms.Button btnIrAlPrimero;
         public System.Windows.Forms.Button btnAceptarCambios;
         public System.Windows.Forms.Button btnCancelarCambios;
-        private System.Windows.Forms.TableLayoutPanel panelControles;
+        private System.Windows.Forms.Panel panelTop;
     }
 }

@@ -38,9 +38,10 @@
             this.formulariosGestiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestiónEmployeesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.gestionProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionCustomersOrdersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,7 +108,8 @@
             this.formulariosGestiónToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gestiónToolStripMenuItem,
             this.gestiónEmployeesToolStripMenuItem,
-            this.gestionProductsToolStripMenuItem});
+            this.gestionProductsToolStripMenuItem,
+            this.gestionCustomersOrdersToolStripMenuItem});
             this.formulariosGestiónToolStripMenuItem.Name = "formulariosGestiónToolStripMenuItem";
             this.formulariosGestiónToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
             this.formulariosGestiónToolStripMenuItem.Text = "Formularios Gestión";
@@ -115,16 +117,23 @@
             // gestiónToolStripMenuItem
             // 
             this.gestiónToolStripMenuItem.Name = "gestiónToolStripMenuItem";
-            this.gestiónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gestiónToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.gestiónToolStripMenuItem.Text = "Gestión Customers";
             this.gestiónToolStripMenuItem.Click += new System.EventHandler(this.gestiónToolStripMenuItem_Click);
             // 
             // gestiónEmployeesToolStripMenuItem
             // 
             this.gestiónEmployeesToolStripMenuItem.Name = "gestiónEmployeesToolStripMenuItem";
-            this.gestiónEmployeesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gestiónEmployeesToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.gestiónEmployeesToolStripMenuItem.Text = "Gestión Employees";
             this.gestiónEmployeesToolStripMenuItem.Click += new System.EventHandler(this.gestiónEmployeesToolStripMenuItem_Click);
+            // 
+            // gestionProductsToolStripMenuItem
+            // 
+            this.gestionProductsToolStripMenuItem.Name = "gestionProductsToolStripMenuItem";
+            this.gestionProductsToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.gestionProductsToolStripMenuItem.Text = "Gestion Products";
+            this.gestionProductsToolStripMenuItem.Click += new System.EventHandler(this.gestionProductsToolStripMenuItem_Click);
             // 
             // loginToolStripMenuItem
             // 
@@ -141,12 +150,12 @@
             this.panelContainer.Size = new System.Drawing.Size(800, 426);
             this.panelContainer.TabIndex = 1;
             // 
-            // gestionProductsToolStripMenuItem
+            // gestionCustomersOrdersToolStripMenuItem
             // 
-            this.gestionProductsToolStripMenuItem.Name = "gestionProductsToolStripMenuItem";
-            this.gestionProductsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.gestionProductsToolStripMenuItem.Text = "Gestion Products";
-            this.gestionProductsToolStripMenuItem.Click += new System.EventHandler(this.gestionProductsToolStripMenuItem_Click);
+            this.gestionCustomersOrdersToolStripMenuItem.Name = "gestionCustomersOrdersToolStripMenuItem";
+            this.gestionCustomersOrdersToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.gestionCustomersOrdersToolStripMenuItem.Text = "Gestion Customers - Orders";
+            this.gestionCustomersOrdersToolStripMenuItem.Click += new System.EventHandler(this.gestionCustomersOrdersToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -180,6 +189,7 @@
         private System.Windows.Forms.ToolStripMenuItem gestiónEmployeesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionProductsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestionCustomersOrdersToolStripMenuItem;
     }
 }
 

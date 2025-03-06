@@ -141,7 +141,7 @@ namespace Northwind2
 
         private void DeshabilitarBotonExceptoSeleccionado(string botonTexto)
         {
-            foreach (Control item in panelControles.Controls)
+            foreach (Control item in panelTop.Controls)
             {
                 if (!item.Text.Equals(botonTexto))
                 {
@@ -151,7 +151,7 @@ namespace Northwind2
         }
         private void HabilitarBotonesTop()
         {
-            foreach (Control item in panelControles.Controls)
+            foreach (Control item in panelTop.Controls)
             {
                 item.Enabled = true;
             }

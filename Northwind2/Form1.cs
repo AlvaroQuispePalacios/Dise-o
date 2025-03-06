@@ -90,5 +90,11 @@ namespace Northwind2
         {
             AbrirFormHijo(new FormGestionProducts());
         }
+
+        private void gestionCustomersOrdersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new FormGestionCustomersOrders());
+
+        }
     }
 }

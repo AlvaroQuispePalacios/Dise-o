@@ -76,11 +76,23 @@
     <Compile Include="FormBase.Designer.cs">
       <DependentUpon>FormBase.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCustomerOrdersMaestroDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomerOrdersMaestroDetalle.Designer.cs">
+      <DependentUpon>FormCustomerOrdersMaestroDetalle.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGestionCustomers.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormGestionCustomers.Designer.cs">
       <DependentUpon>FormGestionCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGestionCustomersOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestionCustomersOrders.Designer.cs">
+      <DependentUpon>FormGestionCustomersOrders.cs</DependentUpon>
     </Compile>
     <Compile Include="FormGestionProducts.cs">
       <SubType>Form</SubType>
@@ -156,8 +168,14 @@
     <EmbeddedResource Include="FormBase.resx">
       <DependentUpon>FormBase.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomerOrdersMaestroDetalle.resx">
+      <DependentUpon>FormCustomerOrdersMaestroDetalle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGestionCustomers.resx">
       <DependentUpon>FormGestionCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestionCustomersOrders.resx">
+      <DependentUpon>FormGestionCustomersOrders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGestionProducts.resx">
       <DependentUpon>FormGestionProducts.cs</DependentUpon>

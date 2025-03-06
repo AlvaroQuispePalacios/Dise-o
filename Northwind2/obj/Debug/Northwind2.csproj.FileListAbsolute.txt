@@ -146,3 +146,5 @@ E:\2DAM\Dise-o\Northwind2\obj\Debug\Northwind2.csproj.Up2Date
 E:\2DAM\Dise-o\Northwind2\obj\Debug\Northwind2.exe
 E:\2DAM\Dise-o\Northwind2\obj\Debug\Northwind2.pdb
 C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormGestionProducts.resources
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormGestionCustomersOrders.resources
+C:\Users\ciclesgs\Desktop\2DAM\Diseño\Northwind2\obj\Debug\Northwind2.FormCustomerOrdersMaestroDetalle.resources

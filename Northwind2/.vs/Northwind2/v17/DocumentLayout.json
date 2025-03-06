@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\northwind2\\formgestioncustomersorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formgestioncustomersorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\northwind2\\formgestioncustomersorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formgestioncustomersorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\formgestionproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formgestionproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\northwind2\\formgestionproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formgestionproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,16 +23,12 @@
       "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formgestiontablabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\northwind2\\formgestionproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formgestionproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|c:\\users\\ciclesgs\\desktop\\2dam\\dise\u00F1o\\northwind2\\formgestioncustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formgestioncustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\formgestiontablabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formgestiontablabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\formgestioncustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8710F7D-7E31-4180-AAE5-B2E44D7813E2}|Northwind2.csproj|solutionrelative:formgestioncustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,12 +47,37 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FormGestionCustomersOrders.cs",
+              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\FormGestionCustomersOrders.cs",
+              "RelativeDocumentMoniker": "FormGestionCustomersOrders.cs",
+              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\FormGestionCustomersOrders.cs",
+              "RelativeToolTip": "FormGestionCustomersOrders.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwC4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T18:59:32.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormGestionCustomersOrders.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\FormGestionCustomersOrders.cs",
+              "RelativeDocumentMoniker": "FormGestionCustomersOrders.cs",
+              "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\FormGestionCustomersOrders.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormGestionCustomersOrders.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T18:59:30.751Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "FormGestionProducts.cs",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\FormGestionProducts.cs",
               "RelativeDocumentMoniker": "FormGestionProducts.cs",
               "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\FormGestionProducts.cs",
               "RelativeToolTip": "FormGestionProducts.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAADwvycAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T16:24:50.72Z",
               "EditorCaption": ""
@@ -63,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "FormGestionCustomers.cs",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\FormGestionCustomers.cs",
               "RelativeDocumentMoniker": "FormGestionCustomers.cs",
@@ -71,25 +104,24 @@
               "RelativeToolTip": "FormGestionCustomers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T15:44:26.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T15:44:26.429Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "FormGestionTablaBase.cs",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\FormGestionTablaBase.cs",
               "RelativeDocumentMoniker": "FormGestionTablaBase.cs",
               "ToolTip": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\FormGestionTablaBase.cs",
               "RelativeToolTip": "FormGestionTablaBase.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAuwJsAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAawD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-25T18:57:13.751Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "FormGestionTablaBase.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ciclesgs\\Desktop\\2DAM\\Dise\u00F1o\\Northwind2\\FormGestionTablaBase.cs",
               "RelativeDocumentMoniker": "FormGestionTablaBase.cs",
